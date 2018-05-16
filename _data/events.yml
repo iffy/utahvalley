@@ -1,10 +1,50 @@
-- name: "Hale Center Theater: The Sound of Music"
-  description: All children's cast
+# - name:
+#   url:
+#   price: free / [1,2]
+#   when:
+#   tags:
+#     - indoor
+#     - outdoor
+#     - baby-friendly
+#     - sitting
+#     - active
+- name: Provo Farmer's Market
+  url: http://www.provofarmersmarket.com/
+  price: varies
+  when:
+  tags:
+    - outdoor
+    - baby-friendly
+    - active
+  when:
+    - 2018-06-02
+    - 2018-06-09
+    - 2018-06-16
+    - 2018-06-23
+    - 2018-06-30
+    - 2018-07-07
+    - 2018-07-14
+    - 2018-07-21
+    - 2018-07-28
+    - 2018-08-04
+    - 2018-08-11
+    - 2018-08-18
+    - 2018-08-25
+    - 2018-09-01
+    - 2018-09-08
+    - 2018-09-15
+    - 2018-09-22
+    - 2018-09-29
+    - 2018-10-06
+    - 2018-10-13
+    - 2018-10-20
+    - 2018-10-27
+- name: "Hale Center Theater: The Sound of Music (by youth)"
   tags:
     - indoor
     - baby-friendly
-    - sit-and-watch
-  price: [2, 9]
+    - sitting
+  price: [7, 9]
   url: http://webticketing.haletheater.org/showdates.php?s_id=463
   when:
     - 2018-05-18
@@ -14,11 +54,168 @@
     - 2018-05-23
     - 2018-05-24
     - 2018-05-25
-- name: Halloween Party
-  description: Something
+- name: "Hale Center Theater: Aladdin Jr. (by youth)"
+  url: http://webticketing.haletheater.org/showdates.php?s_id=464
+  price: [5, 9]
+  tags:
+    - indoor
+    - baby-friendly
+    - sitting
+  when:
+    - 2018-07-23
+    - 2018-07-24
+    - 2018-07-25
+    - 2018-07-26
+    - 2018-07-27
+    - 2018-07-30
+    - 2018-07-31
+    - 2018-08-01
+    - 2018-08-02
+    - 2018-08-03
+- name: "Hale Center Theater: The Velveteen Rabbit (by youth)"
+  url: http://webticketing.haletheater.org/showdates.php?s_id=465
+  price: [5,9]
+  tags:
+    - indoor
+    - baby-friendly
+    - sitting
+  when:
+    - 2018-10-22
+    - 2018-10-26
+    - 2018-10-29
+    - 2018-11-02
+    - 2018-11-05
+    - 2018-11-09
+- name: "Hale Center Theater: A Christmas Carol - Youth Edition"
+  url: http://webticketing.haletheater.org/showdates.php?s_id=466
+  price: [7,9]
+  tags:
+    - indoor
+    - baby-friendly
+    - sitting
+  when:
+    - 2018-11-28
+    - 2018-11-29
+    - 2018-11-30
+    - 2018-12-01
+- name: BYU Baseball
+  url: https://byucougars.com/schedule/baseball/2018
+  price: [6,10]
   tags:
     - outdoor
-  price: free
-  url: http://www.google.com
+    - baby-friendly
+    - sitting
   when:
-    - 2017-10-31
+    - 2018-05-17
+    - 2018-05-18
+    - 2018-05-19
+- name: "Hale Center Theater: Sense & Sensibility"
+  url: http://webticketing.haletheater.org/showdates.php?s_id=455
+  price: [16, 24]
+  minage: 4
+  tags:
+    - indoor
+    - sitting
+  when:
+    - 2018-05-16
+    - 2018-05-17
+    - 2018-05-18
+    - 2018-05-19
+    - 2018-05-19
+    - 2018-05-21
+    - 2018-05-22
+    - 2018-05-23
+    - 2018-05-24
+    - 2018-05-25
+    - 2018-05-26
+    - 2018-05-26
+    - 2018-05-26
+    - 2018-05-28
+    - 2018-05-28
+    - 2018-05-29
+    - 2018-05-29
+    - 2018-05-30
+    - 2018-05-30
+    - 2018-05-31
+    - 2018-05-31
+    - 2018-06-01
+    - 2018-06-01
+    - 2018-06-02
+    - 2018-06-02
+    - 2018-06-02
+- name: "Hale Center Theater: Annie"
+  url: http://webticketing.haletheater.org/showdates.php?s_id=456
+  price: [14, 24]
+  minage: 4
+  tags:
+    - indoor
+    - sitting
+  when:
+    - 2018-06-11
+    - 2018-06-12
+    - 2018-06-13
+    - 2018-06-14
+    - 2018-06-15
+    - 2018-06-16
+    - 2018-06-16
+    - 2018-06-18
+    - 2018-06-19
+    - 2018-06-20
+    - 2018-06-21
+    - 2018-06-22
+    - 2018-06-23
+    - 2018-06-23
+    - 2018-06-25
+    - 2018-06-26
+    - 2018-06-27
+    - 2018-06-28
+    - 2018-06-29
+    - 2018-06-30
+    - 2018-06-30
+    - 2018-07-02
+    - 2018-07-03
+    - 2018-07-05
+    - 2018-07-06
+    - 2018-07-07
+    - 2018-07-07
+    - 2018-07-07
+    - 2018-07-09
+    - 2018-07-10
+    - 2018-07-11
+    - 2018-07-12
+    - 2018-07-13
+    - 2018-07-14
+    - 2018-07-14
+    - 2018-07-14
+    - 2018-07-16
+    - 2018-07-17
+    - 2018-07-18
+    - 2018-07-19
+    - 2018-07-20
+    - 2018-07-21
+    - 2018-07-21
+    - 2018-07-21
+    - 2018-07-23
+    - 2018-07-24
+    - 2018-07-25
+    - 2018-07-26
+    - 2018-07-27
+    - 2018-07-28
+    - 2018-07-28
+    - 2018-07-28
+    - 2018-07-30
+    - 2018-07-31
+    - 2018-08-01
+    - 2018-08-02
+    - 2018-08-03
+    - 2018-08-04
+    - 2018-08-04
+    - 2018-08-04
+    - 2018-08-06
+    - 2018-08-07
+    - 2018-08-08
+    - 2018-08-09
+    - 2018-08-10
+    - 2018-08-11
+    - 2018-08-11
+    - 2018-08-11
