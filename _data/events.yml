@@ -1,13 +1,52 @@
 # - name:
 #   url:
 #   price: free / [1,2]
-#   when:
 #   tags:
 #     - indoor
 #     - outdoor
 #     - baby-friendly
 #     - sitting
 #     - active
+#   when:
+- name: Full moon lift ride - Sundance
+  url: https://www.sundanceresort.com/mountain-activities/full-moon-lift-rides/
+  price: [17, 20]
+  tags:
+    - outdoor
+    - sitting
+  when:
+    - 2018-05-26
+    - 2018-06-29
+    - 2018-06-30
+    - 2018-07-27
+    - 2018-07-28
+    - 2018-08-24
+    - 2018-08-25
+    - 2018-09-20
+    - 2018-09-21
+    - 2018-09-22
+- name: 'Oklahoma! - Sundance'
+  url: https://www.sundanceresort.com/events/summer-theatre/
+  price: [26,38]
+  tags:
+    - outdoor
+    - sitting
+  when:
+    - 2018-07-19
+    - 2018-07-20
+    - 2018-07-21
+    - 2018-07-23
+    - 2018-07-26
+    - 2018-07-27
+    - 2018-07-28
+    - 2018-07-30
+    - 2018-08-02
+    - 2018-08-03
+    - 2018-08-04
+    - 2018-08-06
+    - 2018-08-09
+    - 2018-08-10
+    - 2018-08-11
 - name: Provo Farmer's Market
   url: http://www.provofarmersmarket.com/
   price: varies
