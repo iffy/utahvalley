@@ -14,10 +14,6 @@
     - 2018-05-23
     - 2018-05-24
     - 2018-05-25
-- name: "Maddie's Party"
-  price: free
-  when:
-    - 2018-05-16
 - name: Halloween Party
   description: Something
   tags:
