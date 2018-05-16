@@ -1,0 +1,28 @@
+- name: "Hale Center Theater: The Sound of Music"
+  description: All children's cast
+  tags:
+    - indoor
+    - baby-friendly
+    - sit-and-watch
+  price: [2, 9]
+  url: http://webticketing.haletheater.org/showdates.php?s_id=463
+  when:
+    - 2018-05-18
+    - 2018-05-19
+    - 2018-05-21
+    - 2018-05-22
+    - 2018-05-23
+    - 2018-05-24
+    - 2018-05-25
+- name: "Maddie's Party"
+  price: free
+  when:
+    - 2018-05-16
+- name: Halloween Party
+  description: Something
+  tags:
+    - outdoor
+  price: free
+  url: http://www.google.com
+  when:
+    - 2017-10-31

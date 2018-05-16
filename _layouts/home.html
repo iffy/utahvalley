@@ -1,0 +1,50 @@
+---
+layout: default
+---
+
+<div class="home">
+  {%- if page.title -%}
+    <h1 class="page-heading">{{ page.title }}</h1>
+  {%- endif -%}
+
+  {% assign start = "2018-05-14" | date: "%s" | plus: 0 %}
+  {% assign end = start | plus: 864000 %}
+  
+  <p>
+    Here's some fun things happening in Utah Valley {{ start | date: "%b %-d" }} - {{ end | date: "%b %-d, %Y" }}.
+  </p>
+
+  <h2>Events</h2>
+  {% for event in site.data.events %}
+    {% assign show = false %}
+    {% for when in event.when %}
+      {% assign ts = when | date: "%s" | plus: 0 %}
+      {% if ts >= start and ts <= end %}
+        {% assign show = true %}
+      {% endif %}
+    {% endfor %}
+    {% if show %}
+      <li>
+        {% if event.url %}
+          <a href="{{ event.url }}" target="_blank">{{ event.name }}</a>
+        {% else %}
+          {{ event.name }}
+        {% endif %}
+        {% if event.price == 'free' %}
+          &bull; FREE
+        {% elsif event.price %}
+          {% if event.price.first %}
+          &bull; ${{ event.price.first }}-{{ event.price.last }}
+          {% else %}
+          &bull; ${{ event.price }}
+          {% endif %}
+        {% endif %}
+        {% if event.tags %}
+          &bull;
+          <span class="tags">{{ event.tags | sort | join: ', ' }}</span>
+        {% endif %}
+      </li>
+    {% endif %}
+  {% endfor %}
+
+</div>
