@@ -1,0 +1,24 @@
+- name: Orem Library Storytime
+  url: https://www.oremlibrary.org/events/storytime/
+  price: free
+  tags:
+    - indoor
+    - baby-friendly
+    - sitting
+  when: Tue, Wed, Thu
+- name: Orem Library Baby Storytime
+  url: https://www.oremlibrary.org/events/storytime/
+  price: free
+  tags:
+    - indoor
+    - baby-friendly
+    - sitting
+  when: Fridays
+- name: Orem Library Family Storytime
+  url: https://www.oremlibrary.org/events/storytime/
+  price: free
+  tags:
+    - indoor
+    - baby-friendly
+    - sitting
+  when: 1st and 3rd Thursdays
