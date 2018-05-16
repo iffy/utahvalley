@@ -85,7 +85,7 @@
     - 2018-08-31
     - 2018-09-06
     - 2018-09-07
-- name: "Hale Center Theater: The Sound of Music (by youth)"
+- name: "The Sound of Music - HCT youth"
   tags:
     - indoor
     - baby-friendly
@@ -100,7 +100,7 @@
     - 2018-05-23
     - 2018-05-24
     - 2018-05-25
-- name: "Hale Center Theater: Aladdin Jr. (by youth)"
+- name: "Aladdin Jr. - HCT Youth"
   url: http://webticketing.haletheater.org/showdates.php?s_id=464
   price: [5, 9]
   tags:
@@ -118,7 +118,7 @@
     - 2018-08-01
     - 2018-08-02
     - 2018-08-03
-- name: "Hale Center Theater: The Velveteen Rabbit (by youth)"
+- name: "The Velveteen Rabbit - HCT Youth"
   url: http://webticketing.haletheater.org/showdates.php?s_id=465
   price: [5,9]
   tags:
@@ -132,7 +132,7 @@
     - 2018-11-02
     - 2018-11-05
     - 2018-11-09
-- name: "Hale Center Theater: A Christmas Carol - Youth Edition"
+- name: "A Christmas Carol - Youth Edition (HCT)"
   url: http://webticketing.haletheater.org/showdates.php?s_id=466
   price: [7,9]
   tags:
@@ -155,7 +155,7 @@
     - 2018-05-17
     - 2018-05-18
     - 2018-05-19
-- name: "Hale Center Theater: Sense & Sensibility"
+- name: "Sense & Sensibility - HCT"
   url: http://webticketing.haletheater.org/showdates.php?s_id=455
   price: [16, 24]
   minage: 4
@@ -189,7 +189,7 @@
     - 2018-06-02
     - 2018-06-02
     - 2018-06-02
-- name: "Hale Center Theater: Annie"
+- name: "Annie - HCT"
   url: http://webticketing.haletheater.org/showdates.php?s_id=456
   price: [14, 24]
   minage: 4
