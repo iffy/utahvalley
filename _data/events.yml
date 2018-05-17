@@ -1,5 +1,6 @@
 # - name:
 #   url:
+#   location:
 #   price: free / [1,2]
 #   tags:
 #     - indoor
@@ -8,8 +9,469 @@
 #     - sitting
 #     - active
 #   when:
-- name: Full moon lift ride - Sundance
+
+#------------------------------------------------------------
+# Orem Summerfest 2018
+#------------------------------------------------------------
+- name: Summerfest Fireworks
+  url: https://summerfest.orem.org/fireworks/
+  location: Orem
+  price: iap
+  tags:
+    - outdoor
+    - sitting
+    - active
+  when:
+    - Saturday, June 9th
+- name: Summerfest Parade
+  url: https://summerfest.orem.org/fireworks/
+  location: Orem
+  price: iap
+  tags:
+    - outdoor
+    - sitting
+  when:
+    - Saturday, June 9th
+- name: Summerfest Carnival
+  url: https://summerfest.orem.org/fireworks/
+  location: Orem
+  price: iap
+  tags:
+    - outdoor
+    - sitting
+    - active
+  when:
+    - Thurs. June 7
+    - Fri. June 8
+    - Sat. June 9
+
+#------------------------------------------------------------
+# Deer Valley Music Festival 2018
+#------------------------------------------------------------
+- name: Patriotic Celebration starring Rachel Potter
+  url: https://my.usuo.org/single/PSDetail.aspx?psn=20733
+  location: Park City
+  price: yes
+  tags:
+    - outdoor
+    - sitting
+    - music
+  when:
+    - Saturday, June 30
+- name: "Disney in Concert: A Silly Symphony Celebration"
+  url: https://my.usuo.org/single/PSDetail.aspx?psn=20920
+  location: Park City
+  price: yes
+  tags:
+    - outdoor
+    - sitting
+    - music
+  when:
+    - Friday, July 6
+- name: Broadway Hits by Stephen Sondheim and Andrew Lloyd Webber
+  url: https://my.usuo.org/single/PSDetail.aspx?psn=20921
+  location: Park City
+  price: yes
+  tags:
+    - outdoor
+    - sitting
+    - music
+  when:
+    - Saturday, July 7
+- name: Mozart's Violin Concerto No. 5
+  url: https://my.usuo.org/single/PSDetail.aspx?psn=20951
+  location: Park City
+  price: yes
+  tags:
+    - indoor
+    - sitting
+    - music
+  when:
+    - Wednesday, July 11
+- name: "ABBA The Concert: A Tribute to ABBA with the Utah Symphony"
+  url: https://my.usuo.org/single/PSDetail.aspx?psn=20925
+  location: Park City
+  price: yes
+  tags:
+    - outdoor
+    - sitting
+    - music
+  when:
+    - Friday, July 13
+- name: Ricky Skaggs & Kentucky Thunder with the Utah Symphony
+  url: https://my.usuo.org/single/PSDetail.aspx?psn=20924
+  location: Park City
+  price: yes
+  tags:
+    - outdoor
+    - sitting
+    - music
+  when:
+    - Saturday, July 14
+- name: Mozart's "Jupiter" Symphony
+  url: https://my.usuo.org/single/PSDetail.aspx?psn=20955
+  location: Park City
+  price: yes
+  tags:
+    - indoor
+    - sitting
+    - music
+  when:
+    - Wednesday, July 18
+- name: Rick Springfield with the Utah Symphony
+  url: https://my.usuo.org/single/PSDetail.aspx?psn=20926
+  location: Park City
+  price: yes
+  tags:
+    - outdoor
+    - sitting
+    - music
+  when:
+    - Friday, July 20
+- name: Kristin Chenoweth with the Utah Symphony
+  url: https://my.usuo.org/single/PSDetail.aspx?psn=20927
+  location: Park City
+  price: yes
+  tags:
+    - outdoor
+    - sitting
+    - music
+  when:
+    - Saturday, July 21
+- name: Beethoven's Symphony No. 1
+  url: https://my.usuo.org/single/PSDetail.aspx?psn=20956
+  location: Park City
+  price: yes
+  tags:
+    - indoor
+    - sitting
+    - music
+  when:
+    - Wednesday, July 25
+- name: Amos Lee with the Utah Symphony
+  url: https://my.usuo.org/single/PSDetail.aspx?psn=20928
+  location: Park City
+  price: yes
+  tags:
+    - outdoor
+    - sitting
+    - music
+  when:
+    - Friday, July 27
+- name: The Music of John Williams
+  url: https://my.usuo.org/single/PSDetail.aspx?psn=20931
+  location: Park City
+  price: yes
+  tags:
+    - outdoor
+    - sitting
+    - music
+  when:
+    - Saturday, July 28
+- name: Fremont String Quartet
+  url: https://my.usuo.org/single/PSDetail.aspx?psn=20957
+  location: Park City
+  price: yes
+  tags:
+    - indoor
+    - sitting
+    - music
+  when:
+    - Wednesday, August 1
+- name: "The '70s vs. The '80s"
+  url: https://my.usuo.org/single/PSDetail.aspx?psn=20930
+  location: Park City
+  price: yes
+  tags:
+    - outdoor
+    - sitting
+    - music
+  when:
+    - Friday, August 3
+- name: Big Bad Voodoo Daddy
+  url: http://my.usuo.org/single/EventDetail.aspx?p=21264
+  location: Park City
+  price: yes
+  tags:
+    - outdoor
+    - sitting
+    - music
+  when:
+    - Saturday, August 4
+- name: Festival 15th Anniversary Celebration
+  url: http://www.deervalleymusicfestival.org/2018barnbash/">Deer Valley® Music
+  location: Blue Sky Ranch
+  price: yes
+  tags:
+  when:
+    - Thursday, August 9
+- name: Tchaikovsky's 1812 Overture and Violin Concerto
+  url: https://my.usuo.org/single/PSDetail.aspx?psn=20737
+  location: Park City
+  price: yes
+  tags:
+    - outdoor
+    - sitting
+    - music
+  when:
+    - Friday, August 10
+- name: The Utah Symphony performs The Music of Pink Floyd
+  url: https://my.usuo.org/single/PSDetail.aspx?psn=20932
+  location: Park City
+  price: yes
+  tags:
+    - outdoor
+    - sitting
+    - music
+  when:
+    - Saturday, August 11
+
+
+#------------------------------------------------------------
+# Freedom Festival 2018
+#------------------------------------------------------------
+- name: Baby Contest (Freedom Festival)
+  url: https://www.freedomfestival.org/event/baby-contest/
+  location: Orem
+  price: 12
+  tags:
+    - indoor
+    - sitting
+  when:
+    - 2018-06-09
+
+- name: Flag Retirement Ceremony (Freedom Festival)
+  url: https://www.freedomfestival.org/event/flag-retirement-ceremony/
+  location: Provo
+  price: free
+  tags:
+    - outdoor
+    - sitting
+    - baby-friendly
+  when:
+    - 2018-06-14
+
+- name: Carillon Concert (Freedom Festival)
+  url: https://www.freedomfestival.org/event/carillon-concert/
+  location: Provo
+  price: free
+  tags:
+    - outdoor
+    - sitting
+    - baby-friendly
+    - music
+  when:
+    - 2018-06-22
+
+- name: Firecracker Softball Tournament (Freedom Festival)
+  url: https://www.freedomfestival.org/event/firecracker-softball-tournament/
+  location: Provo
+  price: [0, 250]
+  tags:
+    - outdoor
+    - baby-friendly
+    - sitting
+    - active
+  when:
+    - 2018-06-15
+    - 2018-06-16
+    - 2018-06-22
+    - 2018-06-13
+
+- name: Stars and Stripes Beach Party at Riverwoods (Freedom Festival)
+  url: https://www.freedomfestival.org/event/party-at-riverwoods/
+  location: Provo
+  price: free
+  tags:
+    - outdoor
+    - active
+    - baby-friendly
+  when:
+    - 2018-06-23
+
+- name: Bluegrassroots Timpanogos Folk Festival (Freedom Festival)
+  url: https://www.freedomfestival.org/event/bluegrassroots-timpanogos-folk-festival/
+  location: Provo
+  price: [8,10]
+  tags:
+    - outdoor
+    - sitting
+    - music
+  when:
+    - 2018-06-29
+    - 2018-06-30
+
+- name: Children's Parade (Freedom Festival)
+  url: https://www.freedomfestival.org/event/childrens-parade/
+  location: Provo
+  price: free
+  tags:
+    - outdoor
+    - active
+    - sitting
+    - baby-friendly
+  when:
+    - 2018-06-30
+
+- name: Patriotic Service (Freedom Festival)
+  url: https://www.freedomfestival.org/event/patriotic-service/
+  location: Provo
+  price: free
+  tags:
+    - indoor
+    - sitting
+  when:
+    - 2018-07-01
+
+- name: Clog America (Freedom Festival)
+  url: https://www.freedomfestival.org/event/clog-america/
+  location: Orem
+  price: [7, 10]
+  tags:
+    - indoor
+    - sitting
+    - dance
+  when:
+    - 2018-07-02
+
+- name: Military Outpost (Freedom Festival)
+  url: https://www.freedomfestival.org/event/military-outpost/
+  location: Orem
+  price: iap
+  tags:
+    - outdoor
+    - active
+    - sitting
+    - baby-friendly
+  when:
+    - 2018-07-02
+    - 2018-07-03
+    - 2018-07-04
+
+- name: Freedom Days Carnival (Freedom Festival)
+  url: https://www.freedomfestival.org/event/freedom-days/
+  location: Provo
+  price: iap
+  tags:
+    - outdoor
+    - active
+  when:
+    - 2018-07-02
+    - 2018-07-03
+    - 2018-07-04
+
+- name: Balloon Fest (Freedom Festival)
+  url: https://www.freedomfestival.org/event/balloon-fest/
+  location: Provo
+  price: free
+  tags:
+    - outdoor
+    - active
+    - sitting
+  when:
+    - 2018-07-02
+    - 2018-07-03
+    - 2018-07-04
+
+- name: Grand Parade (Freedom Festival)
+  url: https://www.freedomfestival.org/event/grand-parade/
+  location: Provo
+  price: free
+  tags:
+    - outdoor
+    - sitting
+  when:
+    - 2018-07-04
+
+- name: Colonial Fest (Freedom Festival)
+  url: https://www.freedomfestival.org/event/colonial-fest/
+  location: Orem
+  price: iap
+  tags:
+    - outdoor
+    - active
+    - sitting
+  when:
+    - 2018-07-02
+    - 2018-07-03
+    - 2018-07-04
+
+- name: Fine Art Show (Freedom Festival)
+  url: https://www.freedomfestival.org/event/fine-art-show/
+  location: Provo
+  price: free
+  tags:
+    - indoor
+  when:
+    - 2018-07-02
+    - 2018-07-03
+    - 2018-07-04
+
+- name: Cries of Freedom (Freedom Festival)
+  url: https://www.freedomfestival.org/event/cries-of-freedom-and-the-walk-of-freedom/
+  location: Orem
+  price: free
+  tags:
+    - indoor
+    - sitting
+  when:
+    - 2018-07-02
+    - 2018-07-03
+    - 2018-07-04
+
+- name: Stadium of Fire
+  url: https://www.freedomfestival.org/event/stadium-of-fire/
+  location: Provo
+  price: yes
+  tags:
+    - outdoor
+    - sitting
+    - music
+  when:
+    - 2018-07-04
+
+#------------------------------------------------------------
+# Summer Festivals 2018
+#------------------------------------------------------------
+- name: Timpanogos Storytelling Festival
+  url: https://timpfest.org/
+  location: Lehi
+  price: yes
+  tags:
+    - outdoor
+    - baby-friendly
+    - sitting
+  when:
+    - 2018-09-06
+    - 2018-09-07
+    - 2018-09-08
+- name: Swiss Days
+  url: https://midwayswissdays.com/
+  location: Midway
+  price: iap
+  tags:
+    - outdoor
+    - baby-friendly
+    - sitting
+    - active
+  when:
+    - 2018-08-31
+    - 2018-09-01
+- name: Sheepdog Championship & Festival
+  url: https://soldierhollowclassic.com/
+  location: Midway
+  price: [0, 17]
+  tags:
+    - outdoor
+    - sitting
+    - active
+    - baby-friendly
+  when:
+    - 2018-08-31
+    - 2018-09-01
+- name: Full moon lift ride
   url: https://www.sundanceresort.com/mountain-activities/full-moon-lift-rides/
+  location: Sundance
   price: [17, 20]
   tags:
     - outdoor
@@ -27,10 +489,12 @@
     - 2018-09-22
 - name: 'Oklahoma! - Sundance'
   url: https://www.sundanceresort.com/events/summer-theatre/
+  location: Provo Canyon
   price: [26,38]
   tags:
     - outdoor
     - sitting
+    - theater
   when:
     - 2018-07-19
     - 2018-07-20
@@ -49,7 +513,8 @@
     - 2018-08-11
 - name: Provo Farmer's Market
   url: http://www.provofarmersmarket.com/
-  price: varies
+  location: Provo
+  price: iap
   when:
   tags:
     - outdoor
@@ -80,6 +545,7 @@
     - 2018-10-27
 - name: Orem Owlz Baseball Game
   url: http://www.milb.com/tickets/tickets.jsp?sid=t519
+  location: Orem
   price: [6, 11]
   tags:
     - sitting
@@ -124,11 +590,17 @@
     - 2018-08-31
     - 2018-09-06
     - 2018-09-07
+
+#------------------------------------------------------------
+# Hale Center Theater 2018
+#------------------------------------------------------------
 - name: "The Sound of Music - HCT youth"
+  location: Orem
   tags:
     - indoor
     - baby-friendly
     - sitting
+    - theater
   price: [7, 9]
   url: http://webticketing.haletheater.org/showdates.php?s_id=463
   when:
@@ -140,12 +612,14 @@
     - 2018-05-24
     - 2018-05-25
 - name: "Aladdin Jr. - HCT Youth"
+  location: Orem
   url: http://webticketing.haletheater.org/showdates.php?s_id=464
   price: [5, 9]
   tags:
     - indoor
     - baby-friendly
     - sitting
+    - theater
   when:
     - 2018-07-23
     - 2018-07-24
@@ -158,12 +632,14 @@
     - 2018-08-02
     - 2018-08-03
 - name: "The Velveteen Rabbit - HCT Youth"
+  location: Orem
   url: http://webticketing.haletheater.org/showdates.php?s_id=465
   price: [5,9]
   tags:
     - indoor
     - baby-friendly
     - sitting
+    - theater
   when:
     - 2018-10-22
     - 2018-10-26
@@ -172,18 +648,21 @@
     - 2018-11-05
     - 2018-11-09
 - name: "A Christmas Carol - Youth Edition (HCT)"
+  location: Orem
   url: http://webticketing.haletheater.org/showdates.php?s_id=466
   price: [7,9]
   tags:
     - indoor
     - baby-friendly
     - sitting
+    - theater
   when:
     - 2018-11-28
     - 2018-11-29
     - 2018-11-30
     - 2018-12-01
 - name: BYU Baseball
+  location: Provo
   url: https://byucougars.com/schedule/baseball/2018
   price: [6,10]
   tags:
@@ -195,12 +674,14 @@
     - 2018-05-18
     - 2018-05-19
 - name: "Sense & Sensibility - HCT"
+  location: Orem
   url: http://webticketing.haletheater.org/showdates.php?s_id=455
   price: [16, 24]
   minage: 4
   tags:
     - indoor
     - sitting
+    - theater
   when:
     - 2018-05-16
     - 2018-05-17
@@ -229,12 +710,14 @@
     - 2018-06-02
     - 2018-06-02
 - name: "Annie - HCT"
+  location: Orem
   url: http://webticketing.haletheater.org/showdates.php?s_id=456
   price: [14, 24]
   minage: 4
   tags:
     - indoor
     - sitting
+    - theater
   when:
     - 2018-06-11
     - 2018-06-12

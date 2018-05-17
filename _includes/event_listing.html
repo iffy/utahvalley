@@ -1,0 +1,50 @@
+<li class="listing" {% if event.when.first %}data-dates="{{ event.when | join: ' ' }}"{% endif %}>
+  {% if event.url %}
+    <a href="{{ event.url }}" target="_blank">{{ event.name }}</a>
+  {% else %}
+    {{ event.name }}
+  {% endif %}
+  <div class="second-line">
+    {% if event.price == 'free' or event.price == 'FREE' %}
+      FREE
+    {% elsif event.price == 'iap' %}
+      <span title="Free entry, but there are things for sale">IAP</span>
+    {% elsif event.price %}
+      {% if event.price.first %}
+        ${{ event.price.first }}-{{ event.price.last }}
+      {% elsif event.price contains "" %}
+        {{ event.price }}
+      {% elsif event.price == true %}
+        $
+      {% else %}
+        ${{ event.price }}
+      {% endif %}
+    {% endif %}
+
+    &bull; {{ event.location }}
+
+    {% if event.minage %}
+      &bull;
+      ages {{ event.minage }}+
+    {% endif %}
+
+    &bull;
+    {% if event.when.first %}
+      {% assign num_events = event.when | size %}
+      {% if num_events == 1 %}
+        <span class="date">{{ event.when.first | date: "%a, %b %-d" }}</span>
+      {% elsif num_events == 2 %}
+        <span class="date">{{ event.when.first | date: "%a, %b %-d" }} and {{ event.when.last | date: "%a, %b %-d" }}</span>
+      {% else %}
+        <span class="date">{{ num_events }} times {{ event.when.first | date: "%a, %b %-d" }}&mdash;{{ event.when.last | date: "%a, %b %-d"}}</span>
+      {% endif %}
+    {% else %}
+      <span class="date">{{ event.when }}</span>
+    {% endif %}
+
+    {% if event.tags %}
+      &bull;
+      <span class="tags">{{ event.tags | sort | join: ', ' }}</span>
+    {% endif %}
+  </div>
+</li>

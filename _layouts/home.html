@@ -7,16 +7,14 @@ layout: default
     <h1 class="page-heading">{{ page.title }}</h1>
   {%- endif -%}
 
-  {% assign start = "2018-05-14" | date: "%s" | plus: 0 %}
+  {% assign start = site.data.startdate | date: "%s" | plus: 0 %}
   {% assign end = start | plus: 1209600 %}
 
   <p>
     Here's some fun things happening in Utah Valley {{ start | date: "%b %-d" }} - {{ end | date: "%b %-d, %Y" }}.  <a href="https://docs.google.com/forms/d/e/1FAIpQLSeNumgYsAbknX4dhEWg9jLnD_2MGjO8EIEYab1fGCmVhoMjhQ/viewform?usp=sf_link">Submit an event.</a>
+    Accuracy is attempted, but these listings may be outdated&mdash;always click through for more details.
   </p>
 
-  <p>
-    These listings may not be accurate&mdash;always click through for more details.
-  </p>
 
   <h2>Events</h2>
   <ol>
@@ -31,44 +29,7 @@ layout: default
     {% endfor %}
     
     {%- if show %}
-      <li class="listing" data-dates="{{ event.when | join: ' ' }}">
-        {% if event.url %}
-          <a href="{{ event.url }}" target="_blank">{{ event.name }}</a>
-        {% else %}
-          {{ event.name }}
-        {% endif %}
-        <div class="second-line">
-          {% if event.price == 'free' %}
-            FREE
-          {% elsif event.price %}
-            {% if event.price.first %}
-            ${{ event.price.first }}-{{ event.price.last }}
-            {% else %}
-            ${{ event.price }}
-            {% endif %}
-          {% endif %}
-
-          {% if event.minage %}
-            &bull;
-            ages {{ event.minage }}+
-          {% endif %}
-
-          &bull;
-          {% assign num_events = event.when | size %}
-          {% if num_events == 1 %}
-            <span class="date">{{ event.when.first | date: "%a, %b %-d" }}</span>
-          {% elsif num_events == 2 %}
-            <span class="date">{{ event.when.first | date: "%a, %b %-d" }} and {{ event.when.last | date: "%a, %b %-d" }}</span>
-          {% else %}
-            <span class="date">{{ num_events }} times {{ event.when.first | date: "%a, %b %-d" }}&mdash;{{ event.when.last | date: "%a, %b %-d"}}</span>
-          {% endif %}
-
-          {% if event.tags %}
-            &bull;
-            <span class="tags">{{ event.tags | sort | join: ', ' }}</span>
-          {% endif %}
-        </div>
-      </li>
+      {% include event_listing.html event=event %}
     {% endif %}
   {% endfor %}
   </ol>
@@ -77,38 +38,12 @@ layout: default
   <ol>
   {% assign sorted_events = site.data.ongoing | sort: 'name' %}
   {% for event in sorted_events %}
-    <li class="listing">
-      {% if event.url %}
-        <a href="{{ event.url }}" target="_blank">{{ event.name }}</a>
-      {% else %}
-        {{ event.name }}
-      {% endif %}
-      <div class="second-line">
-        {% if event.price == 'free' %}
-          FREE
-        {% elsif event.price %}
-          {% if event.price.first %}
-          ${{ event.price.first }}-{{ event.price.last }}
-          {% else %}
-          ${{ event.price }}
-          {% endif %}
-        {% endif %}
-
-        {% if event.minage %}
-          &bull;
-          ages {{ event.minage }}+
-        {% endif %}
-
-        &bull;
-        <span class="when">{{ event.when }}</span>
-        
-
-        {% if event.tags %}
-          &bull;
-          <span class="tags">{{ event.tags | sort | join: ', ' }}</span>
-        {% endif %}
-      </div>
-    </li>
+    {% include event_listing.html event=event %}
   {% endfor %}
   </ol>
+
+  <h2>Legend</h2>
+  <ul>
+    <li>IAP = "In App Purchases"  Typically free entry, but there are things for sale at the event.</li>
+  </ul>
 </div>
