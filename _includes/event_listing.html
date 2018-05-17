@@ -1,13 +1,24 @@
 {%- assign start = site.data.startdate | date: "%s" | plus: 0 -%}
 {%- assign order = 0 -%}
+{%- assign whens = "" | split: "" -%}
 {%- if event.when.first -%}
   {%- for when in event.when -%}
+    {%- assign nwhen = when | date: "%s" | plus: 0 -%}
+    {%- if nwhen > start -%}
+      {%- assign whens = whens | push: when %}
+    {%- endif -%}
+  {%- endfor -%}
+  {%- for when in whens -%}
     {%- assign date = when | date: "%s" | plus: 0 -%}
     {%- if date > start and (order == 0 or date < order) -%}
       {%- assign order = date -%}
     {%- endif -%}
   {%- endfor -%}
 {%- endif -%}
+
+<!-- <div>Whens: {{ whens }}</div>
+<div>event.when: {{ event.when | join: ', ' }}</div> -->
+
 <{% if event.url %}a href="{{event.url}}" target="_blank"{% else %}div{% endif %} class="listing" {% if event.when.first %}data-dates="{{ event.when | join: ' ' }}"{% endif %} style="order: {{order}};">
   <div class="prefix">&bull;</div>
   <div class="body">
@@ -38,13 +49,13 @@
 
       &bull;
       {% if event.when.first -%}
-        {% assign num_events = event.when | size %}
-        {% if num_events == 1 %}
-          <span class="date">{{ event.when.first | date: "%a, %b %-d" }}</span>
+        {%- assign num_events = whens | size -%}
+        {%- if num_events == 1 -%}
+          <span class="date">{{ whens.first | date: "%a, %b %-d" }}</span>
         {% elsif num_events == 2 %}
-          <span class="date">{{ event.when.first | date: "%a, %b %-d" }} and {{ event.when.last | date: "%a, %b %-d" }}</span>
+          <span class="date">{{ whens.first | date: "%a, %b %-d" }} and {{ whens.last | date: "%a, %b %-d" }}</span>
         {% else %}
-          <span class="date">{{ num_events }} times {{ event.when.first | date: "%a, %b %-d" }}-{{ event.when.last | date: "%a, %b %-d"}}</span>
+          <span class="date">{{ num_events }} times {{ whens.first | date: "%a, %b %-d" }}-{{ whens.last | date: "%a, %b %-d"}}</span>
         {% endif %}
       {% else %}
         <span class="date">{{ event.when }}</span>

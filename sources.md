@@ -19,3 +19,6 @@ Some places where the event info comes from:
 - <http://www.deervalleymusicfestival.org/schedule/>
 - <https://summerfest.orem.org/>
 - <http://eaglemountaincity.com/community/pony-express-days>
+- <http://www.highlandcity.org>
+- <https://www.utahvalley.com/events>
+- <http://www.centralutahgardens.org/events.htm>

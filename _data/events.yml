@@ -9,7 +9,142 @@
 #     - sitting
 #     - active
 #   when:
+#------------------------------------------------------------
+# Central Utah Gardens
+#------------------------------------------------------------
+- name: Water Festival
+  url: http://www.centralutahgardens.org/events.htm
+  location: Orem
+  price: iap
+  tags:
+    - outdoor
+    - active
+  when:
+    - 2018-05-26
+- name: Evening with a Magician
+  url: http://www.centralutahgardens.org/events.htm
+  location: Orem
+  price: free
+  tags:
+    - outdoor
+    - sitting
+  when:
+    - 2018-08-13
+- name: Comedy Night at Gardens
+  url: http://www.centralutahgardens.org/events.htm
+  location: Orem
+  price: free
+  tags:
+    - outdoor
+    - sitting
+  when:
+    - 2018-09-10
+- name: Pumpkin Walk
+  url: http://www.centralutahgardens.org/events.htm
+  location: Orem
+  price: free
+  tags:
+    - outdoor
+    - baby-friendly
+    - active
+  when:
+    - 2018-10-27
 
+
+- name: Bikes and Trikes Festival
+  url: https://www.utahvalley.com/event/bikes-and-trikes-festival/23238/
+  location: Provo
+  price: iap
+  tags:
+    - outdoor
+    - active
+  when:
+    - 2018-05-26
+- name: Utah Pasifika Festival
+  url: http://utahpasifikafestival.com/
+  location: Provo
+  price: iap
+  tags:
+    - indoor
+    - outdoor
+  when:
+    - 2018-05-25
+    - 2018-05-26
+    - 2018-05-27
+
+#------------------------------------------------------------
+# Highland Fling
+#------------------------------------------------------------
+- name: Disc Golf Tournament - Highland Fling
+  url: http://www.highlandcity.org/index.aspx?NID=314
+  location: Highland
+  price: [20, 35]
+  tags:
+    - outdoor
+    - active
+  when:
+    - 2018-07-30
+- name: Movie in the Park - Highland Fling
+  url: http://www.highlandcity.org/index.aspx?NID=314
+  location: Highland
+  price: iap
+  tags:
+    - outdoor
+    - sitting
+  when:
+    - 2018-07-30
+- name: Kids Night - Highland Fling
+  url: http://www.highlandcity.org/index.aspx?NID=314
+  location: Highland
+  price: iap
+  tags:
+    - outdoor
+    - active
+  when:
+    - 2018-08-01
+- name: Family Adventure Race - Highland Fling
+  url: http://www.highlandcity.org/index.aspx?NID=314
+  location: Highland
+  price: 25
+  tags:
+    - outdoor
+    - active
+  when:
+    - 2018-07-28
+- name: Strongman Competition - Highland Fling
+  url: http://www.highlandcity.org/index.aspx?NID=314
+  location: Highland
+  price: [0, 35]
+  tags:
+    - outdoor
+    - baby-friendly
+    - sitting
+  when:
+    - 2018-08-03
+    - 2018-08-04
+- name: Youth Night - Highland Fling
+  url: http://www.highlandcity.org/index.aspx?NID=314
+  location: Highland
+  price: free
+  minage: high school
+  tags:
+    - outdoor
+    - baby-friendly
+    - sitting
+  when:
+    - 2018-08-03
+- name: Highland Fling
+  url: http://www.highlandcity.org/index.aspx?NID=314
+  location: Highland
+  price: iap
+  tags:
+    - indoor
+    - outdoor
+    - baby-friendly
+    - sitting
+    - active
+  when:
+    - 2018-08-04
 #------------------------------------------------------------
 # Eagle Mountain Pony Express Days 2018
 #------------------------------------------------------------
@@ -544,6 +679,7 @@
   tags:
     - outdoor
     - sitting
+  separate: true
   when:
     - 2018-05-26
     - 2018-06-29
