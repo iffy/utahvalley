@@ -2,24 +2,64 @@
  * My stuff
  */
 
-.tags {
-  color: grey;
-}
+
 li {
   line-spacing: 1rem;
 }
-.listing {
-  margin-bottom: 6px;
-}
-.listing .second-line {
-  font-size: 80%;
-}
-.listing {
-  a {
-    &:visited {
-      color: grey;
+a.listing {
+  .tags {
+    color: grey;
+  }
+  margin-bottom: 10px;
+  display: flex;
+  &:hover {
+    text-decoration: none;
+    .prefix {
+      color: #0984e3;
     }
   }
+  &:visited {
+    color: grey;
+    .tags {
+      color: lightgrey;
+    }
+    .second-line {
+      color: lightgrey;
+    }
+  }
+  .prefix {
+    padding-right: .5rem;
+    flex-basis: min-content;
+    flex-grow: 0;
+    flex-shrink: 0;
+  }
+  .body {
+    flex-grow: 1;
+  }
+  .second-line {
+    color: black;
+    font-size: 70%;
+  }
+}
+
+.header-description {
+  margin-top: 6px;
+  font-size: 75%;
+  color: grey;
+}
+
+.flex-order {
+  display: flex;
+  flex-direction: column;
+}
+
+.trigger .page-link {
+  &:hover {
+    text-decoration: none;
+  }
+}
+.trigger .page-link.selected {
+  border-bottom: 5px solid #00b894;
 }
 
 
@@ -27,8 +67,9 @@ li {
  * Site header
  */
 .site-header {
-  border-top: 5px solid $grey-color-dark;
+  sborder-top: 5px solid #0984e3;
   border-bottom: 1px solid $grey-color-light;
+  border-bottom: 2px solid #0984e3;
   min-height: $spacing-unit * 1.865;
 
   // Positioning context for the mobile navigation icon

@@ -25,3 +25,13 @@
     - baby-friendly
     - sitting
   when: 1st and 3rd Thursdays
+- name: ComedySportz
+  url: https://www.comedysportzutah.com/
+  location: Provo
+  price: [10, 12]
+  minage: 3
+  when: Thu-Sat
+  tags:
+    - indoor
+    - sitting
+    - theater
