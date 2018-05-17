@@ -11,6 +11,74 @@
 #   when:
 
 #------------------------------------------------------------
+# Eagle Mountain Pony Express Days 2018
+#------------------------------------------------------------
+- name: Rodeo - Pony Express Days
+  url: http://eaglemountaincity.com/community/pony-express-days
+  location: Eagle Mountain
+  price: yes
+  tags:
+    - outdoor
+    - sitting
+  when:
+    - May 25, 2018
+    - May 26, 2018
+    - May 28, 2018
+- name: Family fun night & outdoor movie - Pony Express Days
+  url: http://eaglemountaincity.com/community/pony-express-days
+  location: Eagle Mountain
+  price: iap
+  tags:
+    - outdoor
+    - baby-friendly
+    - sitting
+    - active
+  when:
+- name: Carnival - Pony Express Days
+  url: http://eaglemountaincity.com/community/pony-express-days
+  location: Eagle Mountain
+  price: iap
+  tags:
+    - outdoor
+    - baby-friendly
+    - active
+  when:
+    - May 31, 2018
+    - Jun 1, 2018
+    - Jun 2, 2018
+- name: Fireworks - Pony Express Days
+  url: http://eaglemountaincity.com/community/pony-express-days
+  location: Eagle Mountain
+  price: free
+  tags:
+    - outdoor
+    - baby-friendly
+    - sitting
+    - active
+  when:
+    - Jun 2, 2018
+- name: Parade - Pony Express Days
+  url: http://eaglemountaincity.com/community/pony-express-days
+  location: Eagle Mountain
+  price: free
+  tags:
+    - outdoor
+    - baby-friendly
+    - sitting
+    - active
+  when:
+    - Jun 2, 2018
+- name: Demolition Derby - Pony Express Days
+  url: http://eaglemountaincity.com/community/pony-express-days
+  location: Eagle Mountain
+  price: [5, 15]
+  tags:
+    - outdoor
+    - sitting
+  when:
+    - Jun 2, 2018
+
+#------------------------------------------------------------
 # Orem Summerfest 2018
 #------------------------------------------------------------
 - name: Summerfest Fireworks
