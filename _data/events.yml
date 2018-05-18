@@ -10,6 +10,54 @@
 #     - sitting
 #     - active
 #   when:
+- name: Night Garden Hikes
+  url: https://cart.thanksgivingpoint.org/single/SelectSeating.aspx?p=60468
+  location: Lehi
+  price: [12,15]
+  tags:
+    - outdoor
+  when:
+    - 2018-05-23
+    - 2018-06-27
+    - 2018-07-25
+- name: Saratoga Springs Splash Days
+  url: https://www.saratogaspringscity.com/561/Splash-Days
+  location: Saratoga Springs
+  price: vendors
+  tags:
+    - outdoor
+  when:
+    - 2018-06-04
+    - 2018-06-05
+    - 2018-06-06
+    - 2018-06-07
+    - 2018-06-08
+    - 2018-06-09
+- name: Cedar Hills Family Festival
+  url: http://www.cedarhills.org/news-events/family-festival
+  location: Cedar Hills
+  price: vendors
+  tags:
+    - outdoor
+    - baby-friendly
+  when:
+    - 2018-06-04
+    - 2018-06-05
+    - 2018-06-06
+    - 2018-06-07
+    - 2018-06-08
+    - 2018-06-09
+- name: Astrofest
+  url: http://www.physics.byu.edu/clubs/astrosoc/astrofest-new/
+  location: Provo
+  price: free
+  tags:
+    - indoor
+    - outdoor
+    - active
+    - sitting
+  when:
+    - 2018-05-19
 
 - name: The BFG
   partof: Movies Under the Stars
