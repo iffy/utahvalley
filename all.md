@@ -1,6 +1,7 @@
 ---
 layout: page
 title: All
+order: 2
 permalink: /all/
 ---
 

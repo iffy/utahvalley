@@ -1,6 +1,7 @@
 ---
 layout: page
 title: Sources
+order: 4
 permalink: /sources/
 ---
 
@@ -24,3 +25,5 @@ Some places where the event info comes from:
 - <http://www.centralutahgardens.org/events.htm>
 - <http://www.steeldaysaf.com/events.html>
 - <https://www.freedomfestival.org>
+- <http://www.lindoncity.org/lindon-days.htm>
+- <https://www.springville.org/art-city-days/>

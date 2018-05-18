@@ -1,4 +1,5 @@
 # - name:
+#   partof:
 #   url:
 #   location:
 #   price: free / [1,2]
@@ -9,8 +10,398 @@
 #     - sitting
 #     - active
 #   when:
+#------------------------------------------------------------
+# Art City Days
+#------------------------------------------------------------
+- name: Take a Number, Darling
+  partof: Art City Days
+  url: https://www.springville.org/art-city-days/
+  location: Springville
+  price: [8, 10]
+  tags:
+    - indoor
+    - sitting
+    - theater
+  when:
+    - 2018-06-08
+    - 2018-06-09
+    - 2018-06-11
+    - 2018-06-15
+    - 2018-06-16
+    - 2018-06-18
+    - 2018-06-22
+    - 2018-06-23
+    - 2018-06-25
+    - 2018-06-29
+    - 2018-06-30
+- name: Rodeo
+  partof: Art City Days
+  url: https://www.springville.org/art-city-days/
+  location: Springville
+  price: free
+  tags:
+    - outdoor
+    - baby-friendly
+    - sitting
+  when:
+    - 2018-06-02
+- name: Talent Festival
+  partof: Art City Days
+  url: https://www.springville.org/art-city-days/
+  location: Springville
+  price: free
+  tags:
+    - active
+  when:
+    - 2018-06-02
+- name: Eye Spy Photo Hunt
+  partof: Art City Days
+  url: https://www.springville.org/art-city-days/
+  location: Springville
+  price: free
+  tags:
+    - outdoor
+    - baby-friendly
+    - active
+  when:
+    - 2018-06-04
+- name: Medallion Treasure Hunt
+  partof: Art City Days
+  url: https://www.springville.org/art-city-days/
+  location: Springville
+  price: free
+  tags:
+    - outdoor
+    - baby-friendly
+    - active
+  when:
+    - 2018-06-04
+    - 2018-06-05
+    - 2018-06-06
+    - 2018-06-07
+    - 2018-06-08
+- name: Kindy 500
+  partof: Art City Days
+  url: https://www.springville.org/art-city-days/
+  location: Springville
+  price: free
+  tags:
+    - indoor
+    - outdoor
+    - baby-friendly
+    - sitting
+    - active
+  when:
+    - 2018-06-04
+- name: 'Outdoor Movie: Beauty and the Beast'
+  partof: Art City Days
+  url: https://www.springville.org/art-city-days/
+  location: Springville
+  price: free
+  tags:
+    - outdoor
+    - sitting
+  when:
+    - 2018-06-04
+- name: Carnival
+  partof: Art City Days
+  url: https://www.springville.org/art-city-days/
+  location: Springville
+  price: vendors
+  tags:
+    - outdoor
+    - baby-friendly
+    - active
+  when:
+    - 2018-06-06
+    - 2018-06-07
+    - 2018-06-08
+    - 2018-06-09
+- name: Fireman's Breakfast
+  partof: Art City Days
+  url: https://www.springville.org/art-city-days/
+  location: Springville
+  price:
+  tags:
+    - outdoor
+    - sitting
+  when:
+    - 2018-06-07
+    - 2018-06-08
+    - 2018-06-09
+- name: Fun-A-Rama
+  partof: Art City Days
+  url: https://www.springville.org/art-city-days/
+  location: Springville
+  price: free
+  tags:
+    - outdoor
+    - active
+  when:
+    - 2018-06-07
+- name: Battle of the Bands
+  partof: Art City Days
+  url: https://www.springville.org/art-city-days/
+  location: Springville
+  price: free
+  tags:
+    - sitting
+  when:
+    - 2018-06-07
+- name: Hot Air Balloon Fest
+  partof: Art City Days
+  url: https://www.springville.org/art-city-days/
+  location: Springville
+  price: free
+  tags:
+    - outdoor
+    - baby-friendly
+  when:
+    - 2018-06-08
+    - 2018-06-09
+- name: Quilt Show
+  partof: Art City Days
+  url: https://www.springville.org/art-city-days/
+  location: Springville
+  price: free
+  tags:
+    - indoor
+  when:
+    - 2018-06-08
+    - 2018-06-09
+- name: Children's Parade
+  partof: Art City Days
+  url: https://www.springville.org/art-city-days/
+  location: Springville
+  price: free
+  tags:
+    - outdoor
+  when:
+    - 2018-06-08
+- name: Children's Art Festival
+  partof: Art City Days
+  url: https://www.springville.org/art-city-days/
+  location: Springville
+  price: free
+  tags:
+    - indoor
+  when:
+    - 2018-06-08
+- name: Parade
+  partof: Art City Days
+  url: https://www.springville.org/art-city-days/
+  location: Springville
+  price: free
+  tags:
+    - outdoor
+    - sitting
+  when:
+    - 2018-06-09
+- name: Car Show
+  partof: Art City Days
+  url: https://www.springville.org/art-city-days/
+  location: Springville
+  price: free
+  tags:
+    - outdoor
+  when:
+    - 2018-06-09
+- name: Motorcycle Show
+  partof: Art City Days
+  url: https://www.springville.org/art-city-days/
+  location: Springville
+  price: free
+  tags:
+    - outdoor
+  when:
+    - 2018-06-09
+- name: Duct Tape Regatta
+  partof: Art City Days
+  url: https://www.springville.org/art-city-days/
+  location: Springville
+  price: free
+  tags:
+    - outdoor
+    - active
+  when:
+    - 2018-06-09
+- name: Outdoor Concert
+  partof: Art City Days
+  url: https://www.springville.org/art-city-days/
+  location: Springville
+  price: free
+  tags:
+    - outdoor
+    - sitting
+  when:
+    - 2018-06-09
+- name: Fireworks
+  partof: Art City Days
+  url: https://www.springville.org/art-city-days/
+  location: Springville
+  price: free
+  tags:
+    - outdoor
+    - sitting
+  when:
+    - 2018-06-09
 
-
+#------------------------------------------------------------
+# Lindon Days
+#------------------------------------------------------------
+- name: Car Show
+  partof: Lindon Days
+  location: Lindon
+  url: http://www.lindoncity.org/lindon-days.htm
+  price: free
+  tags:
+    - outdoor
+  when:
+    - Aug 6, 2018
+- name: Night Out Against Crime + Ice Cream Social
+  partof: Lindon Days
+  url: http://www.lindoncity.org/lindon-days.htm
+  location: Lindon
+  price: free
+  tags:
+    - outdoor
+    - baby-friendly
+  when:
+    - Aug 7, 2018
+- name: 'Move in the Park: Coco'
+  partof: Lindon Days
+  url: http://www.lindoncity.org/lindon-days.htm
+  location: Lindon
+  price: free
+  tags:
+    - outdoor
+    - sitting
+  when:
+    - Aug 7, 2018
+- name: Huck Finn Fishing
+  partof: Lindon Days
+  url: http://www.lindoncity.org/lindon-days.htm
+  location: Lindon
+  price: free
+  tags:
+    - outdoor
+    - active
+  when:
+    - Aug 8, 2018
+- name: Cardboard Boat Regatta
+  partof: Lindon Days
+  url: http://www.lindoncity.org/lindon-days.htm
+  location: Lindon
+  price: free
+  tags:
+    - outdoor
+    - active
+    - sitting
+  when:
+    - Aug 9, 2018
+- name: Free Swim, Lazy River Duck Race, Dime Dive
+  partof: Lindon Days
+  url: http://www.lindoncity.org/lindon-days.htm
+  location: Lindon
+  price: free
+  tags:
+    - outdoor
+    - active
+  when:
+    - Aug 9, 2018
+- name: Flag retirement
+  partof: Lindon Days
+  url: http://www.lindoncity.org/lindon-days.htm
+  location: Lindon
+  price: free
+  tags:
+    - outdoor
+    - active
+    - sitting
+  when:
+    - Aug 9, 2018
+- name: Horse Show
+  partof: Lindon Days
+  url: http://www.lindoncity.org/lindon-days.htm
+  location: Lindon
+  price: [0,3]
+  tags:
+    - outdoor
+    - active
+    - sitting
+  when:
+    - Aug 9, 2018
+- name: Video Game Tournament
+  partof: Lindon Days
+  url: http://www.lindoncity.org/lindon-days.htm
+  location: Lindon
+  price:
+  tags:
+    - indoor
+    - sitting
+  when:
+    - Aug 10, 2018
+- name: Jr. Rodeo
+  partof: Lindon Days
+  url: http://www.lindoncity.org/lindon-days.htm
+  location: Lindon
+  price: 5
+  tags:
+    - outdoor
+    - sitting
+  when:
+    - Aug 10, 2018
+- name: "Mayor's Breakfast"
+  partof: Lindon Days
+  url: http://www.lindoncity.org/lindon-days.htm
+  location: Lindon
+  price: [2,5]
+  tags:
+    - outdoor
+    - sitting
+  when:
+    - Aug 11, 2018
+- name: Parade"
+  partof: Lindon Days
+  url: http://www.lindoncity.org/lindon-days.htm
+  location: Lindon
+  price: free
+  tags:
+    - outdoor
+    - sitting
+  when:
+    - Aug 11, 2018
+- name: Fair
+  partof: Lindon Days
+  url: http://www.lindoncity.org/lindon-days.htm
+  location: Lindon
+  price: vendors
+  tags:
+    - outdoor
+    - sitting
+    - active
+  when:
+    - Aug 11, 2018
+- name: Outdoor Concert - The Salamanders
+  partof: Lindon Days
+  url: http://www.lindoncity.org/lindon-days.htm
+  location: Lindon
+  price: free
+  tags:
+    - outdoor
+    - sitting
+  when:
+    - Aug 11, 2018
+- name: Fireworks
+  partof: Lindon Days
+  url: http://www.lindoncity.org/lindon-days.htm
+  location: Lindon
+  price: free
+  tags:
+    - outdoor
+    - sitting
+  when:
+    - Aug 11, 2018
 #------------------------------------------------------------
 # BYU Arts
 #------------------------------------------------------------
@@ -54,6 +445,7 @@
   location: Provo
   price: free
 - name: "Spring Opera: The Mikado"
+  location: Provo
   when:
     - 2018-06-13
     - 2018-06-14
@@ -66,12 +458,22 @@
     - indoor
     - sitting
     - theater
+- name: "Coco w/ film's director"
+  url: https://arts.byu.edu/bravo-2018-19-season/
+  location: Provo
+  price:
+  tags:
+    - indoor
+    - sitting
+  when:
+    - 2018-09-14
 
 
 #------------------------------------------------------------
 # Steel Days
 #------------------------------------------------------------
-- name: Horseshoe Tournament - Steel Days
+- name: Horseshoe Tournament
+  partof: Steel Days
   url: http://www.steeldaysaf.com/events.html
   location: American Fork
   tags:
@@ -79,14 +481,16 @@
     - active
   when:
     - Friday, July 13th
-- name: Car Show  - Steel Days
+- name: Car Show 
+  partof: Steel Days
   url: http://www.steeldaysaf.com/events.html
   location: American Fork
   tags:
     - outdoor
   when:
     - Saturday, July 14th
-- name: American Fork Symphony Concert - Steel Days
+- name: American Fork Symphony Concert
+  partof: Steel Days
   url: http://www.steeldaysaf.com/events.html
   location: American Fork
   price: free
@@ -96,7 +500,8 @@
     - music
   when:
     - Monday, July 16th
-- name: Baby Contest - Steel Days
+- name: Baby Contest
+  partof: Steel Days
   url: http://www.steeldaysaf.com/events.html
   location: American Fork
   price: free
@@ -106,7 +511,8 @@
     - baby-friendly
   when:
     - Tuesday, July 17th
-- name: Kickball Tournament - Steel Days
+- name: Kickball Tournament
+  partof: Steel Days
   url: http://www.steeldaysaf.com/events.html
   location: American Fork
   price:
@@ -115,7 +521,8 @@
     - active
   when:
     - Tuesday, July 17th
-- name: Quilt Show - Steel Days
+- name: Quilt Show
+  partof: Steel Days
   url: http://www.steeldaysaf.com/events.html
   location: American Fork
   price: free
@@ -125,7 +532,8 @@
     - Thursday, July 19th
     - Friday, July 20th
     - Saturday, July 21st
-- name: Art Show - Steel Days
+- name: Art Show
+  partof: Steel Days
   url: http://www.steeldaysaf.com/events.html
   location: American Fork
   price: free
@@ -135,7 +543,8 @@
     - Thursday, July 19th
     - Friday July 20th
     - Saturday, July 21st
-- name: Carnival - Steel Days
+- name: Carnival
+  partof: Steel Days
   url: http://www.steeldaysaf.com/events.html
   location: American Fork
   price: vendors
@@ -146,13 +555,15 @@
     - Thursday, July 19th
     - Friday, July 20th
     - Saturday, July 21st
-- name: Tea with the Queen - Steel Days
+- name: Tea with the Queen
+  partof: Steel Days
   url: http://www.steeldaysaf.com/events.html
   location: American Fork
   price:
   when:
     - Thursday, July 19th
-- name: Soap Box Derby - Steel Days
+- name: Soap Box Derby
+  partof: Steel Days
   url: http://www.steeldaysaf.com/events.html
   location: American Fork
   price:
@@ -161,7 +572,8 @@
     - active
   when:
     - Thursday, July 19th
-- name: Movie in the Park - Steel Days
+- name: Movie in the Park
+  partof: Steel Days
   url: http://www.steeldaysaf.com/events.html
   location: American Fork
   price:
@@ -170,7 +582,8 @@
     - sitting
   when:
     - Friday, July 20th
-- name: Marching Band Breakfast - Steel Days
+- name: Marching Band Breakfast
+  partof: Steel Days
   url: http://www.steeldaysaf.com/events.html
   location: American Fork
   price:
@@ -179,7 +592,8 @@
     - sitting
   when:
     - Saturday, July 21st
-- name: Grand Parade - Steel Days
+- name: Grand Parade
+  partof: Steel Days
   url: http://www.steeldaysaf.com/events.html
   location: American Fork
   price: free
@@ -188,7 +602,8 @@
     - sitting
   when:
     - Saturday, July 21st
-- name: Steel Days Fair - Steel Days
+- name: Fair
+  partof: Steel Days
   url: http://www.steeldaysaf.com/events.html
   location: American Fork
   price:
@@ -201,7 +616,8 @@
 #------------------------------------------------------------
 # Strawberry Days
 #------------------------------------------------------------
-- name: Pet show - Strawberry Days
+- name: Pet show
+  partof: Strawberry Days
   url: http://www.strawberrydays.org/pet-show/
   location: Pleasant Grove
   price: free
@@ -210,7 +626,8 @@
     - active
   when:
     - 2018-06-22
-- name: Carnival - Strawberry Days
+- name: Carnival
+  partof: Strawberry Days
   url: http://www.strawberrydays.org/city-of-fun-carnival/
   location: Pleasant Grove
   price: vendors
@@ -222,7 +639,8 @@
     - 2018-06-21
     - 2018-06-22
     - 2018-06-23
-- name: Concert in the Park - Strawberry Days
+- name: Concert in the Park
+  partof: Strawberry Days
   url: http://www.strawberrydays.org/music/
   location: Pleasant Grove
   price: free
@@ -233,7 +651,8 @@
     - 2018-06-17
     - 2018-06-19
     - 2018-06-24
-- name: Rodeo - Strawberry Days
+- name: Rodeo
+  partof: Strawberry Days
   url: https://www.strawberrydaysrodeo.com/
   location: Pleasant Grove
   price: $
@@ -394,7 +813,8 @@
 #------------------------------------------------------------
 # Highland Fling
 #------------------------------------------------------------
-- name: Disc Golf Tournament - Highland Fling
+- name: Disc Golf Tournament
+  partof: Highland Fling
   url: http://www.highlandcity.org/index.aspx?NID=314
   location: Highland
   price: [20, 35]
@@ -403,7 +823,8 @@
     - active
   when:
     - 2018-07-30
-- name: Movie in the Park - Highland Fling
+- name: Movie in the Park
+  partof: Highland Fling
   url: http://www.highlandcity.org/index.aspx?NID=314
   location: Highland
   price: vendors
@@ -412,7 +833,8 @@
     - sitting
   when:
     - 2018-07-30
-- name: Kids Night - Highland Fling
+- name: Kids Night
+  partof: Highland Fling
   url: http://www.highlandcity.org/index.aspx?NID=314
   location: Highland
   price: vendors
@@ -421,7 +843,8 @@
     - active
   when:
     - 2018-08-01
-- name: Family Adventure Race - Highland Fling
+- name: Family Adventure Race
+  partof: Highland Fling
   url: http://www.highlandcity.org/index.aspx?NID=314
   location: Highland
   price: 25
@@ -430,7 +853,8 @@
     - active
   when:
     - 2018-07-28
-- name: Strongman Competition - Highland Fling
+- name: Strongman Competition
+  partof: Highland Fling
   url: http://www.highlandcity.org/index.aspx?NID=314
   location: Highland
   price: [0, 35]
@@ -441,7 +865,8 @@
   when:
     - 2018-08-03
     - 2018-08-04
-- name: Youth Night - Highland Fling
+- name: Youth Night
+  partof: Highland Fling
   url: http://www.highlandcity.org/index.aspx?NID=314
   location: Highland
   price: free
@@ -467,7 +892,8 @@
 #------------------------------------------------------------
 # Eagle Mountain Pony Express Days 2018
 #------------------------------------------------------------
-- name: Rodeo - Pony Express Days
+- name: Rodeo
+  partof: Pony Express Days
   url: http://eaglemountaincity.com/community/pony-express-days
   location: Eagle Mountain
   price: yes
@@ -478,7 +904,8 @@
     - May 25, 2018
     - May 26, 2018
     - May 28, 2018
-- name: Family fun night & outdoor movie - Pony Express Days
+- name: Family fun night & outdoor movie
+  partof: Pony Express Days
   url: http://eaglemountaincity.com/community/pony-express-days
   location: Eagle Mountain
   price: vendors
@@ -488,7 +915,8 @@
     - sitting
     - active
   when:
-- name: Carnival - Pony Express Days
+- name: Carnival
+  partof: Pony Express Days
   url: http://eaglemountaincity.com/community/pony-express-days
   location: Eagle Mountain
   price: vendors
@@ -500,7 +928,8 @@
     - May 31, 2018
     - Jun 1, 2018
     - Jun 2, 2018
-- name: Fireworks - Pony Express Days
+- name: Fireworks
+  partof: Pony Express Days
   url: http://eaglemountaincity.com/community/pony-express-days
   location: Eagle Mountain
   price: free
@@ -511,7 +940,8 @@
     - active
   when:
     - Jun 2, 2018
-- name: Parade - Pony Express Days
+- name: Parade
+  partof: Pony Express Days
   url: http://eaglemountaincity.com/community/pony-express-days
   location: Eagle Mountain
   price: free
@@ -522,7 +952,8 @@
     - active
   when:
     - Jun 2, 2018
-- name: Demolition Derby - Pony Express Days
+- name: Demolition Derby
+  partof: Pony Express Days
   url: http://eaglemountaincity.com/community/pony-express-days
   location: Eagle Mountain
   price: [5, 15]
@@ -535,7 +966,8 @@
 #------------------------------------------------------------
 # Orem Summerfest 2018
 #------------------------------------------------------------
-- name: Fireworks - Summerfest
+- name: Fireworks
+  partof: Summerfest
   url: https://summerfest.orem.org/events/
   location: Orem
   price: vendors
@@ -545,7 +977,8 @@
     - active
   when:
     - Saturday, June 9th
-- name: Parade - Summerfest
+- name: Parade
+  partof: Summerfest
   url: https://summerfest.orem.org/events/
   location: Orem
   price: vendors
@@ -554,7 +987,8 @@
     - sitting
   when:
     - Saturday, June 9th
-- name: Kids Crafts - Summerfest
+- name: Kids Crafts
+  partof: Summerfest
   url: https://summerfest.orem.org/kids-crafts/
   location: Orem
   price: free
@@ -564,7 +998,8 @@
   when:
     - Fri. June 8
     - Sat. June 9
-- name: Carnival - Summerfest
+- name: Carnival
+  partof: Summerfest
   url: https://summerfest.orem.org/events/
   location: Orem
   price: vendors
@@ -576,7 +1011,8 @@
     - Thurs. June 7
     - Fri. June 8
     - Sat. June 9
-- name: Concert - Summerfest
+- name: Concert
+  partof: Summerfest
   url: https://scera.org/events/jenny-oaks-baker-family-four-with-dallyn-vail-bayles-the-utah-valley-symphony/
   location: Orem
   price: vendors
@@ -771,7 +1207,8 @@
 #------------------------------------------------------------
 # Freedom Festival 2018
 #------------------------------------------------------------
-- name: Baby Contest - Freedom Festival
+- name: Baby Contest
+  partof: Freedom Festival
   url: https://www.freedomfestival.org/event/baby-contest/
   location: Orem
   price: 12
@@ -781,7 +1218,8 @@
   when:
     - 2018-06-09
 
-- name: Flag Retirement Ceremony - Freedom Festival
+- name: Flag Retirement Ceremony
+  partof: Freedom Festival
   url: https://www.freedomfestival.org/event/flag-retirement-ceremony/
   location: Provo
   price: free
@@ -792,7 +1230,8 @@
   when:
     - 2018-06-14
 
-- name: Carillon Concert - Freedom Festival
+- name: Carillon Concert
+  partof: Freedom Festival
   url: https://www.freedomfestival.org/event/carillon-concert/
   location: Provo
   price: free
@@ -804,7 +1243,8 @@
   when:
     - 2018-06-22
 
-- name: Firecracker Softball Tournament - Freedom Festival
+- name: Firecracker Softball Tournament
+  partof: Freedom Festival
   url: https://www.freedomfestival.org/event/firecracker-softball-tournament/
   location: Provo
   price: [0, 250]
@@ -819,7 +1259,8 @@
     - 2018-06-22
     - 2018-06-13
 
-- name: Stars and Stripes Beach Party at Riverwoods - Freedom Festival
+- name: Stars and Stripes Beach Party at Riverwoods
+  partof: Freedom Festival
   url: https://www.freedomfestival.org/event/party-at-riverwoods/
   location: Provo
   price: free
@@ -830,7 +1271,8 @@
   when:
     - 2018-06-23
 
-- name: Bluegrassroots Timpanogos Folk Festival - Freedom Festival
+- name: Bluegrassroots Timpanogos Folk Festival
+  partof: Freedom Festival
   url: https://www.freedomfestival.org/event/bluegrassroots-timpanogos-folk-festival/
   location: Provo
   price: [8,10]
@@ -842,7 +1284,8 @@
     - 2018-06-29
     - 2018-06-30
 
-- name: Children's Parade - Freedom Festival
+- name: Children's Parade
+  partof: Freedom Festival
   url: https://www.freedomfestival.org/event/childrens-parade/
   location: Provo
   price: free
@@ -854,7 +1297,8 @@
   when:
     - 2018-06-30
 
-- name: Patriotic Service - Freedom Festival
+- name: Patriotic Service
+  partof: Freedom Festival
   url: https://www.freedomfestival.org/event/patriotic-service/
   location: Provo
   price: free
@@ -864,7 +1308,8 @@
   when:
     - 2018-07-01
 
-- name: Clog America - Freedom Festival
+- name: Clog America
+  partof: Freedom Festival
   url: https://www.freedomfestival.org/event/clog-america/
   location: Orem
   price: [7, 10]
@@ -875,7 +1320,8 @@
   when:
     - 2018-07-02
 
-- name: Military Outpost - Freedom Festival
+- name: Military Outpost
+  partof: Freedom Festival
   url: https://www.freedomfestival.org/event/military-outpost/
   location: Orem
   price: vendors
@@ -889,7 +1335,8 @@
     - 2018-07-03
     - 2018-07-04
 
-- name: Freedom Days Carnival - Freedom Festival
+- name: Freedom Days Carnival
+  partof: Freedom Festival
   url: https://www.freedomfestival.org/event/freedom-days/
   location: Provo
   price: vendors
@@ -901,7 +1348,8 @@
     - 2018-07-03
     - 2018-07-04
 
-- name: Balloon Fest - Freedom Festival
+- name: Balloon Fest
+  partof: Freedom Festival
   url: https://www.freedomfestival.org/event/balloon-fest/
   location: Provo
   price: free
@@ -914,7 +1362,8 @@
     - 2018-07-03
     - 2018-07-04
 
-- name: Grand Parade - Freedom Festival
+- name: Grand Parade
+  partof: Freedom Festival
   url: https://www.freedomfestival.org/event/grand-parade/
   location: Provo
   price: free
@@ -924,7 +1373,8 @@
   when:
     - 2018-07-04
 
-- name: Colonial Fest - Freedom Festival
+- name: Colonial Fest
+  partof: Freedom Festival
   url: https://www.freedomfestival.org/event/colonial-fest/
   location: Orem
   price: vendors
@@ -937,7 +1387,8 @@
     - 2018-07-03
     - 2018-07-04
 
-- name: Fine Art Show - Freedom Festival
+- name: Fine Art Show
+  partof: Freedom Festival
   url: https://www.freedomfestival.org/event/fine-art-show/
   location: Provo
   price: free
@@ -948,7 +1399,8 @@
     - 2018-07-03
     - 2018-07-04
 
-- name: Cries of Freedom - Freedom Festival
+- name: Cries of Freedom
+  partof: Freedom Festival
   url: https://www.freedomfestival.org/event/cries-of-freedom-and-the-walk-of-freedom/
   location: Orem
   price: free
@@ -961,6 +1413,7 @@
     - 2018-07-04
 
 - name: Stadium of Fire
+  partof: Freedom Festival
   url: https://www.freedomfestival.org/event/stadium-of-fire/
   location: Provo
   price: yes
@@ -1136,7 +1589,8 @@
 #------------------------------------------------------------
 # Hale Center Theater 2018
 #------------------------------------------------------------
-- name: "The Sound of Music - HCT youth"
+- name: "The Sound of Music"
+  partof: HCT Youth
   location: Orem
   tags:
     - indoor
@@ -1153,7 +1607,8 @@
     - 2018-05-23
     - 2018-05-24
     - 2018-05-25
-- name: "Aladdin Jr. - HCT Youth"
+- name: "Aladdin Jr."
+  partof: HCT Youth
   location: Orem
   url: http://webticketing.haletheater.org/showdates.php?s_id=464
   price: [5, 9]
@@ -1173,7 +1628,8 @@
     - 2018-08-01
     - 2018-08-02
     - 2018-08-03
-- name: "The Velveteen Rabbit - HCT Youth"
+- name: "The Velveteen Rabbit"
+  partof: HCT Youth
   location: Orem
   url: http://webticketing.haletheater.org/showdates.php?s_id=465
   price: [5,9]
@@ -1189,7 +1645,8 @@
     - 2018-11-02
     - 2018-11-05
     - 2018-11-09
-- name: "A Christmas Carol - Youth Edition (HCT)"
+- name: "A Christmas Carol - Youth Edition"
+  partof: HCT Youth
   location: Orem
   url: http://webticketing.haletheater.org/showdates.php?s_id=466
   price: [7,9]
@@ -1215,7 +1672,8 @@
     - 2018-05-17
     - 2018-05-18
     - 2018-05-19
-- name: "Sense & Sensibility - HCT"
+- name: "Sense & Sensibility"
+  partof: Hale Center Theater
   location: Orem
   url: http://webticketing.haletheater.org/showdates.php?s_id=455
   price: [16, 24]
@@ -1251,7 +1709,8 @@
     - 2018-06-02
     - 2018-06-02
     - 2018-06-02
-- name: "Annie - HCT"
+- name: "Annie"
+  partof: Hale Center Theater
   location: Orem
   url: http://webticketing.haletheater.org/showdates.php?s_id=456
   price: [14, 24]

@@ -5,7 +5,7 @@
   {%- for when in event.when -%}
     {%- assign nwhen = when | date: "%s" | plus: 0 -%}
     {%- if nwhen > start -%}
-      {%- assign whens = whens | push: when %}
+      {%- assign whens = whens | push: when -%}
     {%- endif -%}
   {%- endfor -%}
   {%- for when in whens -%}
@@ -24,49 +24,52 @@
   <div class="body">
     <div class="first-line">{{ event.name }}</div>
     <div class="second-line">
-      {%- if event.price == 'free' or event.price == 'FREE' %}
+      <span class="segment" data-name="price">
+      {%- if event.price == 'free' or event.price == 'FREE' -%}
         FREE
-      {%- elsif event.price == 'vendors' %}
-        <span title="Free entry, but there are vendors selling things">FREE + Vendors</span>
-      {%- elsif event.price %}
-        {%- if event.price.first %}
+      {%- elsif event.price == 'vendors' -%}
+        FREE + Vendors
+      {%- elsif event.price -%}
+        {%- if event.price.first -%}
           ${{ event.price.first }}-{{ event.price.last }}
-        {%- elsif event.price contains "" %}
+        {%- elsif event.price contains "" -%}
           {{ event.price }}
-        {%- elsif event.price == true %}
+        {%- elsif event.price == true -%}
           $
-        {%- else %}
+        {%- else -%}
           ${{ event.price }}
-        {%- endif %}
+        {%- endif -%}
       {%- else -%}
         $?
-      {%- endif %}
-
-      &bull; {{ event.location }}
+      {%- endif -%}
+      </span><span class="segment" data-name="location">{{ event.location }}</span>
       
-      {% if event.minage -%}
-        &bull;
-        ages {{ event.minage }}+
-      {% endif %}
+      {%- if event.minage -%}
+        <span class="segment" data-name="minage">ages {{ event.minage }}+</span>
+      {%- endif -%}
 
-      &bull;
-      {% if event.when.first -%}
+      <span class="segment" data-name="when">
+      {%- if event.when.first -%}
         {%- assign num_events = whens | size -%}
         {%- if num_events == 1 -%}
-          <span class="date">{{ whens.first | date: "%a, %b %-d" }}</span>
-        {% elsif num_events == 2 %}
-          <span class="date">{{ whens.first | date: "%a, %b %-d" }} and {{ whens.last | date: "%a, %b %-d" }}</span>
-        {% else %}
-          <span class="date">{{ num_events }} times {{ whens.first | date: "%a, %b %-d" }}-{{ whens.last | date: "%a, %b %-d"}}</span>
-        {% endif %}
-      {% else %}
-        <span class="date">{{ event.when }}</span>
-      {%- endif %}
+          {{ whens.first | date: "%a, %b %-d" }}
+        {%- elsif num_events == 2 -%}
+          {{ whens.first | date: "%a, %b %-d" }} and {{ whens.last | date: "%a, %b %-d" }}
+        {%- else -%}
+          {{ num_events }} times {{ whens.first | date: "%a, %b %-d" }}-{{ whens.last | date: "%a, %b %-d"}}
+        {%- endif -%}
+      {%- else -%}
+        {{ event.when }}
+      {%- endif -%}
+      </span>
 
-      {% if event.tags %}
-        &bull;
-        <span class="tags">{{ event.tags | sort | join: ', ' }}</span>
-      {% endif %}
+      {%- if event.partof -%}
+        <span class="segment" data-name="partof">{{ event.partof }}</span>
+      {%- endif -%}
+
+      {%- if event.tags -%}
+        <span class="segment tags" data-name="tags">{{ event.tags | sort | join: ', ' }}</span>
+      {%- endif -%}
     </div>
   </div>
-</{% if event.url %}a{% else %}div{% endif %}>
+</{%- if event.url -%}a{%- else -%}div{%- endif -%}>

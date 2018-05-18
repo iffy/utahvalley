@@ -1,6 +1,7 @@
 ---
 layout: page
 title: Soon
+order: 1
 permalink: /
 ---
 
@@ -44,11 +45,9 @@ permalink: /
 {% endfor %}
 </div>
 
-<h2>Ongoing</h2>
-<div class="listings">
-{% for event in site.data.ongoing %}
-  {% include event_listing.html event=event %}
-{% endfor %}
-</div>
+<h2>More</h2>
+
+- <a href="{{ site.baseurl }}/all/">Future events</a>
+- <a href="{{ site.baseurl }}/ongoing/">Ongoing events</a>
 
 {% include legend.html %}
