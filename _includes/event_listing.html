@@ -26,8 +26,8 @@
     <div class="second-line">
       {%- if event.price == 'free' or event.price == 'FREE' %}
         FREE
-      {%- elsif event.price == 'iap' %}
-        <span title="Free entry, but there are things for sale">IAP</span>
+      {%- elsif event.price == 'vendors' %}
+        <span title="Free entry, but there are vendors selling things">FREE + Vendors</span>
       {%- elsif event.price %}
         {%- if event.price.first %}
           ${{ event.price.first }}-{{ event.price.last }}

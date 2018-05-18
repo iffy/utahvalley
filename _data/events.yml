@@ -138,7 +138,7 @@
 - name: Carnival - Steel Days
   url: http://www.steeldaysaf.com/events.html
   location: American Fork
-  price: iap
+  price: vendors
   tags:
     - outdoor
     - active
@@ -213,7 +213,7 @@
 - name: Carnival - Strawberry Days
   url: http://www.strawberrydays.org/city-of-fun-carnival/
   location: Pleasant Grove
-  price: iap
+  price: vendors
   tags:
     - outdoor
     - active
@@ -269,7 +269,7 @@
 - name: "Movies in the Park: Greatest Showman"
   url: https://www.provo.org/community/events-in-provo/movies-in-the-park
   location: Provo
-  price: iap
+  price: vendors
   tags:
     - outdoor
     - sitting
@@ -279,7 +279,7 @@
 - name: "Movies in the Park: Despicable Me"
   url: https://www.provo.org/community/events-in-provo/movies-in-the-park
   location: Provo
-  price: iap
+  price: vendors
   tags:
     - outdoor
     - sitting
@@ -289,7 +289,7 @@
 - name: "Movies in the Park: Megamind"
   url: https://www.provo.org/community/events-in-provo/movies-in-the-park
   location: Provo
-  price: iap
+  price: vendors
   tags:
     - outdoor
     - sitting
@@ -299,7 +299,7 @@
 - name: "Movies in the Park: How to Train Your Dragon"
   url: https://www.provo.org/community/events-in-provo/movies-in-the-park
   location: Provo
-  price: iap
+  price: vendors
   tags:
     - outdoor
     - sitting
@@ -334,7 +334,7 @@
 - name: Water Festival
   url: http://www.centralutahgardens.org/events.htm
   location: Orem
-  price: iap
+  price: vendors
   tags:
     - outdoor
     - active
@@ -373,7 +373,7 @@
 - name: Bikes and Trikes Festival
   url: https://www.utahvalley.com/event/bikes-and-trikes-festival/23238/
   location: Provo
-  price: iap
+  price: vendors
   tags:
     - outdoor
     - active
@@ -382,7 +382,7 @@
 - name: Utah Pasifika Festival
   url: http://utahpasifikafestival.com/
   location: Provo
-  price: iap
+  price: vendors
   tags:
     - indoor
     - outdoor
@@ -406,7 +406,7 @@
 - name: Movie in the Park - Highland Fling
   url: http://www.highlandcity.org/index.aspx?NID=314
   location: Highland
-  price: iap
+  price: vendors
   tags:
     - outdoor
     - sitting
@@ -415,7 +415,7 @@
 - name: Kids Night - Highland Fling
   url: http://www.highlandcity.org/index.aspx?NID=314
   location: Highland
-  price: iap
+  price: vendors
   tags:
     - outdoor
     - active
@@ -455,7 +455,7 @@
 - name: Highland Fling
   url: http://www.highlandcity.org/index.aspx?NID=314
   location: Highland
-  price: iap
+  price: vendors
   tags:
     - indoor
     - outdoor
@@ -481,7 +481,7 @@
 - name: Family fun night & outdoor movie - Pony Express Days
   url: http://eaglemountaincity.com/community/pony-express-days
   location: Eagle Mountain
-  price: iap
+  price: vendors
   tags:
     - outdoor
     - baby-friendly
@@ -491,7 +491,7 @@
 - name: Carnival - Pony Express Days
   url: http://eaglemountaincity.com/community/pony-express-days
   location: Eagle Mountain
-  price: iap
+  price: vendors
   tags:
     - outdoor
     - baby-friendly
@@ -538,7 +538,7 @@
 - name: Fireworks - Summerfest
   url: https://summerfest.orem.org/events/
   location: Orem
-  price: iap
+  price: vendors
   tags:
     - outdoor
     - sitting
@@ -548,7 +548,7 @@
 - name: Parade - Summerfest
   url: https://summerfest.orem.org/events/
   location: Orem
-  price: iap
+  price: vendors
   tags:
     - outdoor
     - sitting
@@ -567,7 +567,7 @@
 - name: Carnival - Summerfest
   url: https://summerfest.orem.org/events/
   location: Orem
-  price: iap
+  price: vendors
   tags:
     - outdoor
     - sitting
@@ -579,7 +579,7 @@
 - name: Concert - Summerfest
   url: https://scera.org/events/jenny-oaks-baker-family-four-with-dallyn-vail-bayles-the-utah-valley-symphony/
   location: Orem
-  price: iap
+  price: vendors
   tags:
     - outdoor
     - sitting
@@ -878,7 +878,7 @@
 - name: Military Outpost - Freedom Festival
   url: https://www.freedomfestival.org/event/military-outpost/
   location: Orem
-  price: iap
+  price: vendors
   tags:
     - outdoor
     - active
@@ -892,7 +892,7 @@
 - name: Freedom Days Carnival - Freedom Festival
   url: https://www.freedomfestival.org/event/freedom-days/
   location: Provo
-  price: iap
+  price: vendors
   tags:
     - outdoor
     - active
@@ -927,7 +927,7 @@
 - name: Colonial Fest - Freedom Festival
   url: https://www.freedomfestival.org/event/colonial-fest/
   location: Orem
-  price: iap
+  price: vendors
   tags:
     - outdoor
     - active
@@ -989,7 +989,7 @@
 - name: Swiss Days
   url: https://midwayswissdays.com/
   location: Midway
-  price: iap
+  price: vendors
   tags:
     - outdoor
     - baby-friendly
@@ -1056,7 +1056,7 @@
 - name: Provo Farmer's Market
   url: http://www.provofarmersmarket.com/
   location: Provo
-  price: iap
+  price: vendors
   when:
   tags:
     - outdoor
