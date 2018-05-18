@@ -27,3 +27,4 @@ Some places where the event info comes from:
 - <https://www.freedomfestival.org>
 - <http://www.lindoncity.org/lindon-days.htm>
 - <https://www.springville.org/art-city-days/>
+- <http://www.springvilleplayhouse.com/>
