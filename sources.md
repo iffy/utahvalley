@@ -22,3 +22,5 @@ Some places where the event info comes from:
 - <http://www.highlandcity.org>
 - <https://www.utahvalley.com/events>
 - <http://www.centralutahgardens.org/events.htm>
+- <http://www.steeldaysaf.com/events.html>
+- <https://www.freedomfestival.org>

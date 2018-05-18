@@ -9,6 +9,325 @@
 #     - sitting
 #     - active
 #   when:
+
+
+#------------------------------------------------------------
+# BYU Arts
+#------------------------------------------------------------
+- name: Anne of Green Gables
+  when:
+    - 2018-06-01
+    - 2018-06-02
+    - 2018-06-03
+    - 2018-06-04
+    - 2018-06-05
+    - 2018-06-06
+    - 2018-06-07
+    - 2018-06-07
+    - 2018-06-08
+    - 2018-06-09
+    - 2018-06-09
+    - 2018-06-10
+    - 2018-06-11
+    - 2018-06-12
+    - 2018-06-13
+    - 2018-06-13
+    - 2018-06-14
+    - 2018-06-15
+    - 2018-06-15
+  url: https://arts.byu.edu/event/anne-of-green-gables/2018-06-01/
+  price: [7,13]
+  minage: 6
+  tags:
+    - indoor
+    - sitting
+    - theater
+  location: Provo
+- name: Student Recital Matthew Baird
+  when:
+    - 2018-06-05
+  url: https://arts.byu.edu/event/student-recital-matthew-baird/
+  tags:
+    - indoor
+    - sitting
+    - music
+  location: Provo
+  price: free
+- name: "Spring Opera: The Mikado"
+  when:
+    - 2018-06-13
+    - 2018-06-14
+    - 2018-06-15
+  minage: 6
+  price: 7
+  url: https://arts.byu.edu/event/the-mikado/2018-06-14/
+  tags:
+    - music
+    - indoor
+    - sitting
+    - theater
+
+
+#------------------------------------------------------------
+# Steel Days
+#------------------------------------------------------------
+- name: Horseshoe Tournament - Steel Days
+  url: http://www.steeldaysaf.com/events.html
+  location: American Fork
+  tags:
+    - outdoor
+    - active
+  when:
+    - Friday, July 13th
+- name: Car Show  - Steel Days
+  url: http://www.steeldaysaf.com/events.html
+  location: American Fork
+  tags:
+    - outdoor
+  when:
+    - Saturday, July 14th
+- name: American Fork Symphony Concert - Steel Days
+  url: http://www.steeldaysaf.com/events.html
+  location: American Fork
+  price: free
+  tags:
+    - outdoor
+    - sitting
+    - music
+  when:
+    - Monday, July 16th
+- name: Baby Contest - Steel Days
+  url: http://www.steeldaysaf.com/events.html
+  location: American Fork
+  price: free
+  tags:
+    - outdoor
+    - sitting
+    - baby-friendly
+  when:
+    - Tuesday, July 17th
+- name: Kickball Tournament - Steel Days
+  url: http://www.steeldaysaf.com/events.html
+  location: American Fork
+  price: '?'
+  tags:
+    - outdoor
+    - active
+  when:
+    - Tuesday, July 17th
+- name: Quilt Show - Steel Days
+  url: http://www.steeldaysaf.com/events.html
+  location: American Fork
+  price: free
+  tags:
+    - indoor
+  when:
+    - Thursday, July 19th
+    - Friday, July 20th
+    - Saturday, July 21st
+- name: Art Show - Steel Days
+  url: http://www.steeldaysaf.com/events.html
+  location: American Fork
+  price: free
+  tags:
+    - indoor
+  when:
+    - Thursday, July 19th
+    - Friday July 20th
+    - Saturday, July 21st
+- name: Carnival - Steel Days
+  url: http://www.steeldaysaf.com/events.html
+  location: American Fork
+  price: iap
+  tags:
+    - outdoor
+    - active
+  when:
+    - Thursday, July 19th
+    - Friday, July 20th
+    - Saturday, July 21st
+- name: Tea with the Queen - Steel Days
+  url: http://www.steeldaysaf.com/events.html
+  location: American Fork
+  price: '?'
+  when:
+    - Thursday, July 19th
+- name: Soap Box Derby - Steel Days
+  url: http://www.steeldaysaf.com/events.html
+  location: American Fork
+  price: '?'
+  tags:
+    - outdoor
+    - active
+  when:
+    - Thursday, July 19th
+- name: Movie in the Park - Steel Days
+  url: http://www.steeldaysaf.com/events.html
+  location: American Fork
+  price: '?'
+  tags:
+    - outdoor
+    - sitting
+  when:
+    - Friday, July 20th
+- name: Marching Band Breakfast - Steel Days
+  url: http://www.steeldaysaf.com/events.html
+  location: American Fork
+  price: '?'
+  tags:
+    - outdoor
+    - sitting
+  when:
+    - Saturday, July 21st
+- name: Grand Parade - Steel Days
+  url: http://www.steeldaysaf.com/events.html
+  location: American Fork
+  price: free
+  tags:
+    - outdoor
+    - sitting
+  when:
+    - Saturday, July 21st
+- name: Steel Days Fair - Steel Days
+  url: http://www.steeldaysaf.com/events.html
+  location: American Fork
+  price: '?'
+  tags:
+    - outdoor
+    - active
+  when:
+    - Saturday, July 21st
+
+#------------------------------------------------------------
+# Strawberry Days
+#------------------------------------------------------------
+- name: Pet show - Strawberry Days
+  url: http://www.strawberrydays.org/pet-show/
+  location: Pleasant Grove
+  price: free
+  tags:
+    - outdoor
+    - active
+  when:
+    - 2018-06-22
+- name: Carnival - Strawberry Days
+  url: http://www.strawberrydays.org/city-of-fun-carnival/
+  location: Pleasant Grove
+  price: iap
+  tags:
+    - outdoor
+    - active
+  when:
+    - 2018-06-20
+    - 2018-06-21
+    - 2018-06-22
+    - 2018-06-23
+- name: Concert in the Park - Strawberry Days
+  url: http://www.strawberrydays.org/music/
+  location: Pleasant Grove
+  price: free
+  tags:
+    - outdoor
+    - sitting
+  when:
+    - 2018-06-17
+    - 2018-06-19
+    - 2018-06-24
+- name: Rodeo - Strawberry Days
+  url: https://www.strawberrydaysrodeo.com/
+  location: Pleasant Grove
+  price: $
+  tags:
+    - outdoor
+    - sitting
+  when:
+    - 2018-06-20
+    - 2018-06-21
+    - 2018-06-22
+    - 2018-06-23
+#------------------------------------------------------------
+# ProvoCityEvents.com
+#------------------------------------------------------------
+- name: ProvoServes Picnic
+  url: https://www.provocityevents.com/calendar
+  location: Provo
+  price: free
+  tags:
+    - outdoor
+    - active
+  when:
+    - 2018-06-16
+- name: Utah Lake Festival
+  url: http://utahlakecommission.org/utah-lake-festival/
+  location: Provo
+  price: free
+  tags:
+    - outdoor
+    - active
+  when:
+    - 2018-06-02
+- name: "Movies in the Park: Greatest Showman"
+  url: https://www.provo.org/community/events-in-provo/movies-in-the-park
+  location: Provo
+  price: iap
+  tags:
+    - outdoor
+    - sitting
+    - active
+  when:
+    - 2018-06-25
+- name: "Movies in the Park: Despicable Me"
+  url: https://www.provo.org/community/events-in-provo/movies-in-the-park
+  location: Provo
+  price: iap
+  tags:
+    - outdoor
+    - sitting
+    - active
+  when:
+    - 2018-06-18
+- name: "Movies in the Park: Megamind"
+  url: https://www.provo.org/community/events-in-provo/movies-in-the-park
+  location: Provo
+  price: iap
+  tags:
+    - outdoor
+    - sitting
+    - active
+  when:
+    - 2018-06-11
+- name: "Movies in the Park: How to Train Your Dragon"
+  url: https://www.provo.org/community/events-in-provo/movies-in-the-park
+  location: Provo
+  price: iap
+  tags:
+    - outdoor
+    - sitting
+    - active
+  when:
+    - 2018-06-04
+- name: "Dive in Movie: Wreck It Ralph"
+  url: https://www.provocityevents.com/
+  location: Provo
+  price: [0, 5]
+  tags:
+    - outdoor
+    - sitting
+    - active
+  when:
+    - 2018-06-29
+- name: "Dive in Movie: Coco"
+  url: https://www.provocityevents.com/single-post/2018/05/02/Dive-in-Movie-COCO
+  location: Provo
+  price: [0, 5]
+  tags:
+    - outdoor
+    - sitting
+    - active
+  when:
+    - 2018-05-25
+
+
 #------------------------------------------------------------
 # Central Utah Gardens
 #------------------------------------------------------------
@@ -216,8 +535,8 @@
 #------------------------------------------------------------
 # Orem Summerfest 2018
 #------------------------------------------------------------
-- name: Summerfest Fireworks
-  url: https://summerfest.orem.org/fireworks/
+- name: Fireworks - Summerfest
+  url: https://summerfest.orem.org/events/
   location: Orem
   price: iap
   tags:
@@ -226,8 +545,8 @@
     - active
   when:
     - Saturday, June 9th
-- name: Summerfest Parade
-  url: https://summerfest.orem.org/fireworks/
+- name: Parade - Summerfest
+  url: https://summerfest.orem.org/events/
   location: Orem
   price: iap
   tags:
@@ -235,8 +554,18 @@
     - sitting
   when:
     - Saturday, June 9th
-- name: Summerfest Carnival
-  url: https://summerfest.orem.org/fireworks/
+- name: Kids Crafts - Summerfest
+  url: https://summerfest.orem.org/kids-crafts/
+  location: Orem
+  price: free
+  tags:
+    - outdoor
+    - active
+  when:
+    - Fri. June 8
+    - Sat. June 9
+- name: Carnival - Summerfest
+  url: https://summerfest.orem.org/events/
   location: Orem
   price: iap
   tags:
@@ -247,6 +576,15 @@
     - Thurs. June 7
     - Fri. June 8
     - Sat. June 9
+- name: Concert - Summerfest
+  url: https://scera.org/events/jenny-oaks-baker-family-four-with-dallyn-vail-bayles-the-utah-valley-symphony/
+  location: Orem
+  price: iap
+  tags:
+    - outdoor
+    - sitting
+  when:
+    - Jun 6, 2018
 
 #------------------------------------------------------------
 # Deer Valley Music Festival 2018
@@ -433,7 +771,7 @@
 #------------------------------------------------------------
 # Freedom Festival 2018
 #------------------------------------------------------------
-- name: Baby Contest (Freedom Festival)
+- name: Baby Contest - Freedom Festival
   url: https://www.freedomfestival.org/event/baby-contest/
   location: Orem
   price: 12
@@ -443,7 +781,7 @@
   when:
     - 2018-06-09
 
-- name: Flag Retirement Ceremony (Freedom Festival)
+- name: Flag Retirement Ceremony - Freedom Festival
   url: https://www.freedomfestival.org/event/flag-retirement-ceremony/
   location: Provo
   price: free
@@ -454,7 +792,7 @@
   when:
     - 2018-06-14
 
-- name: Carillon Concert (Freedom Festival)
+- name: Carillon Concert - Freedom Festival
   url: https://www.freedomfestival.org/event/carillon-concert/
   location: Provo
   price: free
@@ -466,7 +804,7 @@
   when:
     - 2018-06-22
 
-- name: Firecracker Softball Tournament (Freedom Festival)
+- name: Firecracker Softball Tournament - Freedom Festival
   url: https://www.freedomfestival.org/event/firecracker-softball-tournament/
   location: Provo
   price: [0, 250]
@@ -481,7 +819,7 @@
     - 2018-06-22
     - 2018-06-13
 
-- name: Stars and Stripes Beach Party at Riverwoods (Freedom Festival)
+- name: Stars and Stripes Beach Party at Riverwoods - Freedom Festival
   url: https://www.freedomfestival.org/event/party-at-riverwoods/
   location: Provo
   price: free
@@ -492,7 +830,7 @@
   when:
     - 2018-06-23
 
-- name: Bluegrassroots Timpanogos Folk Festival (Freedom Festival)
+- name: Bluegrassroots Timpanogos Folk Festival - Freedom Festival
   url: https://www.freedomfestival.org/event/bluegrassroots-timpanogos-folk-festival/
   location: Provo
   price: [8,10]
@@ -504,7 +842,7 @@
     - 2018-06-29
     - 2018-06-30
 
-- name: Children's Parade (Freedom Festival)
+- name: Children's Parade - Freedom Festival
   url: https://www.freedomfestival.org/event/childrens-parade/
   location: Provo
   price: free
@@ -516,7 +854,7 @@
   when:
     - 2018-06-30
 
-- name: Patriotic Service (Freedom Festival)
+- name: Patriotic Service - Freedom Festival
   url: https://www.freedomfestival.org/event/patriotic-service/
   location: Provo
   price: free
@@ -526,7 +864,7 @@
   when:
     - 2018-07-01
 
-- name: Clog America (Freedom Festival)
+- name: Clog America - Freedom Festival
   url: https://www.freedomfestival.org/event/clog-america/
   location: Orem
   price: [7, 10]
@@ -537,7 +875,7 @@
   when:
     - 2018-07-02
 
-- name: Military Outpost (Freedom Festival)
+- name: Military Outpost - Freedom Festival
   url: https://www.freedomfestival.org/event/military-outpost/
   location: Orem
   price: iap
@@ -551,7 +889,7 @@
     - 2018-07-03
     - 2018-07-04
 
-- name: Freedom Days Carnival (Freedom Festival)
+- name: Freedom Days Carnival - Freedom Festival
   url: https://www.freedomfestival.org/event/freedom-days/
   location: Provo
   price: iap
@@ -563,7 +901,7 @@
     - 2018-07-03
     - 2018-07-04
 
-- name: Balloon Fest (Freedom Festival)
+- name: Balloon Fest - Freedom Festival
   url: https://www.freedomfestival.org/event/balloon-fest/
   location: Provo
   price: free
@@ -576,7 +914,7 @@
     - 2018-07-03
     - 2018-07-04
 
-- name: Grand Parade (Freedom Festival)
+- name: Grand Parade - Freedom Festival
   url: https://www.freedomfestival.org/event/grand-parade/
   location: Provo
   price: free
@@ -586,7 +924,7 @@
   when:
     - 2018-07-04
 
-- name: Colonial Fest (Freedom Festival)
+- name: Colonial Fest - Freedom Festival
   url: https://www.freedomfestival.org/event/colonial-fest/
   location: Orem
   price: iap
@@ -599,7 +937,7 @@
     - 2018-07-03
     - 2018-07-04
 
-- name: Fine Art Show (Freedom Festival)
+- name: Fine Art Show - Freedom Festival
   url: https://www.freedomfestival.org/event/fine-art-show/
   location: Provo
   price: free
@@ -610,7 +948,7 @@
     - 2018-07-03
     - 2018-07-04
 
-- name: Cries of Freedom (Freedom Festival)
+- name: Cries of Freedom - Freedom Festival
   url: https://www.freedomfestival.org/event/cries-of-freedom-and-the-walk-of-freedom/
   location: Orem
   price: free
@@ -691,9 +1029,9 @@
     - 2018-09-20
     - 2018-09-21
     - 2018-09-22
-- name: 'Oklahoma! - Sundance'
+- name: 'Oklahoma!'
   url: https://www.sundanceresort.com/events/summer-theatre/
-  location: Provo Canyon
+  location: Sundance
   price: [26,38]
   tags:
     - outdoor
