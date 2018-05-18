@@ -109,7 +109,7 @@
 - name: Kickball Tournament - Steel Days
   url: http://www.steeldaysaf.com/events.html
   location: American Fork
-  price: '?'
+  price:
   tags:
     - outdoor
     - active
@@ -149,13 +149,13 @@
 - name: Tea with the Queen - Steel Days
   url: http://www.steeldaysaf.com/events.html
   location: American Fork
-  price: '?'
+  price:
   when:
     - Thursday, July 19th
 - name: Soap Box Derby - Steel Days
   url: http://www.steeldaysaf.com/events.html
   location: American Fork
-  price: '?'
+  price:
   tags:
     - outdoor
     - active
@@ -164,7 +164,7 @@
 - name: Movie in the Park - Steel Days
   url: http://www.steeldaysaf.com/events.html
   location: American Fork
-  price: '?'
+  price:
   tags:
     - outdoor
     - sitting
@@ -173,7 +173,7 @@
 - name: Marching Band Breakfast - Steel Days
   url: http://www.steeldaysaf.com/events.html
   location: American Fork
-  price: '?'
+  price:
   tags:
     - outdoor
     - sitting
@@ -191,7 +191,7 @@
 - name: Steel Days Fair - Steel Days
   url: http://www.steeldaysaf.com/events.html
   location: American Fork
-  price: '?'
+  price:
   tags:
     - outdoor
     - active

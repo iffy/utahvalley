@@ -38,6 +38,8 @@
         {%- else %}
           ${{ event.price }}
         {%- endif %}
+      {%- else -%}
+        $?
       {%- endif %}
 
       &bull; {{ event.location }}
