@@ -10,6 +10,71 @@
 #     - sitting
 #     - active
 #   when:
+
+- name: The BFG
+  partof: Movies Under the Stars
+  url: https://paysonutah.org/events/movies-in-the-park
+  location: Payson
+  price: free
+  tags:
+    - outdoor
+    - sitting
+  when:
+    - 2018-09-15
+- name: Moana
+  partof: Movies Under the Stars
+  url: https://paysonutah.org/events/movies-in-the-park
+  location: Payson
+  price: free
+  tags:
+    - outdoor
+    - sitting
+  when:
+    - 2018-08-18
+- name: Finding Dory
+  partof: Movies Under the Stars
+  url: https://paysonutah.org/events/movies-in-the-park
+  location: Payson
+  price: free
+  tags:
+    - outdoor
+    - sitting
+  when:
+    - 2018-07-14
+- name: The Secret Life of Pets
+  partof: Movies Under the Stars
+  url: https://paysonutah.org/events/movies-in-the-park
+  location: Payson
+  price: free
+  tags:
+    - outdoor
+    - sitting
+  when:
+    - 2018-06-16
+- name: Payson Golden Onion Days
+  url: https://paysonutah.org/events/golden-onion-days
+  location: Payson
+  price: vendors
+  tags:
+    - outdoor
+  when:
+    - 2018-08-31
+    - 2018-09-01
+    - 2018-09-02
+    - 2018-09-03
+    - 2018-09-04
+#------------------------------------------------------------
+# Payson Scottish Festival
+#------------------------------------------------------------
+- name: Scottish Festival
+  url: http://paysonscottishfestival.org/
+  location: Payson
+  price: free
+  tags:
+    - outdoor
+  when:
+    - 2018-07-13
+    - 2018-07-14
 #------------------------------------------------------------
 # Art City Days
 #------------------------------------------------------------
