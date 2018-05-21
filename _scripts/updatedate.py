@@ -4,12 +4,13 @@ import os
 import io
 from datetime import date, timedelta
 
-def main():
+def main(debug=False):
+    run = subprocess.check_output if debug else subprocess.check_call
     datefile = os.path.join(os.path.dirname(__file__), '../_data/startdate.yml')
 
     # git fetch and fast forward
-    subprocess.check_call(['git', 'fetch', 'origin'])
-    subprocess.check_call(['git', 'merge', 'origin/master'])
+    run(['git', 'fetch', 'origin'])
+    run(['git', 'merge', 'origin/master'])
 
     start = date.today()
     while start.weekday() != 0:
@@ -18,12 +19,12 @@ def main():
         fh.write(u'"{0}"'.format(start) + u'\n')
 
     # commit
-    subprocess.check_call(['git', 'add', datefile])
+    run(['git', 'add', datefile])
     try:
-        subprocess.check_call(['git', 'commit', '-m', 'List from {0}'.format(start)])
+        run(['git', 'commit', '-m', 'List from {0}'.format(start)])
     except subprocess.CalledProcessError:
         # nothing to commit
         return
-    subprocess.check_call(['git', 'push', 'origin', 'master'])
+    run(['git', 'push', 'origin', 'master'])
 
 main()
