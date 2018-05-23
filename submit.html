@@ -1,0 +1,194 @@
+---
+layout: page
+title: Submit
+order: 5
+skipheader: yes
+permalink: /submit/
+---
+
+<style>
+.form {
+  max-width: 30rem;
+}
+.question {
+  margin-bottom: 1rem;
+  width: 100%;
+}
+.question label {
+  display: block;
+  width: 100%;
+}
+.question input[type="text"] {
+  display: block;
+  width: 100%;
+}
+.question .required::after {
+  content: '*';
+}
+.form .note {
+  margin: 2rem 0 2rem;
+  background-color: rgba(255, 234, 167, 0.5);
+  padding: 1rem;
+  border-radius: 3px;
+}
+.yaml-output {
+  white-space: pre;
+  word-wrap: normal;
+  overflow: auto;
+  font-family: monospace;
+  font-size: 0.9rem;
+  padding: .5rem 1rem;
+  border-radius: 3px;
+  border: 1px solid black;
+  background-color: white;
+}
+
+.submit-area {
+  max-width: 30rem;
+}
+summary {
+  margin-bottom: 1rem;
+}
+</style>
+
+<script src="{{ site.baseurl }}/assets/js-yaml.min.js"></script>
+
+
+<div class="form">
+  <div class="question">
+    <label class="required">Event name</label>
+    <input type="text" id="event-name" autofocus>
+  </div>
+
+  <div class="question">
+    <label class="required">URL</label>
+    <input type="text" id="event-url" placeholder="www.myevent.com">
+  </div>
+
+  <details>
+    <summary>Additional information</summary>
+
+    <div class="question">
+      <label>City</label>
+      <input type="text" id="event-location">
+    </div>
+
+    <div class="question">
+      <label>Part of (i.e. Festival Name/Business Name)</label>
+      <input type="text" id="event-partof">
+    </div>
+
+    <div class="question">
+      <label>Minimum age</label>
+      <input type="text" id="event-minage">
+    </div>
+
+    <div class="question">
+      <label>Price</label>
+      <label><input type="radio" value="free" id="price-radio-free" name="price-radio"> FREE</label>
+      <label><input type="radio" value="vendors" id="price-radio-vendors" name="price-radio"> FREE + Vendors</label>
+      <label><input type="radio" value="range" id="price-radio-range" name="price-radio"> $<input type="number" size="4" id="event-price-minprice"/> - $<input type="number" size="4" id="event-price-maxprice"/></label>
+    </div>
+
+    <div class="question">
+      <label>Tags</label>
+      <label><input type="checkbox" data-type="tag" value="outdoor" id="event-tag-outdoor"> outdoor</label>
+      <label><input type="checkbox" data-type="tag" value="indoor" id="event-tag-indoor"> indoor</label>
+      <label><input type="checkbox" data-type="tag" value="sitting" id="event-tag-sitting"> sitting</label>
+      <label><input type="checkbox" data-type="tag" value="active" id="event-tag-active"> active</label>
+      <label><input type="checkbox" data-type="tag" value="baby-friendly" id="event-tag-baby-friendly"> baby-friendly</label>
+    </div>
+
+  </details>
+
+  <div class="note">
+    <ol>
+      <li>Submit what you have by <a href="#">clicking here</a>, or</li>
+      <li>Copy and paste the following into an email to haggardii+uv@gmail.com
+        <div class="yaml-output"></div>
+      </li>
+    </ol>
+  </div>
+</div>
+
+
+<script>
+const towatch = [
+  'event-name',
+  'event-url',
+  'event-location',
+  'event-partof',
+  'event-minage',
+  'event-tag-outdoor',
+  'event-tag-indoor',
+  'event-tag-sitting',
+  'event-tag-active',
+  'event-tag-baby-friendly',
+  'price-radio-free',
+  'price-radio-vendors',
+  'price-radio-range',
+  'event-price-minprice',
+  'event-price-maxprice',
+]
+towatch.forEach(id => {
+  const elem = document.getElementById(id)
+  elem.addEventListener('change', ev => {
+    console.log('Change', id, ev.target.value);
+    refreshYAMLOutput();
+  })
+})
+
+function recomputeYAML() {
+  let base = {
+    name: document.getElementById('event-name').value,
+    url: document.getElementById('event-url').value,
+    location: document.getElementById('event-location').value,
+    partof: document.getElementById('event-partof').value,
+    minage: document.getElementById('event-minage').value,
+  }
+  // tags
+  base.tags = Array.from(document.querySelectorAll('input[data-type="tag"]'))
+  .filter(tag_el => {
+    return tag_el.checked;
+  })
+  .map(tag_el => {
+    return tag_el.value;
+  })
+
+  // price
+  if (document.getElementById('price-radio-free').checked) {
+    base.price = 'free'
+  } else if (document.getElementById('price-radio-vendors').checked) {
+    base.price = 'vendors'
+  } else {
+    const minprice = Number(document.getElementById('event-price-minprice').value);
+    const maxprice = Number(document.getElementById('event-price-maxprice').value);
+    console.log('minprice', minprice, typeof minprice);
+    console.log('maxprice', maxprice, typeof maxprice);
+    if (minprice || maxprice) {
+      if (minprice === maxprice || minprice && !maxprice) {
+        base.price = minprice;
+      } else {
+        base.price = [minprice, maxprice];
+      }
+    } else {
+      base.price = '?'
+    }
+  }
+  return [base]
+}
+function refreshYAMLOutput() {
+  let val = recomputeYAML();
+  console.log('val', val);
+  const dumped = jsyaml.dump(val);
+  console.log('dumped', dumped);
+  Array.from(document.getElementsByClassName('yaml-output'))
+  .forEach(elem => {
+    elem.innerText = dumped;
+  });
+  Array.from(document.getElementsByClassName('mailto-link'))
+  .forEach(elem => {
+    elem.setAttribute('href', `mailto:haggardii+uv@gmail.com?subject=${encodeURIComponent('New Event - ' + val.name)}&body=${encodeURIComponent(dumped)}`);
+  });
+}
+</script>
