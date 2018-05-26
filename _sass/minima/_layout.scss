@@ -20,12 +20,6 @@ li {
   }
   a:visited {
     color: #2d3436;
-    .tags {
-      color: grey;
-    }
-    .second-line {
-      color: grey;
-    }
   }
   .prefix {
     padding-right: .5rem;
@@ -40,7 +34,7 @@ li {
     font-size: 1rem;
   }
   .second-line {
-    color: black;
+    color: grey;
     font-size: 70%;
   }
   .segment {
