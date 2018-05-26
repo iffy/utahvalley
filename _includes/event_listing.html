@@ -19,7 +19,7 @@
 <!-- <div>Whens: {{ whens }}</div>
 <div>event.when: {{ event.when | join: ', ' }}</div> -->
 
-<div class="listing" {% if event.when.first %}data-dates="{{ event.when | join: ' ' }}"{% endif %} style="order: {{order}};">
+<div class="listing" {% if event.when.first %}data-dates="{% for when in event.when %}{{ when | date: "%s" }} {% endfor %}"{% endif %} style="order: {{order}};">
   <div class="prefix">&bull;</div>
   <div class="body">
     <div class="first-line"><a href="{{event.url}}" target="_blank">{{ event.name }}</a></div>

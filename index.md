@@ -10,7 +10,7 @@ permalink: /
 {% assign end2 = end1 | plus: 604800 %}
 
 <h2>This week</h2>
-<div class="flex-order listings">
+<div class="flex-order listings" id="this-week-listings">
 {% assign sorted_events = site.data.events | sort: 'name' %}
 {% for event in sorted_events %}
   {% assign show = false %}
@@ -44,6 +44,44 @@ permalink: /
   {% endif %}
 {% endfor %}
 </div>
+
+<script>
+const thisweek_end = {{ end1 }};
+const nextweek_end = {{ end2 }};
+function startOfToday() {
+  let now = new Date();
+  let offset = now.getTimezoneOffset();
+  now.setHours(0,0,0,0);
+  const ts = Math.floor(now.getTime()/1000) - (offset * 60) - 1;
+  return ts;
+}
+function fadePastEvents() {
+  const now = startOfToday();
+  Array.from(document.querySelectorAll('[data-dates]')).forEach(elem => {
+    let whens = elem.getAttribute('data-dates')
+    .trim()
+    .split(' ')
+    .map(s => Number(s))
+    .filter(when => {
+      if (when > nextweek_end) {
+        // date is not in view
+        return false;
+      }
+      if (when < now) {
+        // event has passed
+        return false;
+      } else {
+        // still time in the future
+        return true;
+      }
+    })
+    if (!whens.length) {
+      elem.classList.add('finished');
+    }
+  })
+}
+fadePastEvents();
+</script>
 
 <h2>More</h2>
 
