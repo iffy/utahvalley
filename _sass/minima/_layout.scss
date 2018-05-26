@@ -6,19 +6,19 @@
 li {
   line-spacing: 1rem;
 }
-a.listing {
+.listing {
   .tags {
     color: grey;
   }
   margin-bottom: 5px;
   display: flex;
-  &:hover {
+  a:hover {
     text-decoration: none;
     .prefix {
       color: #0984e3;
     }
   }
-  &:visited {
+  a:visited {
     color: #2d3436;
     .tags {
       color: grey;

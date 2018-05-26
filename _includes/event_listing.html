@@ -19,10 +19,10 @@
 <!-- <div>Whens: {{ whens }}</div>
 <div>event.when: {{ event.when | join: ', ' }}</div> -->
 
-<{% if event.url %}a href="{{event.url}}" target="_blank"{% else %}div{% endif %} class="listing" {% if event.when.first %}data-dates="{{ event.when | join: ' ' }}"{% endif %} style="order: {{order}};">
+<div class="listing" {% if event.when.first %}data-dates="{{ event.when | join: ' ' }}"{% endif %} style="order: {{order}};">
   <div class="prefix">&bull;</div>
   <div class="body">
-    <div class="first-line">{{ event.name }}</div>
+    <div class="first-line"><a href="{{event.url}}" target="_blank">{{ event.name }}</a></div>
     <div class="second-line">
       <span class="segment" data-name="price">
       {%- if event.price == 'free' or event.price == 'FREE' -%}
@@ -72,4 +72,4 @@
       {%- endif -%}
     </div>
   </div>
-</{%- if event.url -%}a{%- else -%}div{%- endif -%}>
+</div>
