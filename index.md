@@ -22,7 +22,7 @@ permalink: /
   {% endfor %}
   
   {%- if show %}
-    {% include event_listing.html event=event start=start %}
+    {% include event_listing.html event=event start=start showcal=true %}
   {% endif %}
 {% endfor %}
 </div>
@@ -40,7 +40,7 @@ permalink: /
   {% endfor %}
   
   {%- if show %}
-    {% include event_listing.html event=event start=end1 %}
+    {% include event_listing.html event=event start=end1 showcal=true %}
   {% endif %}
 {% endfor %}
 </div>

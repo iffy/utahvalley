@@ -26,6 +26,7 @@
   <div class="body">
     <div class="first-line"><a href="{{event.url}}" target="_blank">{{ event.name }}</a></div>
     <div class="second-line">
+      {%- if include.showcal -%}
       <span class="segment" data-name="calendar">
         <div class="calendar">
           {%- for num in (0...6) -%}
@@ -38,6 +39,7 @@
           {%- endfor -%}
         </div>
       </span>
+      {%- endif -%}
       <span class="segment" data-name="price">
       {%- if event.price == 'free' or event.price == 'FREE' -%}
         FREE
