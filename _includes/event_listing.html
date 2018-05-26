@@ -34,7 +34,7 @@
           {%- assign nextday = thisday | plus: 86400 -%}
           <div class="{%- for nwhen in nwhens -%}
             {%- if (nwhen >= thisday) and (nwhen < nextday -%}included {% endif -%}
-          {%- endfor -%}" date-date-marker="{{ thisday }}">{{ nextday | date: "%a" | truncate: 1, ''}}</div>
+          {%- endfor -%}" date-date-marker="{{ thisday }}">{{ thisday | date: "%a" | truncate: 1, ''}}</div>
           {%- endfor -%}
         </div>
       </span>
