@@ -1,16 +1,18 @@
-{%- assign start = site.data.startdate | date: "%s" | plus: 0 -%}
+{%- assign time_start = include.start -%}
 {%- assign order = 0 -%}
 {%- assign whens = "" | split: "" -%}
+{%- assign nwhens = "" | split: "" -%}
 {%- if event.when.first -%}
   {%- for when in event.when -%}
     {%- assign nwhen = when | date: "%s" | plus: 0 -%}
-    {%- if nwhen > start -%}
+    {%- if nwhen > time_start -%}
       {%- assign whens = whens | push: when -%}
     {%- endif -%}
+    {%- assign nwhens = nwhens | push: nwhen -%}
   {%- endfor -%}
   {%- for when in whens -%}
     {%- assign date = when | date: "%s" | plus: 0 -%}
-    {%- if date > start and (order == 0 or date < order) -%}
+    {%- if date > time_start and (order == 0 or date < order) -%}
       {%- assign order = date -%}
     {%- endif -%}
   {%- endfor -%}
@@ -24,6 +26,18 @@
   <div class="body">
     <div class="first-line"><a href="{{event.url}}" target="_blank">{{ event.name }}</a></div>
     <div class="second-line">
+      <span class="segment" data-name="calendar">
+        <div class="calendar">
+          {%- for num in (0...6) -%}
+          {%- assign seconds_after = num | times: 86400 -%}
+          {%- assign thisday = time_start | plus: seconds_after -%}
+          {%- assign nextday = thisday | plus: 86400 -%}
+          <div class="{%- for nwhen in nwhens -%}
+            {%- if (nwhen >= thisday) and (nwhen < nextday -%}included {% endif -%}
+          {%- endfor -%}" date-date-marker="{{ thisday }}">{{ nextday | date: "%a" | truncate: 1, ''}}</div>
+          {%- endfor -%}
+        </div>
+      </span>
       <span class="segment" data-name="price">
       {%- if event.price == 'free' or event.price == 'FREE' -%}
         FREE

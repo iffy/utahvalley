@@ -13,10 +13,11 @@ def main(debug=False):
     run(['git', 'merge', 'origin/master'])
 
     start = date.today()
-    while start.weekday() != 0:
+    SUNDAY = 6
+    while start.weekday() != SUNDAY:
         start -= timedelta(days=1)
     with io.open(datefile, 'w') as fh:
-        fh.write(u'"{0}"'.format(start) + u'\n')
+        fh.write(u'{0}'.format(start) + u'\n')
 
     # commit
     run(['git', 'add', datefile])

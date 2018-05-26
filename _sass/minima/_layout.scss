@@ -40,6 +40,31 @@ li {
     color: grey;
     font-size: 70%;
   }
+  .calendar {
+    display: inline-block;
+    border-collapse: collapse;
+    padding: 0;
+    margin: 0;
+    > div {
+      display: inline-block;
+      padding: 0;
+      font-size: 8px;
+      border: 1px solid lightgrey;
+      border-width: 1px 0px 1px 1px;
+      sheight: 8px;
+      width: 10px;
+      color: lightgrey;
+      position: relative;
+      text-align: center;
+      &.included {
+        background-color: lightgrey;
+        color: black;
+      }
+      &:last-child {
+        border-right-width: 1px;
+      }
+    }
+  }
   .segment {
     display: inline-block;
   }
