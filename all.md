@@ -20,7 +20,7 @@ permalink: /all/
 {% endfor %}
 
 {%- if show %}
-  {% include event_listing.html event=event %}
+  {% include event_listing.html event=event start=start showcal=false %}
 {% endif %}
 {% endfor %}
 </div>

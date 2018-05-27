@@ -26,6 +26,7 @@
   <div class="body">
     <div class="first-line"><a href="{{event.url}}" target="_blank">{{ event.name }}</a></div>
     <div class="second-line">
+      {%- if include.showcal -%}
       <span class="segment" data-name="calendar">
         <div class="calendar">
           {%- for num in (0...6) -%}
@@ -34,10 +35,11 @@
           {%- assign nextday = thisday | plus: 86400 -%}
           <div class="{%- for nwhen in nwhens -%}
             {%- if (nwhen >= thisday) and (nwhen < nextday -%}included {% endif -%}
-          {%- endfor -%}" date-date-marker="{{ thisday }}">{{ nextday | date: "%a" | truncate: 1, ''}}</div>
+          {%- endfor -%}" date-date-marker="{{ thisday }}">{{ thisday | date: "%a" | truncate: 1, ''}}</div>
           {%- endfor -%}
         </div>
       </span>
+      {%- endif -%}
       <span class="segment" data-name="price">
       {%- if event.price == 'free' or event.price == 'FREE' -%}
         FREE
