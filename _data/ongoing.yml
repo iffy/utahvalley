@@ -35,3 +35,13 @@
     - indoor
     - sitting
     - theater
+- name: Grain Maze
+  partof: Wilkerson Farms
+  url: 'https://www.facebook.com/wilkersonfarm/photos/a.289433367832496.63748.120347941407707/1559581050817715/?type=3&permPage=1'
+  location: Orem
+  price: [0, 2]
+  minage: 0
+  when: May 28 - Aug 18
+  tags:
+    - outdoor
+    - active
