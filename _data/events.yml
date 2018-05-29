@@ -1323,6 +1323,15 @@
 #------------------------------------------------------------
 # Orem Summerfest 2018
 #------------------------------------------------------------
+- name: Family Storytelling Concert
+  url: https://timpfest.org/events/orem-summerfest-family-storytelling-concert/
+  partof: Summerfest
+  location: Orem
+  when:
+    - 2018-06-04
+  price: free
+  tags:
+    - sitting
 - name: Fireworks
   partof: Summerfest
   url: https://summerfest.orem.org/events/
