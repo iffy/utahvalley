@@ -10,6 +10,116 @@
 #     - sitting
 #     - active
 #   when:
+#-------------------------------------------
+# Spanish Fork Fiesta Days
+#-------------------------------------------
+- name: Spanish Fork Fiesta Days
+  url: https://www.spanishfork.org/residents/news_and_events/fiesta_days/calendar.php
+  location: Spanish Fork
+  when:
+    - 2018-07-13
+    - 2018-07-14
+    - 2018-07-17
+    - 2018-07-18
+    - 2018-07-19
+    - 2018-07-20
+    - 2018-07-21
+    - 2018-07-22
+    - 2018-07-23
+    - 2018-07-24
+  tags:
+    - indoor
+    - outdoor
+    - active
+    - sitting
+- name: Spamalot
+  url: http://www.sfctonline.org/
+  price: [8, 10]
+  tags:
+    - indoor
+    - sitting
+    - theater
+  when:
+    - 2018-07-20
+    - 2018-07-21
+    - 2018-07-23
+    - 2018-07-24
+    - 2018-07-26
+    - 2018-07-27
+    - 2018-07-28
+- name: Harvest Moon Hurrah
+  url: https://www.spanishfork.org/departments/parks_and_recreation/arts/harvest_moon_hurrah.php
+  location: Spanish Fork
+  price: vendors
+  when:
+    - 2018-09-16
+  tags:
+    - outdoor
+    - sitting
+    - music
+
+
+#-------------------------------------------
+# Utah County Fair
+#-------------------------------------------
+- name: Utah County Fair
+  url: http://www.utahcountyfair.org/schedule.html
+  location: Spanish Fork
+  when:
+    - 2018-08-15
+    - 2018-08-16
+    - 2018-08-17
+    - 2018-08-18
+  price: vendors
+  tags:
+    - outdoor
+    - indoor
+    - active
+    - sitting
+- name: Bullfighting
+  url: 'http://www.utahcountyfair.org/'
+  location: Spanish Fork
+  partof: Utah County Fair
+  minage: null
+  when:
+    - '2018-08-15'
+  tags:
+    - outdoor
+    - sitting
+  price: '?'
+- name: Rodeo
+  url: 'http://www.utahcountyfair.org/'
+  location: Spanish Fork
+  partof: Utah County Fair
+  minage: null
+  when:
+    - '2018-08-16'
+  tags:
+    - outdoor
+    - sitting
+  price: free
+- name: Monster Trucks
+  url: 'http://www.utahcountyfair.org/'
+  location: Spanish Fork
+  partof: Utah County Fair
+  minage: null
+  when:
+    - '2018-08-17'
+  tags:
+    - outdoor
+    - sitting
+  price: '?'
+- name: Demolition Derby
+  url: 'http://www.utahcountyfair.org/'
+  location: Spanish Fork
+  partof: Utah County Fair
+  minage: null
+  when:
+    - '2018-08-18'
+  tags:
+    - outdoor
+    - sitting
+  price: '?'
 
 #-------------------------------------------
 # Scera

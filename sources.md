@@ -30,3 +30,6 @@ Some places where the event info comes from:
 - <http://www.springvilleplayhouse.com/>
 - <http://www.cedarhills.org/news-events/family-festival>
 - <https://scera.org/event-category/summer-season/>
+- <http://www.utahcountyfair.org/>
+- <http://www.sfctonline.org/>
+
