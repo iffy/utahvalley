@@ -171,8 +171,8 @@ function recomputeYAML() {
     name: document.getElementById('event-name').value,
     url: document.getElementById('event-url').value,
     location: document.getElementById('event-location').value,
-    partof: document.getElementById('event-partof').value,
-    minage: document.getElementById('event-minage').value,
+    partof: document.getElementById('event-partof').value || null,
+    minage: document.getElementById('event-minage').value || null,
     when: null,
   }
   // tags

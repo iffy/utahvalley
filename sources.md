@@ -29,3 +29,4 @@ Some places where the event info comes from:
 - <https://www.springville.org/art-city-days/>
 - <http://www.springvilleplayhouse.com/>
 - <http://www.cedarhills.org/news-events/family-festival>
+- <https://scera.org/event-category/summer-season/>

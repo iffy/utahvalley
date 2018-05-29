@@ -10,6 +10,250 @@
 #     - sitting
 #     - active
 #   when:
+
+#-------------------------------------------
+# Scera
+#-------------------------------------------
+- name: Megan Hilty + Utah Valley Symphony
+  url: 'https://scera.org/events/megan-hilty-with-the-utah-valley-symphony/'
+  location: Orem
+  partof: Scera
+  minage: null
+  when:
+    - '2018-09-01'
+  tags:
+    - outdoor
+    - sitting
+  price:
+    - 20
+    - 40
+- name: Larry Gatlin & The Gatlin Brothers
+  url: 'https://scera.org/events/larry-gatlin-the-gatlin-brothers/'
+  location: Orem
+  partof: Scera
+  minage: null
+  when:
+    - '2018-08-27'
+  tags:
+    - outdoor
+    - sitting
+  price:
+    - 20
+    - 40
+- name: Kenneth Cope Fireside
+  url: 'https://scera.org/events/kenneth-cope-2/'
+  location: Orem
+  partof: Scera
+  minage: null
+  when:
+    - '2018-08-26'
+  tags:
+    - outdoor
+    - sitting
+  price: free
+- name: 13th Annual Dancing Under the Stars
+  url: 'https://scera.org/events/dancing-under-the-stars/'
+  location: Orem
+  partof: Scera
+  minage: null
+  when:
+    - '2018-08-24'
+    - '2018-08-25'
+  tags:
+    - outdoor
+    - sitting
+  price:
+    - 15
+    - 35
+- name: Under the Streetlamp (retro vocal group)
+  url: 'https://scera.org/events/under-the-streetlamp/'
+  location: Orem
+  partof: Scera
+  minage: null
+  when:
+    - '2018-08-20'
+  tags:
+    - outdoor
+    - sitting
+  price:
+    - 15
+    - 35
+- name: Bye Bye Birdie
+  url: 'https://scera.org/events/bye-bye-birdie/'
+  location: Orem
+  partof: Scera
+  minage: null
+  when:
+    - '2018-08-03'
+    - '2018-08-04'
+    - '2018-08-06'
+    - '2018-08-07'
+    - '2018-08-09'
+    - '2018-08-10'
+    - '2018-08-11'
+    - '2018-08-13'
+    - '2018-08-14'
+    - '2018-08-16'
+    - '2018-08-17'
+    - '2018-08-18'
+  tags:
+    - outdoor
+    - sitting
+    - theater
+  price:
+    - 10
+    - 16
+
+- name: The Commodores' Experience w/ Thomas McClary
+  url: 'https://scera.org/events/the-commodores-experience/'
+  location: Orem
+  partof: Scera
+  minage: null
+  when:
+    - '2018-07-23'
+  tags:
+    - outdoor
+    - sitting
+  price:
+    - 15
+    - 35
+
+- name: 'Big River: The Adventures of Huckleberry Finn'
+  url: 'https://scera.org/events/big-river/'
+  location: Orem
+  partof: Scera
+  minage: null
+  when:
+    - '2018-07-06'
+    - '2018-07-07'
+    - '2018-07-09'
+    - '2018-07-10'
+    - '2018-07-12'
+    - '2018-07-13'
+    - '2018-07-14'
+    - '2018-07-16'
+    - '2018-07-17'
+    - '2018-07-19'
+    - '2018-07-20'
+    - '2018-07-21'
+  tags:
+    - outdoor
+    - sitting
+    - theater
+  price:
+    - 10
+    - 16
+
+- name: Steve Augeri - Journey former lead vocalist
+  url: 'https://scera.org/events/journey-former-lead-vocalist-steve-augeri/'
+  location: Orem
+  partof: Scera
+  minage: null
+  when:
+    - '2018-06-25'
+  tags:
+    - outdoor
+    - sitting
+  price:
+    - 15
+    - 30
+- name: 'Outdoor Movie: Monty Python & the Holy Grail'
+  url: https://scera.org/events/monty-python-the-holy-grail/
+  location: Orem
+  partof: Scera
+  when:
+    - '2018-08-15'
+  tags:
+    - outdoor
+    - sitting
+  price:
+    - 3
+    - 4
+- name: 'Outdoor Movie: Close Encounters of the Third Kind'
+  url: https://scera.org/events/close-encounters-of-the-third-kind/
+  location: Orem
+  partof: Scera
+  when:
+    - '2018-08-08'
+  tags:
+    - outdoor
+    - sitting
+  price:
+    - 3
+    - 4
+- name: 'Outdoor Movie: Coco'
+  url: https://scera.org/events/coco/
+  location: Orem
+  partof: Scera
+  when:
+    - '2018-07-18'
+  tags:
+    - outdoor
+    - sitting
+  price:
+    - 3
+    - 4
+- name: 'Outdoor Movie: Star Wars, The Last Jedi'
+  url: https://scera.org/events/star-wars-the-last-jedi/
+  location: Orem
+  partof: Scera
+  when:
+    - '2018-07-11'
+  tags:
+    - outdoor
+    - sitting
+  price:
+    - 3
+    - 4
+- name: 'Outdoor Movie: Matilda'
+  url: https://scera.org/events/matilda/
+  location: Orem
+  partof: Scera
+  when:
+    - '2018-06-20'
+  tags:
+    - outdoor
+    - sitting
+  price:
+    - 3
+    - 4
+- name: 'Outdoor Movie: The Greatest Showman'
+  url: 'https://scera.org/events/the-greatest-showman/'
+  location: Orem
+  partof: Scera
+  when:
+    - '2018-06-13'
+  tags:
+    - outdoor
+    - sitting
+  price:
+    - 3
+    - 4
+- name: Shrek the Musical
+  url: 'https://scera.org/events/shrek-the-musical/'
+  location: Orem
+  partof: Scera
+  when:
+    - '2018-06-08'
+    - '2018-06-09'
+    - '2018-06-11'
+    - '2018-06-12'
+    - '2018-06-14'
+    - '2018-06-15'
+    - '2018-06-16'
+    - '2018-06-18'
+    - '2018-06-19'
+    - '2018-06-21'
+    - '2018-06-22'
+    - '2018-06-23'
+  tags:
+    - outdoor
+    - sitting
+    - theater
+  price:
+    - 10
+    - 14
+
 - name: Night Garden Hikes
   url: https://cart.thanksgivingpoint.org/single/SelectSeating.aspx?p=60468
   location: Lehi
@@ -1124,7 +1368,7 @@
     - Thurs. June 7
     - Fri. June 8
     - Sat. June 9
-- name: Concert
+- name: Concert - Jenny Oaks Baker+
   partof: Summerfest
   url: https://scera.org/events/jenny-oaks-baker-family-four-with-dallyn-vail-bayles-the-utah-valley-symphony/
   location: Orem
