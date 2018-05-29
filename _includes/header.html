@@ -3,7 +3,13 @@
   <div class="wrapper">
     {%- assign default_paths = site.pages | sort: "order" | map: "path" -%}
     {%- assign page_paths = site.header_pages | default: default_paths -%}
-    <a class="site-title" rel="author" href="{{ "/" | relative_url }}">{{ site.title | escape }} &mdash; {{ site.data.startdate | date: "%b %-d, %Y" }}</a>
+    <a class="site-title" rel="author" href="{{ "/" | relative_url }}">{{ site.title | escape }} 
+      <svg viewBox="0 0 90 30" width="90px" height="20px">
+        <path fill="#fdcb6e" d="M0,30L20,0L40,0L20,30z" />
+        <path fill="#6c5ce7" d="M25,30L45,0L65,0L45,30z" />
+        <path fill="#00b894" d="M50,30L70,0L90,0L70,30z" />
+      </svg>
+      {{ site.data.startdate | date: "%b %-d, %Y" }}</a>
 
 
     {%- if page_paths -%}
