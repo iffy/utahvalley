@@ -288,7 +288,12 @@ function createCalendar(root) {
 }
 
 
-
-createCalendar(document.getElementById('calendar-picker'));
-refreshYAMLOutput();
+function start() {
+  console.log('start');
+  createCalendar(document.getElementById('calendar-picker'));
+  refreshYAMLOutput();
+}
+window.addEventListener('load', function() {
+  start();
+}, false)
 </script>
