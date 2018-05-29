@@ -87,5 +87,6 @@ fadePastEvents();
 
 - <a href="{{ site.baseurl }}/all/">Future events</a>
 - <a href="{{ site.baseurl }}/ongoing/">Ongoing events</a>
+- <a href="{{ site.baseurl }}/sources/">Sources</a>
 
 {% include legend.html %}
