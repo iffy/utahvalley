@@ -133,7 +133,7 @@ def get(path):
 
 @cli.command()
 @click.option('-u', '--url',
-    default='http://www.iffycan.com/utahvalley/')
+    default='http://fun.iffycan.com')
 def scrape(url):
     doer = Doer()
     result = doer.scrape(url)

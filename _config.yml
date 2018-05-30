@@ -17,8 +17,8 @@ title: mattslist
 email: haggardii+uv@gmail.com
 description: >- # this means to ignore newlines until "baseurl:"
   A list of fun family/date events happening in and around Utah Valley
-baseurl: "/utahvalley" # the subpath of your site, e.g. /blog
-url: "https://www.iffycan.com" # the base hostname & protocol for your site, e.g. http://example.com
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "https://fun.iffycan.com" # the base hostname & protocol for your site, e.g. http://example.com
 
 # Build settings
 markdown: kramdown
