@@ -10,7 +10,139 @@
 #     - sitting
 #     - active
 #   when:
+- name: Pioneer Craft Fair
+  url: http://www.provopioneervillage.org/2018-craft-fair/
+  location: Provo
+  price: free
+  tags:
+    - outdoor
+  when:
+    - 2018-06-09
 
+#-------------------------------------------
+# AF Summer Concert Series
+#-------------------------------------------
+- name: The Kings of 88
+  url: http://www.steeldaysaf.com/summer-concert-series.html
+  partof: Summer Concert Series
+  location: American Fork
+  price: vendors
+  tags:
+    - outdoor
+    - sitting
+    - music
+  when:
+    - 2018-07-30
+
+- name: Radio Motion, Kingston Winter, The Inevitables
+  url: http://www.steeldaysaf.com/summer-concert-series.html
+  partof: Summer Concert Series
+  location: American Fork
+  price: vendors
+  tags:
+    - outdoor
+    - sitting
+    - music
+  when:
+    - 2018-07-23
+
+- name: American Fork Symphony
+  url: http://www.steeldaysaf.com/summer-concert-series.html
+  partof: Summer Concert Series
+  location: American Fork
+  price: vendors
+  tags:
+    - outdoor
+    - sitting
+    - music
+  when:
+    - 2018-07-16
+
+- name: Hooligans Brass Band, Vicious Beat, Soul Research Foundation
+  url: http://www.steeldaysaf.com/summer-concert-series.html
+  partof: Summer Concert Series
+  location: American Fork
+  price: vendors
+  tags:
+    - outdoor
+    - sitting
+    - music
+  when:
+    - 2018-07-09
+
+- name: Wasatch Winds and AFHS Marching Band
+  url: http://www.steeldaysaf.com/summer-concert-series.html
+  partof: Summer Concert Series
+  location: American Fork
+  price: vendors
+  tags:
+    - outdoor
+    - sitting
+    - music
+  when:
+    - 2018-07-02
+
+- name: "The Fabulous Flynn'sTones"
+  url: http://www.steeldaysaf.com/summer-concert-series.html
+  partof: Summer Concert Series
+  location: American Fork
+  price: vendors
+  tags:
+    - outdoor
+    - sitting
+    - music
+  when:
+    - 2018-06-25
+
+- name: Timpanogos Symphony
+  url: http://www.steeldaysaf.com/summer-concert-series.html
+  partof: Summer Concert Series
+  location: American Fork
+  price: vendors
+  tags:
+    - outdoor
+    - sitting
+    - music
+  when:
+    - 2018-06-18
+
+- name: Timpanogos Chorale and Wasatch Show Band
+  url: http://www.steeldaysaf.com/summer-concert-series.html
+  partof: Summer Concert Series
+  location: American Fork
+  price: vendors
+  tags:
+    - outdoor
+    - sitting
+    - music
+  when:
+    - 2018-06-11
+
+- name: Joshua Creek
+  url: http://www.steeldaysaf.com/summer-concert-series.html
+  partof: Summer Concert Series
+  location: American Fork
+  price: vendors
+  tags:
+    - outdoor
+    - sitting
+    - music
+  when:
+    - 2018-06-04
+
+- name: Juab County Fair
+  url: http://www.juabcountyfair.com/
+  location: Nephi
+  price: vendors
+  tags:
+    - outdoor
+  when:
+    - 2018-08-06
+    - 2018-08-07
+    - 2018-08-08
+    - 2018-08-09
+    - 2018-08-10
+    - 2018-08-11
 - name: Demolition Derby
   url: http://www.gohebervalley.com/Demolition-Derby-39655
   location: Heber
