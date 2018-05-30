@@ -15,7 +15,7 @@ def main(debug=False):
     start = date.today()
     SUNDAY = 6
     while start.weekday() != SUNDAY:
-        start -= timedelta(days=1)
+        start += timedelta(days=1)
     with io.open(datefile, 'w') as fh:
         fh.write(u'{0}'.format(start) + u'\n')
 
