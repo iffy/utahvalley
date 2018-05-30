@@ -10,6 +10,20 @@
 #     - sitting
 #     - active
 #   when:
+- name: Utah Premiere Brass Band Concert
+  url: http://www.upb.org/concerts
+  location: Provo
+  price: free
+  tags:
+    - outdoor
+    - sitting
+    - music
+  when:
+    - 2018-06-03
+    - 2018-06-10
+    - 2018-06-17
+    - 2018-06-24
+
 - name: Pioneer Craft Fair
   url: http://www.provopioneervillage.org/2018-craft-fair/
   location: Provo
