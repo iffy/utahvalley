@@ -9,7 +9,7 @@ permalink: /
 {%- assign end1 = start | plus: 604800 -%}
 {%- assign end2 = end1 | plus: 604800 -%}
 
-<h2>This week</h2>
+<h2><a name="this-week"></a>This week</h2>
 <div class="flex-order listings" id="this-week-listings">
 {%- assign sorted_events = site.data.events | sort: 'name' -%}
 {%- for event in sorted_events -%}
@@ -27,7 +27,7 @@ permalink: /
 {%- endfor -%}
 </div>
 
-<h2>Next week</h2>
+<h2><a name="next-week"></a>Next week</h2>
 <div class="flex-order listings">
 {%- assign sorted_events = site.data.events | sort: 'name' -%}
 {%- for event in sorted_events -%}

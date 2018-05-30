@@ -32,4 +32,5 @@ Some places where the event info comes from:
 - <https://scera.org/event-category/summer-season/>
 - <http://www.utahcountyfair.org/>
 - <http://www.sfctonline.org/>
+- <http://www.provolibrary.com/what-to-do-in-provo-summer>
 

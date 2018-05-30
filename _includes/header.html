@@ -9,7 +9,7 @@
         <path fill="#6c5ce7" d="M25,30L45,0L65,0L45,30z" />
         <path fill="#00b894" d="M50,30L70,0L90,0L70,30z" />
       </svg>
-      {{ site.data.startdate | date: "%b %-d, %Y" }}</a>
+      <span id="this-week-date">{{ site.data.startdate | date: "%b %-d, %Y" }}</span></a>
 
 
     {%- if page_paths -%}
@@ -41,7 +41,7 @@
 
 <div class="wrapper">
   <div class="header-description">
-    Fun family/date events around Utah valley &mdash; Updated Sundays &mdash; Click through for full details &mdash; <a href="#" id="subscribe">Weekly email</a> &mdash; <a href="mailto:haggardii+uv@gmail.com" target="_blank">Report an error</a>
+    Fun family/date events around Utah valley &mdash; Updated Saturday night &mdash; Click through for full details &mdash; <a href="#" id="subscribe">Weekly email</a> &mdash; <a href="mailto:haggardii+uv@gmail.com" target="_blank">Report an error</a>
     
 <script>
   document.getElementById('subscribe').addEventListener('click', function(ev) {
