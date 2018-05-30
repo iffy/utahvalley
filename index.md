@@ -9,6 +9,12 @@ permalink: /
 {%- assign end1 = start | plus: 604800 -%}
 {%- assign end2 = end1 | plus: 604800 -%}
 
+<!--
+start: {{ start | date: "%s" }}
+end1:  {{ end1 | date: "%s" }}
+end2:  {{ end2 | date: "%s" }}
+-->
+
 <h2><a name="this-week"></a>This week</h2>
 <div class="flex-order listings" id="this-week-listings">
 {%- assign sorted_events = site.data.events | sort: 'name' -%}
@@ -34,7 +40,7 @@ permalink: /
   {%- assign show = false -%}
   {%- for when in event.when -%}
     {%- assign ts = when | date: "%s" | plus: 0 -%}
-    {%- if ts >= end1 and ts <= end2 -%}
+    {%- if ts >= end1 and ts < end2 -%}
       {%- assign show = true -%}
     {%- endif -%}
   {%- endfor -%}

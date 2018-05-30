@@ -5,14 +5,14 @@
 {%- if event.when.first -%}
   {%- for when in event.when -%}
     {%- assign nwhen = when | date: "%s" | plus: 0 -%}
-    {%- if nwhen > time_start -%}
+    {%- if nwhen >= time_start -%}
       {%- assign whens = whens | push: when -%}
     {%- endif -%}
     {%- assign nwhens = nwhens | push: nwhen -%}
   {%- endfor -%}
   {%- for when in whens -%}
     {%- assign date = when | date: "%s" | plus: 0 -%}
-    {%- if date > time_start and (order == 0 or date < order) -%}
+    {%- if date >= time_start and (order == 0 or date < order) -%}
       {%- assign order = date -%}
     {%- endif -%}
   {%- endfor -%}
