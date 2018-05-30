@@ -10,6 +10,32 @@
 #     - sitting
 #     - active
 #   when:
+
+- name: Demolition Derby
+  url: http://www.gohebervalley.com/Demolition-Derby-39655
+  location: Heber
+  price: '?'
+  tags:
+    - sitting
+  when:
+    - 2018-07-27
+    - 2018-07-28
+
+- name: World Folkfest
+  partof: World Folkfest
+  url: http://www.worldfolkfest.dreamhosters.com/
+  location: Springville
+  price: [6,10]
+  tags:
+    - outdoor
+    - sitting
+  when:
+    - 2018-07-30
+    - 2018-07-31
+    - 2018-08-01
+    - 2018-08-02
+    - 2018-08-03
+    - 2018-08-04
 #-------------------------------------------
 # Spanish Fork Fiesta Days
 #-------------------------------------------
@@ -466,9 +492,9 @@
     - 2018-09-03
     - 2018-09-04
 #------------------------------------------------------------
-# Payson Scottish Festival
+# Scottish Festivals
 #------------------------------------------------------------
-- name: Scottish Festival
+- name: Payson Scottish Festival
   url: http://paysonscottishfestival.org/
   location: Payson
   price: free
