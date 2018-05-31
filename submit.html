@@ -141,8 +141,8 @@ summary {
       <label><input type="radio" value="freeform" id="when-freeform-radio" name="when-radio"> <input placeholder="e.g. every 3rd Tuesday" id="when-freeform" /></label>
       <label><input type="radio" value="specific" name="when-radio"> Choose dates:</label>
 
-      <div id="calendar-picker">
-      </div>
+      <button id="reset-calendar-button">Reset calendar</button>
+      <div id="calendar-picker"></div>
     </div>
 
   </details>
@@ -199,7 +199,7 @@ function recomputeYAML() {
         base.price = [minprice, maxprice];
       }
     } else {
-      base.price = '?'
+      base.price = null
     }
   }
 
@@ -229,7 +229,6 @@ function refreshYAMLOutput() {
     elem.setAttribute('href', `mailto:haggardii+uv@gmail.com?subject=${encodeURIComponent('New Event - ' + val[0].name)}&body=${encodeURIComponent(dumped)}`);
   });
 }
-
 
 function createCalendar(root) {
   const now = new Date();
@@ -286,11 +285,19 @@ function createCalendar(root) {
     }
   }
 }
-
+function clearCalendar(elem) {
+  elem.querySelectorAll('.selected').forEach(elem => {
+    elem.classList.remove('selected');
+  });
+  refreshYAMLOutput();
+}
 
 function start() {
-  console.log('start');
-  createCalendar(document.getElementById('calendar-picker'));
+  const cal_elem = document.getElementById('calendar-picker')
+  createCalendar(cal_elem);
+  document.getElementById('reset-calendar-button').addEventListener('click', () => {
+    clearCalendar(cal_elem);
+  }, false)
   refreshYAMLOutput();
 }
 window.addEventListener('load', function() {

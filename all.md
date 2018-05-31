@@ -5,11 +5,16 @@ order: 2
 permalink: /all/
 ---
 
-{% assign start = site.data.startdate | date: "%s" | plus: 0 %}
+{%- assign events = "" | split: "" -%}
+{%- for subdir in site.data.events -%}
+  {%- assign events = events | concat: subdir[1] -%}
+{%- endfor -%}
+
+{%- assign start = site.data.startdate | date: "%s" | plus: 0 -%}
 
 <h2>All Future Events</h2>
 <div class="flex-order">
-{% assign sorted_events = site.data.events | sort: 'name' %}
+{% assign sorted_events = events | sort: 'name' %}
 {% for event in sorted_events %}
 {% assign show = false %}
 {% for when in event.when %}

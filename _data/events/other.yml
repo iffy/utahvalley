@@ -3,6 +3,7 @@
 #   url:
 #   location:
 #   price: free / [1,2]
+#   ticketsonsale:
 #   tags:
 #     - indoor
 #     - outdoor
@@ -10,6 +11,7 @@
 #     - sitting
 #     - active
 #   when:
+
 - name: Utah Premiere Brass Band Concert
   url: http://www.upb.org/concerts
   location: Provo
