@@ -52,3 +52,19 @@
     - 2018-08-31
     - 2018-09-01
     - 2018-09-03
+- name: Joseph and the Amazing Technicolor Dreamcoat
+  url: http://www.alpinecommunitytheater.org/
+  location: Alpine
+  price:
+  tags:
+    - indoor
+    - sitting
+    - theater
+  when:
+    - 2018-07-19
+    - 2018-07-20
+    - 2018-07-21
+    - 2018-07-23
+    - 2018-07-27
+    - 2018-07-28
+    - 2018-07-30
