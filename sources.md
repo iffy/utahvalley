@@ -9,6 +9,8 @@ Some places where the event info comes from:
 
 - <http://webticketing.haletheater.org/>
 - <https://byucougars.com/schedule/all/>
+- <https://calendar.byu.edu/subscribe>
+- <https://calendar.byu.edu/events-api>
 - <http://gouvu.com/calendar.aspx>
 - <https://utah.com/summer-festivals-in-utah>
 - <https://utah.com/events-in-utah>
