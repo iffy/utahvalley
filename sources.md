@@ -11,6 +11,7 @@ Some places where the event info comes from:
 - <https://byucougars.com/schedule/all/>
 - <https://calendar.byu.edu/subscribe>
 - <https://calendar.byu.edu/events-api>
+- <https://music.byu.edu/family-concert-series>
 - <http://gouvu.com/calendar.aspx>
 - <https://utah.com/summer-festivals-in-utah>
 - <https://utah.com/events-in-utah>
