@@ -1,0 +1,70 @@
+# https://www.provo.org/community/covey-center-for-the-arts/2013-2014-calendar/-curm-7/-cury-2018
+- name: The Miraculous Journey of Edward Tomas
+  url: 'https://tix6.centerstageticketing.com/sites/coveycenter/event-details.php?e=1351'
+  location: Provo
+  partof: null
+  minage: null
+  when:
+    - '2018-06-22'
+    - '2018-06-23'
+  tags:
+    - indoor
+    - sitting
+    - baby-friendly
+    - dance
+  price: 8
+- name: FreQuency
+  url: https://www.provo.org/community/covey-center-for-the-arts/2013-2014-calendar/-curm-6/-cury-2018/-item-38738
+  location: Provo
+  price: free
+  when:
+    - 2018-06-11
+  tags:
+    - indoor
+    - sitting
+    - music
+- name: Joshua Creek
+  url: https://www.provo.org/community/covey-center-for-the-arts/2013-2014-calendar/-curm-7/-cury-2018/-item-45470
+  location: Provo
+  price: 15
+  when:
+    - 2018-07-07
+  tags:
+    - indoor
+    - sitting
+    - music
+- name: The Nerd
+  url: 'https://www.provo.org/community/covey-center-for-the-arts/2013-2014-calendar/-curm-8/-cury-2018/-item-45474'
+  location: Provo
+  price: [14, 16]
+  minage: 8
+  when:
+    - 2018-08-02
+    - 2018-08-03
+    - 2018-08-04
+    - 2018-08-06
+    - 2018-08-09
+    - 2018-08-10
+    - 2018-08-11
+    - 2018-08-13
+    - 2018-08-16
+    - 2018-08-17
+    - 2018-08-18
+    - 2018-08-20
+    - 2018-08-23
+    - 2018-08-24
+    - 2018-08-25
+  tags:
+    - indoor
+    - sitting
+    - theater
+- name: GENTRI
+  url: https://www.provo.org/community/covey-center-for-the-arts/2013-2014-calendar/-curm-8/-cury-2018/-item-45634
+  location: Provo
+  price: [29,49]
+  when:
+    - 2018-08-17
+  tags:
+    - indoor
+    - sitting
+    - music

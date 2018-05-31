@@ -1,4 +1,4 @@
-- name: 'Play: The World''s Strongest Librarian'
+- name: 'The World''s Strongest Librarian'
   url: 'https://arts.byu.edu/2018/05/byu-announces-2018-19-theatre-season/'
   location: Provo
   partof: BYU Young Company
@@ -17,7 +17,7 @@
     - sitting
     - theater
   price:
-- name: 'Play: The Mousetrap'
+- name: 'The Mousetrap'
   url: 'https://arts.byu.edu/2018/05/byu-announces-2018-19-theatre-season/'
   location: Provo
   partof: BYU
@@ -34,7 +34,7 @@
     - sitting
     - theater
   price: null
-- name: 'Play: Radium Girls'
+- name: 'Radium Girls'
   url: 'https://arts.byu.edu/2018/05/byu-announces-2018-19-theatre-season/'
   location: Provo
   partof: BYU
@@ -51,7 +51,7 @@
     - sitting
     - theater
   price: null
-- name: 'Musical: Wonderland'
+- name: 'Wonderland'
   url: 'https://arts.byu.edu/2018/05/byu-announces-2018-19-theatre-season/'
   location: Provo
   partof: BYU
@@ -70,7 +70,7 @@
     - sitting
     - theater
   price: null
-- name: 'Play: Comedy of Errors'
+- name: 'Comedy of Errors'
   url: 'https://arts.byu.edu/2018/05/byu-announces-2018-19-theatre-season/'
   location: Provo
   partof: BYU Young Company
@@ -89,7 +89,7 @@
     - sitting
     - theater
   price: null
-- name: 'Play: Rosencrantz and Guildenstern Are Dead'
+- name: 'Rosencrantz and Guildenstern Are Dead'
   url: 'https://arts.byu.edu/2018/05/byu-announces-2018-19-theatre-season/'
   location: Provo
   partof: BYU
