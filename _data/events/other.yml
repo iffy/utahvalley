@@ -1714,7 +1714,8 @@
     - music
   when:
     - Saturday, July 14
-- name: Mozart's "Jupiter" Symphony
+- name: |
+    Mozart's "Jupiter" Symphony
   url: https://my.usuo.org/single/PSDetail.aspx?psn=20955
   location: Park City
   price: yes

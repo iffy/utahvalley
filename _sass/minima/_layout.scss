@@ -13,6 +13,14 @@ li {
   &.finished {
     opacity: 0.3;
   }
+  &.sfeatured {
+    background-color: rgba(116, 185, 255, 0.1);
+    border: 2px solid rgba(116, 185, 255,1.0);
+    padding: 0.5rem;
+    margin-left: -0.5rem;
+    margin-right: -0.5rem;
+    border-radius: 4px;
+  }
   margin-bottom: 5px;
   display: flex;
   a:hover {
@@ -29,6 +37,19 @@ li {
     flex-basis: min-content;
     flex-grow: 0;
     flex-shrink: 0;
+    text-align: center;
+    width: 1rem;
+    &:after {
+      content: '\2022';
+    }
+  }
+  &.favorite {
+    .prefix {
+      &:after {
+        content: '\2665';
+        color: rgba(214, 48, 49,1.0);
+      }
+    }
   }
   .body {
     flex-grow: 1;

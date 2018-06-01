@@ -1,2 +1,36 @@
 
+<script>
+// Favoriting code
+let favorites = JSON.parse(localStorage.getItem('favorites') || '[]');
+function saveFaves() {
+  localStorage.setItem('favorites', JSON.stringify(favorites));
+}
+document.querySelectorAll('.listing').forEach(listing => {
+  let prefix = listing.querySelector('.prefix');
+  const hash = sha1(listing.getAttribute('data-hashable')).substr(0, 8);
+  listing.setAttribute('data-hash', hash);
+
+  // initial state
+  if (favorites.indexOf(hash) !== -1) {
+    listing.classList.add('favorite');
+  }
+  prefix.addEventListener('click', ev => {
+    let idx = favorites.indexOf(hash);
+    if (idx === -1) {
+      document.querySelectorAll(`[data-hash="${hash}"]`).forEach(e => {
+        e.classList.add('favorite');
+      })
+      favorites.push(hash);
+      saveFaves();
+    } else {
+      document.querySelectorAll(`[data-hash="${hash}"]`).forEach(e => {
+        e.classList.remove('favorite');
+      })
+      favorites.splice(favorites.indexOf(hash), 1);
+      saveFaves();
+    }
+  })
+})
+</script>
+
 <script type="text/javascript" src="//downloads.mailchimp.com/js/signup-forms/popup/embed.js" data-dojo-config="usePlainJson: true, isDebug: false"></script>

@@ -18,8 +18,11 @@
     {%- endif -%}
   {%- endfor -%}
 {%- endif -%}
-<div class="listing" {% if event.when.first %}data-dates="{% for when in event.when %}{{ when | date: "%s" }} {% endfor %}"{% endif %} style="order: {{order}};" data-order="{{ order }}">
-  <div class="prefix">&bull;</div>
+{%- if event.featured -%}
+  {%- assign order = order | times: 0.01 -%}
+{%- endif -%}
+<div class="listing{% if event.featured %} featured{% endif %}" {% if event.when.first %}data-dates="{% for when in event.when %}{{ when | date: "%s" }} {% endfor %}"{% endif %} style="order: {{order}};" data-order="{{ order }}" data-hashable="{{ event.name|xml_escape }} {{ event.url|xml_escape }}">
+  <div class="prefix"></div>
   <div class="body">
     <div class="first-line"><a href="{{event.url}}" target="_blank">{{ event.name }}</a></div>
     <div class="second-line">
