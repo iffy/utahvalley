@@ -1,0 +1,61 @@
+<div id="filter-controls" class="filter-controls"></div>
+<script>
+// Filtering code
+window.addEventListener('load', () => {
+  const controls = document.getElementById('filter-controls');
+  const listings = Array.from(document.querySelectorAll('.listing'));
+  const tags = new Set();
+  const selected_tags = new Set();
+  const weekdays = new Set();
+
+  function updateListingFilters() {
+    listings.forEach(listing => {
+      if (selected_tags.size) {
+        listing.classList.add('filter-hidden');
+        let num_matching = 0;
+        for (const tag of selected_tags) {
+          if (listing.tags.has(tag)) {
+            num_matching += 1;
+          }
+        }
+        if (num_matching === selected_tags.size) {
+          listing.classList.remove('filter-hidden');
+        }
+      } else {
+        listing.classList.remove('filter-hidden');
+      }
+    })
+  }
+
+  listings.forEach(listing => {
+    let tags_elem = listing.querySelector('.tags');
+    if (tags_elem) {
+      listing.tags = new Set(tags_elem.innerText.split(', '));
+      listing.tags.forEach(tag => {
+        tags.add(tag);
+      })
+    } else {
+      listing.tags = new Set();
+    }
+  })
+  let sorted_tags = Array.from(tags);
+  sorted_tags.sort();
+  sorted_tags.forEach(tag => {
+    let tag_toggle = document.createElement('div');
+    tag_toggle.classList.add('tag-toggle');
+    tag_toggle.innerText = tag;
+    tag_toggle.addEventListener('click', () => {
+      if (tag_toggle.classList.contains('selected')) {
+        tag_toggle.classList.remove('selected');
+        selected_tags.delete(tag);
+      } else {
+        tag_toggle.classList.add('selected');
+        selected_tags.add(tag);
+      }
+      updateListingFilters();
+    }, false);
+    controls.appendChild(tag_toggle);
+  })
+  // console.log('tags', tags);
+}, false)
+</script>

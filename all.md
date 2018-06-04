@@ -12,6 +12,8 @@ permalink: /all/
 
 {%- assign start = site.data.startdate | date: "%s" | plus: 0 -%}
 
+{%- include filtering.html -%}
+
 <h2>All Future Events</h2>
 <div class="flex-order">
 {% assign sorted_events = events | sort: 'name' %}

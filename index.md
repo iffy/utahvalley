@@ -20,6 +20,8 @@ end1:  {{ end1 | date: "%s" }}
 end2:  {{ end2 | date: "%s" }}
 -->
 
+{%- include filtering.html -%}
+
 <h2><a name="this-week"></a>This week</h2>
 <div class="flex-order listings" id="this-week-listings">
 {%- assign sorted_events = events | sort: 'name' -%}

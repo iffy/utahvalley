@@ -2,6 +2,23 @@
  * My stuff
  */
 
+.filter-controls {
+  font-size: .7rem;
+  & > div {
+    margin-right: .5rem;
+  }
+  .tag-toggle {
+    display: inline-block;
+    border-radius: 2px;
+    padding: 2px 4px;
+    cursor: pointer;
+    user-select: none;
+
+    &.selected {
+      background-color: rgba(255, 234, 167,1.0);
+    }
+  }
+}
 
 li {
   line-spacing: 1rem;
@@ -9,6 +26,9 @@ li {
 .listing {
   .tags {
     color: grey;
+  }
+  &.filter-hidden {
+    display: none;
   }
   &.finished {
     opacity: 0.3;
@@ -59,7 +79,7 @@ li {
   }
   .second-line {
     color: grey;
-    font-size: 70%;
+    font-size: .7rem;
   }
   .calendar {
     display: inline-block;

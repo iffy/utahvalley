@@ -1312,7 +1312,7 @@
   tags:
     - outdoor
     - sitting
-    - active
+    - music
   when:
     - 2018-06-25
 - name: "Movies in the Park: Despicable Me"
@@ -1322,7 +1322,6 @@
   tags:
     - outdoor
     - sitting
-    - active
   when:
     - 2018-06-18
 - name: "Movies in the Park: Megamind"
@@ -1332,7 +1331,6 @@
   tags:
     - outdoor
     - sitting
-    - active
   when:
     - 2018-06-11
 - name: "Movies in the Park: How to Train Your Dragon"
@@ -1342,7 +1340,6 @@
   tags:
     - outdoor
     - sitting
-    - active
   when:
     - 2018-06-04
 - name: "Dive in Movie: Wreck It Ralph"
@@ -1535,6 +1532,7 @@
     - sitting
     - active
   when:
+    - May 30, 2018
 - name: Carnival
   partof: Pony Express Days
   url: http://eaglemountaincity.com/community/pony-express-days
@@ -1648,6 +1646,7 @@
   tags:
     - outdoor
     - sitting
+    - music
   when:
     - Jun 6, 2018
 
