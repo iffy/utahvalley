@@ -19,6 +19,7 @@
     - sitting
     - outdoor
     - baby-friendly
+    - sport
   when:
     - 2018-05-15
     - 2018-08-22
@@ -42,6 +43,7 @@
     - sitting
     - outdoor
     - baby-friendly
+    - sport
   when:
     - 2018-08-24
     - 2018-08-27
@@ -61,6 +63,7 @@
     - sitting
     - outdoor
     - baby-friendly
+    - sport
   when:
     - 2018-08-21
     - 2018-08-28
