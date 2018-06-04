@@ -11,6 +11,235 @@
 #     - sitting
 #     - active
 #   when:
+
+#----------------------
+# Eagle Mountain Movies in the Park
+#----------------------
+- name: Frozen
+  url: http://eaglemountaincity.com/community/pony-express-days/family-fun-night/family-movie-night
+  location: Eagle Mountain
+  price: free
+  tags:
+    - outdoor
+    - movie
+    - sitting
+  when:
+    - 2018-06-22
+- name: Coco
+  url: http://eaglemountaincity.com/community/pony-express-days/family-fun-night/family-movie-night
+  location: Eagle Mountain
+  price: free
+  tags:
+    - outdoor
+    - movie
+    - sitting
+  when:
+    - 2018-07-13
+- name: Back to the Future
+  url: http://eaglemountaincity.com/community/pony-express-days/family-fun-night/family-movie-night
+  location: Eagle Mountain
+  price: free
+  tags:
+    - outdoor
+    - movie
+    - sitting
+  when:
+    - 2018-07-28
+
+#----------------------
+# Springville Movies in the Park
+#----------------------
+- name: The BFG
+  url: https://www.springville.org/recreation/movies-in-the-park/
+  location: Springville
+  price: vendors
+  tags:
+    - outdoor
+    - movie
+    - sitting
+  when:
+    - 2018-06-18
+- name: LEGO Batman
+  url: https://www.springville.org/recreation/movies-in-the-park/
+  location: Springville
+  price: vendors
+  tags:
+    - outdoor
+    - movie
+    - sitting
+  when:
+    - 2018-06-25
+- name: Peter Rabbit
+  url: https://www.springville.org/recreation/movies-in-the-park/
+  location: Springville
+  price: vendors
+  tags:
+    - outdoor
+    - movie
+    - sitting
+  when:
+    - 2018-07-02
+- name: Despicable Me 3
+  url: https://www.springville.org/recreation/movies-in-the-park/
+  location: Springville
+  price: vendors
+  tags:
+    - outdoor
+    - movie
+    - sitting
+  when:
+    - 2018-07-09
+- name: Coco
+  url: https://www.springville.org/recreation/movies-in-the-park/
+  location: Springville
+  price: vendors
+  tags:
+    - outdoor
+    - movie
+    - sitting
+  when:
+    - 2018-07-16
+
+#----------------------
+# Lindon Movies
+#----------------------
+- name: The Emoji Movie
+  url: http://www.lindoncity.org/lindon-community-center.htm
+  location: Lindon
+  price: free
+  tags:
+    - outdoor
+    - movie
+    - sitting
+  when:
+    - 2018-06-22
+- name: Hoodwinked
+  url: http://www.lindoncity.org/lindon-community-center.htm
+  location: Lindon
+  price: free
+  tags:
+    - outdoor
+    - movie
+    - sitting
+  when:
+    - 2018-07-13
+- name: Megamind
+  url: http://www.lindoncity.org/lindon-community-center.htm
+  location: Lindon
+  price: free
+  tags:
+    - indoor
+    - movie
+    - sitting
+  when:
+    - 2018-06-14
+- name: Rio
+  url: http://www.lindoncity.org/lindon-community-center.htm
+  location: Lindon
+  price: free
+  tags:
+    - outdoor
+    - movie
+    - sitting
+  when:
+    - 2018-06-28
+- name: Monsters vs. Aliens
+  url: http://www.lindoncity.org/lindon-community-center.htm
+  location: Lindon
+  price: free
+  tags:
+    - outdoor
+    - movie
+    - sitting
+  when:
+    - 2018-07-12
+- name: Robots
+  url: http://www.lindoncity.org/lindon-community-center.htm
+  location: Lindon
+  price: free
+  tags:
+    - outdoor
+    - movie
+    - sitting
+  when:
+    - 2018-07-26
+
+#----------------------
+# Thanksgiving Point Movies
+#----------------------
+- name: Ferdinand
+  url: https://www.thanksgivingpoint.org/events/outdoor-movie-series/
+  partof: Thanksgiving Point
+  price: [0, 20]
+  tags:
+    - outdoor
+    - movie
+    - sitting
+  when:
+    - 2018-07-06
+- name: Jumanji
+  url: https://www.thanksgivingpoint.org/events/outdoor-movie-series/
+  partof: Thanksgiving Point
+  price: [0, 20]
+  tags:
+    - outdoor
+    - movie
+    - sitting
+  when:
+    - 2018-07-13
+- name: Robin Hood
+  url: https://www.thanksgivingpoint.org/events/outdoor-movie-series/
+  partof: Thanksgiving Point
+  price: [0, 20]
+  tags:
+    - outdoor
+    - movie
+    - sitting
+  when:
+    - 2018-07-20
+- name: Coco
+  url: https://www.thanksgivingpoint.org/events/outdoor-movie-series/
+  partof: Thanksgiving Point
+  price: [0, 20]
+  tags:
+    - outdoor
+    - movie
+    - sitting
+  when:
+    - 2018-07-27
+- name: The Greatest Showman
+  url: https://www.thanksgivingpoint.org/events/outdoor-movie-series/
+  partof: Thanksgiving Point
+  price: [0, 20]
+  tags:
+    - outdoor
+    - movie
+    - sitting
+  when:
+    - 2018-08-03
+- name: Black Panther
+  url: https://www.thanksgivingpoint.org/events/outdoor-movie-series/
+  partof: Thanksgiving Point
+  price: [0, 20]
+  tags:
+    - outdoor
+    - movie
+    - sitting
+  when:
+    - 2018-08-10
+
+
+- name: Fairy Tale Festival
+  url: https://www.thanksgivingpoint.org/events/fairy-tale-festival/
+  location: Lehi
+  price: [0, 20]
+  tags:
+    - outdoor
+    - baby-friendly
+    - active
+  when:
+    - 2018-06-23
+
 - name: Ninjago
   url: http://santaquin.org/cms/one.aspx?portalId=5893802&pageId=5893818&objectId.89674=12932181&contextId.89674=6396165&parentId.89674=6396166&ref=mesTP9fg96fVsgzpWYeogNC%2fTgUKSgchb3Z7f4xWpv4%3d
   location: Santaquin

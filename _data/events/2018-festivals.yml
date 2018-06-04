@@ -1,3 +1,78 @@
+#=======================================================
+- name: Salem Days
+  url: http://www.salemcity.org/salem-days.htm
+  location: Salem
+  price: vendors
+  tags:
+    - outdoor
+    - indoor
+    - baby-friendly
+    - active
+    - sitting
+  when:
+    - 2018-08-03
+    - 2018-08-04
+    - 2018-08-05
+    - 2018-08-06
+    - 2018-08-07
+    - 2018-08-08
+    - 2018-08-09
+    - 2018-08-10
+    - 2018-08-11
+- name: Cardboard Duct Tape Regatta
+  url: http://www.salemcity.org/salem-days-cardboard-duct-tape-regatta.htm
+  location: Salem
+  partof: Salem Days
+  price: [0, 15]
+  ticketsonsale: 2018-07-01
+  tags:
+    - outdoor
+    - active
+    - sitting
+  when:
+    - 2018-08-07
+- name: James the Mormon and Maddie Wilson
+  url: http://www.salemcity.org/monday-night-concerts.htm
+  location: Salem
+  partof: Salem Days
+  price: vendors
+  tags:
+    - outdoor
+    - music
+    - sitting
+  when:
+    - 2018-08-07
+- name: Trolls
+  url: http://www.salemcity.org/salem-days-family-movie-in-the-park.htm
+  location: Salem
+  partof: Salem Days
+  price: free
+  tags:
+    - outdoor
+    - movie
+  when:
+    - 2018-08-09
+- name: The Fab Folk
+  url: http://www.salemcity.org/salem-days-play-list-in-the-park.htm
+  location: Salem
+  partof: Salem Days
+  price: free
+  tags:
+    - outdoor
+    - music
+  when:
+    - 2018-08-11
+- name: Mud Volleyball Tournament
+  url: https://media.rainpos.com/1443/salemdaysmudvolleyballtournament2018_20180419143939.pdf
+  location: Salem
+  partof: Salem Days
+  price: [0, 35]
+  tags:
+    - sport
+    - outdoor
+  when:
+    - 2018-08-04
+#=======================================================
 - name: Santaquin Orchard Days
   url: http://www.santaquin.org/news/what_s_new/orchard_days
   location: Santaquin
@@ -23,6 +98,15 @@
   when:
     - 2018-07-21
 #=======================================================
+- name: Lehi Foam Day
+  url: https://www.lehi-ut.gov/recreation/events-celebrations/
+  location: Lehi
+  price: vendors
+  tags:
+    - outdoor
+    - active
+  when:
+    - 2018-07-24
 - name: Lehi Roundup
   url: https://www.lehi-ut.gov/roundup/
   location: Lehi
