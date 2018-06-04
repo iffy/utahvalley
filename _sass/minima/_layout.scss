@@ -63,7 +63,18 @@ li {
       content: '\2022';
     }
   }
-  &.favorite {
+  &.vote-no {
+    opacity: 0.2;
+    .prefix {
+      &:after {
+        content: '\00d7';
+      }
+    }
+    .second-line {
+      visibility: hidden;
+    }
+  }
+  &.vote-fave {
     .prefix {
       &:after {
         content: '\2665';

@@ -1,0 +1,66 @@
+- name: Santaquin Orchard Days
+  url: http://www.santaquin.org/news/what_s_new/orchard_days
+  location: Santaquin
+  price: vendors
+  tags:
+    - outdoor
+    - baby-friendly
+  when:
+    - 2018-07-30
+    - 2018-07-31
+    - 2018-08-01
+    - 2018-08-02
+    - 2018-08-03
+    - 2018-08-04
+#=======================================================
+- name: Mapleton Pioneer Day Celebration
+  url: http://mapleton.org/2018/05/21/pioneer-day-celebration-july-21-2018/
+  location: Mapleton
+  price: vendors
+  tags:
+    - outdoor
+    - baby-friendly
+  when:
+    - 2018-07-21
+#=======================================================
+- name: Lehi Roundup
+  url: https://www.lehi-ut.gov/roundup/
+  location: Lehi
+  price: vendors
+  tags:
+    - outdoor
+    - indoor
+    - active
+    - sitting
+    - baby-friendly
+  when:
+    - 2018-06-23
+    - 2018-06-24
+    - 2018-06-25
+    - 2018-06-26
+    - 2018-06-27
+    - 2018-06-28
+    - 2018-06-29
+    - 2018-06-30
+    - 2018-07-01
+- name: Chalk Art Contest
+  url: https://www.lehi-ut.gov/roundup/
+  partof: Lehi Roundup
+  location: Lehi
+  price: [0, 5]
+  tags:
+    - outdoor
+  when:
+    - 2018-06-25
+
+#=======================================================
+- name: Elk Ridge City Celebration
+  url: https://www.facebook.com/Elk-Ridge-City-Celebration-171218519696091/info?tab=page_info
+  location: Elk Ridge
+  price: vendors
+  tags:
+    - outdoor
+    - active
+    - baby-friendly
+  when:
+    - 2018-06-22

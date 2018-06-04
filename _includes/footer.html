@@ -1,9 +1,10 @@
 
 <script>
 // Favoriting code
-let favorites = JSON.parse(localStorage.getItem('favorites') || '[]');
-function saveFaves() {
-  localStorage.setItem('favorites', JSON.stringify(favorites));
+let votes = JSON.parse(localStorage.getItem('votes') || '{}');
+
+function saveVotes() {
+  localStorage.setItem('votes', JSON.stringify(votes));
 }
 document.querySelectorAll('.listing').forEach(listing => {
   let prefix = listing.querySelector('.prefix');
@@ -11,24 +12,24 @@ document.querySelectorAll('.listing').forEach(listing => {
   listing.setAttribute('data-hash', hash);
 
   // initial state
-  if (favorites.indexOf(hash) !== -1) {
-    listing.classList.add('favorite');
-  }
+  listing.classList.add(`vote-${votes[hash]}`);
+  
   prefix.addEventListener('click', ev => {
-    let idx = favorites.indexOf(hash);
-    if (idx === -1) {
-      document.querySelectorAll(`[data-hash="${hash}"]`).forEach(e => {
-        e.classList.add('favorite');
-      })
-      favorites.push(hash);
-      saveFaves();
+    if (votes[hash] === 'fave') {
+      votes[hash] = 'no';
+    } else if (votes[hash] === 'no') {
+      delete votes[hash];
     } else {
-      document.querySelectorAll(`[data-hash="${hash}"]`).forEach(e => {
-        e.classList.remove('favorite');
-      })
-      favorites.splice(favorites.indexOf(hash), 1);
-      saveFaves();
+      votes[hash] = 'fave';
     }
+
+    document.querySelectorAll(`[data-hash="${hash}"]`).forEach(item => {
+      item.classList.remove('vote-fave');
+      item.classList.remove('vote-no');
+      item.classList.remove('vote-undefined');
+      item.classList.add(`vote-${votes[hash]}`);
+    });
+    saveVotes();
   })
 })
 </script>

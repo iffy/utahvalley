@@ -30,7 +30,7 @@ window.addEventListener('load', () => {
   listings.forEach(listing => {
     let tags_elem = listing.querySelector('.tags');
     if (tags_elem) {
-      listing.tags = new Set(tags_elem.innerText.split(', '));
+      listing.tags = new Set(tags_elem.innerText.split(', ').filter(x => x));
       listing.tags.forEach(tag => {
         tags.add(tag);
       })

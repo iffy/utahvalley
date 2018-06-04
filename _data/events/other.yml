@@ -11,6 +11,38 @@
 #     - sitting
 #     - active
 #   when:
+- name: Ninjago
+  url: http://santaquin.org/cms/one.aspx?portalId=5893802&pageId=5893818&objectId.89674=12932181&contextId.89674=6396165&parentId.89674=6396166&ref=mesTP9fg96fVsgzpWYeogNC%2fTgUKSgchb3Z7f4xWpv4%3d
+  location: Santaquin
+  tags:
+    - movie
+  when:
+    - 2018-06-22
+- name: Cars 3
+  url: http://santaquin.org/cms/one.aspx?portalId=5893802&pageId=5893818&objectId.89674=12932181&contextId.89674=6396165&parentId.89674=6396166&ref=mesTP9fg96fVsgzpWYeogNC%2fTgUKSgchb3Z7f4xWpv4%3d
+  location: Santaquin
+  tags:
+    - movie
+  when:
+    - 2018-07-20
+- name: The Incredibles
+  url: http://santaquin.org/cms/one.aspx?portalId=5893802&pageId=5893818&objectId.89674=12932181&contextId.89674=6396165&parentId.89674=6396166&ref=mesTP9fg96fVsgzpWYeogNC%2fTgUKSgchb3Z7f4xWpv4%3d
+  location: Santaquin
+  tags:
+    - movie
+  when:
+    - 2018-09-14
+
+- name: Diamond Rio Concert
+  url: http://santaquin.org/cms/One.aspx?portalId=5893802&pageId=11353758
+  price: [20,35]
+  location: Santaquin
+  tags:
+    - music
+    - outdoor
+    - sitting
+  when:
+    - 2018-06-15
 
 - name: Utah Premiere Brass Band Concert
   url: http://www.upb.org/concerts
@@ -208,6 +240,7 @@
     - sitting
 - name: Spamalot
   url: http://www.sfctonline.org/
+  partof: Fiesta Days
   price: [8, 10]
   tags:
     - indoor
@@ -441,7 +474,7 @@
   price:
     - 15
     - 30
-- name: 'Outdoor Movie: Monty Python & the Holy Grail'
+- name: 'Monty Python & the Holy Grail'
   url: https://scera.org/events/monty-python-the-holy-grail/
   location: Orem
   partof: Scera
@@ -450,10 +483,11 @@
   tags:
     - outdoor
     - sitting
+    - movie
   price:
     - 3
     - 4
-- name: 'Outdoor Movie: Close Encounters of the Third Kind'
+- name: 'Close Encounters of the Third Kind'
   url: https://scera.org/events/close-encounters-of-the-third-kind/
   location: Orem
   partof: Scera
@@ -462,10 +496,11 @@
   tags:
     - outdoor
     - sitting
+    - movie
   price:
     - 3
     - 4
-- name: 'Outdoor Movie: Coco'
+- name: 'Coco'
   url: https://scera.org/events/coco/
   location: Orem
   partof: Scera
@@ -474,10 +509,11 @@
   tags:
     - outdoor
     - sitting
+    - movie
   price:
     - 3
     - 4
-- name: 'Outdoor Movie: Star Wars, The Last Jedi'
+- name: 'Star Wars, The Last Jedi'
   url: https://scera.org/events/star-wars-the-last-jedi/
   location: Orem
   partof: Scera
@@ -486,10 +522,11 @@
   tags:
     - outdoor
     - sitting
+    - movie
   price:
     - 3
     - 4
-- name: 'Outdoor Movie: Matilda'
+- name: 'Matilda'
   url: https://scera.org/events/matilda/
   location: Orem
   partof: Scera
@@ -498,10 +535,11 @@
   tags:
     - outdoor
     - sitting
+    - movie
   price:
     - 3
     - 4
-- name: 'Outdoor Movie: The Greatest Showman'
+- name: 'The Greatest Showman'
   url: 'https://scera.org/events/the-greatest-showman/'
   location: Orem
   partof: Scera
@@ -510,6 +548,7 @@
   tags:
     - outdoor
     - sitting
+    - movie
   price:
     - 3
     - 4
@@ -595,6 +634,7 @@
   tags:
     - outdoor
     - sitting
+    - movie
   when:
     - 2018-09-15
 - name: Moana
@@ -605,6 +645,7 @@
   tags:
     - outdoor
     - sitting
+    - movie
   when:
     - 2018-08-18
 - name: Finding Dory
@@ -615,6 +656,7 @@
   tags:
     - outdoor
     - sitting
+    - movie
   when:
     - 2018-07-14
 - name: The Secret Life of Pets
@@ -625,6 +667,7 @@
   tags:
     - outdoor
     - sitting
+    - movie
   when:
     - 2018-06-16
 - name: Payson Golden Onion Days
@@ -713,7 +756,7 @@
     - active
   when:
     - 2018-06-04
-- name: 'Outdoor Movie: Beauty and the Beast'
+- name: 'Beauty and the Beast'
   partof: Art City Days
   url: https://www.springville.org/art-city-days/
   location: Springville
@@ -721,6 +764,7 @@
   tags:
     - outdoor
     - sitting
+    - movie
   when:
     - 2018-06-04
 - name: Carnival
@@ -888,7 +932,7 @@
     - baby-friendly
   when:
     - Aug 7, 2018
-- name: 'Move in the Park: Coco'
+- name: 'Coco'
   partof: Lindon Days
   url: http://www.lindoncity.org/lindon-days.htm
   location: Lindon
@@ -896,6 +940,7 @@
   tags:
     - outdoor
     - sitting
+    - movie
   when:
     - Aug 7, 2018
 - name: Huck Finn Fishing
@@ -1085,6 +1130,7 @@
   tags:
     - indoor
     - sitting
+    - movie
   when:
     - 2018-09-14
 
@@ -1200,6 +1246,7 @@
   tags:
     - outdoor
     - sitting
+    - movie
   when:
     - Friday, July 20th
 - name: Marching Band Breakfast
@@ -1267,6 +1314,7 @@
   tags:
     - outdoor
     - sitting
+    - music
   when:
     - 2018-06-17
     - 2018-06-19
@@ -1305,7 +1353,7 @@
     - active
   when:
     - 2018-06-02
-- name: "Movies in the Park: Greatest Showman"
+- name: "Greatest Showman"
   url: https://www.provo.org/community/events-in-provo/movies-in-the-park
   location: Provo
   price: vendors
@@ -1313,33 +1361,37 @@
     - outdoor
     - sitting
     - music
+    - movie
   when:
     - 2018-06-25
-- name: "Movies in the Park: Despicable Me"
+- name: "Despicable Me"
   url: https://www.provo.org/community/events-in-provo/movies-in-the-park
   location: Provo
   price: vendors
   tags:
     - outdoor
     - sitting
+    - movie
   when:
     - 2018-06-18
-- name: "Movies in the Park: Megamind"
+- name: "Megamind"
   url: https://www.provo.org/community/events-in-provo/movies-in-the-park
   location: Provo
   price: vendors
   tags:
     - outdoor
     - sitting
+    - movie
   when:
     - 2018-06-11
-- name: "Movies in the Park: How to Train Your Dragon"
+- name: "How to Train Your Dragon"
   url: https://www.provo.org/community/events-in-provo/movies-in-the-park
   location: Provo
   price: vendors
   tags:
     - outdoor
     - sitting
+    - movie
   when:
     - 2018-06-04
 - name: "Dive in Movie: Wreck It Ralph"
@@ -1348,8 +1400,8 @@
   price: [0, 5]
   tags:
     - outdoor
-    - sitting
     - active
+    - movie
   when:
     - 2018-06-29
 - name: "Dive in Movie: Coco"
@@ -1358,8 +1410,8 @@
   price: [0, 5]
   tags:
     - outdoor
-    - sitting
     - active
+    - movie
   when:
     - 2018-05-25
 
@@ -1448,6 +1500,7 @@
   tags:
     - outdoor
     - sitting
+    - movie
   when:
     - 2018-07-30
 - name: Kids Night
@@ -1531,6 +1584,7 @@
     - baby-friendly
     - sitting
     - active
+    - movie
   when:
     - May 30, 2018
 - name: Carnival
