@@ -1,3 +1,16 @@
+- name: Iceland Days
+  url: https://www.facebook.com/events/254337395104143/
+  location: Spanish Fork
+  price: free
+  tags:
+    - indoor
+    - outdoor
+    - active
+    - sitting
+  when:
+    - 2018-06-22
+    - 2018-06-23
+    - 2018-06-24
 #=======================================================
 - name: Salem Days
   url: http://www.salemcity.org/salem-days.htm
