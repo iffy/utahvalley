@@ -11,6 +11,16 @@
 #     - sitting
 #     - active
 #   when:
+- name: MOA Family Arts Festival
+  url: 'https://www.facebook.com/events/239508803263358/'
+  location: Provo
+  partof: null
+  minage: null
+  when:
+    - '2018-06-15'
+  tags:
+    - indoor
+  price: free
 
 #----------------------
 # Eagle Mountain Movies in the Park
