@@ -19,7 +19,13 @@ permalink: /all/
 {% assign sorted_events = events | sort: 'name' %}
 {% for event in sorted_events %}
 {% assign show = false %}
-{% for when in event.when %}
+{%- assign whens = event.when -%}
+{%- if whens.first -%}
+{%- else -%}
+    {%- assign whens = event.when|split:',' -%}
+{%- endif -%}
+
+{% for when in whens %}
   {% assign ts = when | date: "%s" | plus: 0 %}
   {% if ts >= start %}
     {% assign show = true %}

@@ -1,27 +1,35 @@
 {%- assign time_start = include.start -%}
 
 {%- assign order = 0 -%}
-{%- assign whens = "" | split: "" -%}
 {%- assign nwhens = "" | split: "" -%}
+{%- assign whens = "" | split: "" -%}
+{%- assign all_whens = "" | split: "" -%}
 {%- if event.when.first -%}
-  {%- for when in event.when -%}
-    {%- assign nwhen = when | date: "%s" | plus: 0 -%}
-    {%- if nwhen >= time_start -%}
-      {%- assign whens = whens | push: when -%}
-    {%- endif -%}
-    {%- assign nwhens = nwhens | push: nwhen -%}
-  {%- endfor -%}
-  {%- for when in whens -%}
-    {%- assign date = when | date: "%s" | plus: 0 -%}
-    {%- if date >= time_start and (order == 0 or date < order) -%}
-      {%- assign order = date -%}
-    {%- endif -%}
-  {%- endfor -%}
+  {%- assign all_whens = event.when -%}
+{%- else -%}
+  {%- assign all_whens = event.when|split:',' -%}
 {%- endif -%}
+
+{%- for when in all_whens -%}
+  {%- assign nwhen = when | date: "%s" | plus: 0 -%}
+  {%- if nwhen >= time_start -%}
+    {%- assign whens = whens | push: when -%}
+  {%- endif -%}
+  {%- assign nwhens = nwhens | push: nwhen -%}
+{%- endfor -%}
+
+{%- for when in whens -%}
+  {%- assign date = when | date: "%s" | plus: 0 -%}
+  {%- if date >= time_start and (order == 0 or date < order) -%}
+    {%- assign order = date -%}
+  {%- endif -%}
+{%- endfor -%}
+
 {%- if event.featured -%}
   {%- assign order = order | times: 0.01 -%}
 {%- endif -%}
-<div class="listing{% if event.featured %} featured{% endif %}" {% if event.when.first %}data-dates="{% for when in event.when %}{{ when | date: "%s" }} {% endfor %}"{% endif %} style="order: {{order}};" data-order="{{ order }}" data-hashable="{{ event.name|xml_escape }} {{ event.url|xml_escape }}">
+
+<div class="listing{% if event.featured %} featured{% endif %}" data-dates="{% for when in whens %}{{ when | date: "%s" }} {% endfor %}" style="order: {{order}};" data-order="{{ order }}" data-hashable="{{ event.name|xml_escape }} {{ event.url|xml_escape }}">
   <div class="prefix"></div>
   <div class="body">
     <div class="first-line"><a href="{{event.url}}" target="_blank">{{ event.name }}</a></div>
@@ -65,17 +73,13 @@
       {%- endif -%}
 
       <span class="segment" data-name="when">
-      {%- if event.when.first -%}
-        {%- assign num_events = whens | size -%}
-        {%- if num_events == 1 -%}
-          {{ whens.first | date: "%a, %b %-d" }}
-        {%- elsif num_events == 2 -%}
-          {{ whens.first | date: "%a, %b %-d" }} and {{ whens.last | date: "%a, %b %-d" }}
-        {%- else -%}
-          {{ num_events }} times {{ whens.first | date: "%a, %b %-d" }}-{{ whens.last | date: "%a, %b %-d"}}
-        {%- endif -%}
+      {%- assign num_events = whens | size -%}
+      {%- if num_events == 1 -%}
+        {{ whens.first | date: "%a, %b %-d" }}
+      {%- elsif num_events == 2 -%}
+        {{ whens.first | date: "%a, %b %-d" }} and {{ whens.last | date: "%a, %b %-d" }}
       {%- else -%}
-        {{ event.when }}
+        {{ num_events }} times {{ whens.first | date: "%a, %b %-d" }}-{{ whens.last | date: "%a, %b %-d"}}
       {%- endif -%}
       </span>
 
@@ -84,7 +88,12 @@
       {%- endif -%}
 
       {%- if event.tags -%}
-        <span class="segment tags" data-name="tags">{{ event.tags | sort | join: ', ' }}</span>
+        {%- assign tags = event.tags -%}
+        {%- if tags.first -%}
+        {%- else -%}
+          {%- assign tags = tags | split: ',' -%}
+        {%- endif -%}
+        <span class="segment tags" data-name="tags">{{ tags | sort | join: ', ' }}</span>
       {%- endif -%}
     </div>
   </div>
