@@ -14,6 +14,8 @@ permalink: /
 {%- assign end1 = start | plus: 604800 -%}
 {%- assign end2 = end1 | plus: 604800 -%}
 
+{%- assign sorted_events = events|sort:'name' -%}
+
 <!--
 start: {{ start | date: "%s" }}
 end1:  {{ end1 | date: "%s" }}
@@ -23,8 +25,7 @@ end2:  {{ end2 | date: "%s" }}
 {%- include filtering.html -%}
 
 <h2><a name="this-week"></a>This week</h2>
-<div class="flex-order listings" id="this-week-listings">
-{%- assign sorted_events = events | sort: 'name' -%}
+<table class="listings" id="this-week-listings">
 {%- for event in sorted_events -%}
   {%- assign show = false -%}
   {%- for when in event.when -%}
@@ -38,11 +39,10 @@ end2:  {{ end2 | date: "%s" }}
     {%- include event_listing.html event=event start=start showcal=true -%}
   {%- endif -%}
 {%- endfor -%}
-</div>
+</table>
 
 <h2><a name="next-week"></a>Next week</h2>
-<div class="flex-order listings">
-{%- assign sorted_events = events | sort: 'name' -%}
+<table class="listings">
 {%- for event in sorted_events -%}
   {%- assign show = false -%}
   {%- for when in event.when -%}
@@ -56,7 +56,7 @@ end2:  {{ end2 | date: "%s" }}
     {%- include event_listing.html event=event start=end1 showcal=true -%}
   {%- endif -%}
 {%- endfor -%}
-</div>
+</table>
 
 <script>
 const thisweek_end = {{ end1 }};

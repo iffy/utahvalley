@@ -14,9 +14,10 @@ permalink: /all/
 
 {%- include filtering.html -%}
 
+{% assign sorted_events = events|sort:'name' %}
+
 <h2>All Future Events</h2>
-<div class="flex-order">
-{% assign sorted_events = events | sort: 'name' %}
+<table class="listings">
 {% for event in sorted_events %}
 {% assign show = false %}
 {%- assign whens = event.when -%}
@@ -36,7 +37,7 @@ permalink: /all/
   {% include event_listing.html event=event start=start showcal=false %}
 {% endif %}
 {% endfor %}
-</div>
+</table>
 
 {% include legend.html %}
 

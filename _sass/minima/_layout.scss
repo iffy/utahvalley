@@ -23,111 +23,74 @@
 li {
   line-spacing: 1rem;
 }
-.listing {
-  .tags {
-    color: grey;
+table.listings {
+  border-collapse: collapse;
+  width: 100%;
+
+  a:visited {
+    color: purple;
   }
-  &.filter-hidden {
-    display: none;
-  }
-  &.finished {
-    opacity: 0.3;
-  }
-  &.sfeatured {
-    background-color: rgba(116, 185, 255, 0.1);
-    border: 2px solid rgba(116, 185, 255,1.0);
-    padding: 0.5rem;
-    margin-left: -0.5rem;
-    margin-right: -0.5rem;
-    border-radius: 4px;
-  }
-  margin-bottom: 5px;
-  display: flex;
   a:hover {
     text-decoration: none;
-    .prefix {
-      color: #0984e3;
-    }
+    color: green;
   }
-  a:visited {
-    color: #2d3436;
-  }
-  .prefix {
-    padding-right: .5rem;
-    flex-basis: min-content;
-    flex-grow: 0;
-    flex-shrink: 0;
-    text-align: center;
-    width: 1rem;
-    &:after {
-      content: '\2022';
-    }
-  }
-  &.vote-no {
-    opacity: 0.2;
-    .prefix {
-      &:after {
-        content: '\00d7';
-      }
-    }
-    .second-line {
-      visibility: hidden;
-    }
-  }
-  &.vote-fave {
-    .prefix {
-      &:after {
-        content: '\2665';
-        color: rgba(214, 48, 49,1.0);
-      }
-    }
-  }
-  .body {
-    flex-grow: 1;
-  }
-  .first-line {
+
+  td {
+    border: 1px solid lightgrey;
+    border-width: 1px 0;
+    padding: 0 .5rem;
     font-size: 1rem;
   }
-  .second-line {
-    color: grey;
+  tr:hover td {
+    background-color: aliceblue;
+  }
+  tr.listing {
+    &.filter-hidden {
+      display: none;
+    }
+  }
+  .price {
     font-size: .7rem;
+    .free {
+      color: green;
+    }
+    .cost {
+    }
   }
   .calendar {
-    display: inline-block;
-    border-collapse: collapse;
-    padding: 0;
-    margin: 0;
-    > div {
-      display: inline-block;
+    display: flex;
+    align-items: center;
+    height: 100%;
+    .calendar-day {
+      font-size: .7rem;
       padding: 0;
-      border-width: 1px 0px 1px 1px;
       width: 14px;
-      color: lightgrey;
+      color: black;
+      opacity: 0.1;
       position: relative;
       text-align: center;
       &.included {
-        color: black;
-        border-bottom: 1px solid grey;
-      }
-      &:last-child {
-        border-right-width: 1px;
+        opacity: 1;
       }
     }
   }
-  .segment {
-    display: inline-block;
+  .name {
   }
-  .segment::before {
-    content: '|';
-    display: inline-block;
-    padding: 0 5px;
-    opacity: 0.5;
+  .location {
+    font-size: .7rem;
   }
-  .segment:first-child::before {
-    content: '';
-    padding: 0;
+  .tags {
+    color: grey;
+    font-size: .7rem;
+  }
+  .partof {
+    font-size: .7rem;
+  }
+  .dates {
+    font-size: .7rem;
   }
 }
+
 .today-marker {
   border-top: 2px solid #00b894;
   color: #00b894;

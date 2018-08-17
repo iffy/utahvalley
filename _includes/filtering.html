@@ -1,4 +1,5 @@
 <div id="filter-controls" class="filter-controls"></div>
+
 <script>
 // Filtering code
 window.addEventListener('load', () => {
@@ -58,4 +59,28 @@ window.addEventListener('load', () => {
   })
   // console.log('tags', tags);
 }, false)
+</script>
+
+<script>
+// Ordering code
+// From https://www.w3schools.com/howto/howto_js_sort_table.asp
+window.addEventListener('load', () => {
+  const tables = Array.from(document.querySelectorAll('table.listings'));
+  tables.forEach(table => {
+    let switching = true;
+    while (switching) {
+      switching = false;
+      rows = table.rows;
+      for (let i = 0; i < (rows.length - 1); i++) {
+        let x = rows[i].getAttribute('data-order');
+        let y = rows[i + 1].getAttribute('data-order');;
+        if (Number(x) > Number(y)) {
+          rows[i].parentNode.insertBefore(rows[i + 1], rows[i]);
+          switching = true;
+          break;
+        }
+      }
+    }
+  })
+})
 </script>

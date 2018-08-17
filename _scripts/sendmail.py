@@ -24,26 +24,25 @@ class Doer(object):
         for child in thisweeklistings.children:
             # print child
             # print list(child.children)
+            if not hasattr(child, 'attrs'):
+                continue
             order = long(child.attrs['data-order'])
 
             name = None
-            href = child.find('a').attrs['href']
-            divs = child.find_all('div')
-            secondline = None
-            for div in divs:
-                classes = div.attrs['class']
-                if 'first-line' in classes:
-                    name = div.text
-                elif 'second-line' in classes:
-                    secondline = u' | '.join(
-                        [x.text for x in list(div.children)[1:] if hasattr(x, 'text')]
-                    )
+            href = None
+            for td in child.children:
+                try:
+                    if 'name' in td.attrs.get('class'):
+                        name = td.text.strip()
+                        href = td.find('a').attrs['href']
+                except:
+                    pass
+            
             item = {
                 'order': order,
-                'content': '<li><div class="first-line"><a href="{href}" class="mc-template-link">{title}</a></div><div class="second-line">{secondline}</div></li>'.format(
+                'content': '<li><a href="{href}" class="mc-template-link">{title}</a></li>'.format(
                     href=cgi.escape(href),
                     title=cgi.escape(name),
-                    secondline=cgi.escape(secondline),
                 ),
             }
             items.append(item)

@@ -29,7 +29,59 @@
   {%- assign order = order | times: 0.01 -%}
 {%- endif -%}
 
-<div class="listing{% if event.featured %} featured{% endif %}" data-dates="{% for when in whens %}{{ when | date: "%s" }} {% endfor %}" style="order: {{order}};" data-order="{{ order }}" data-hashable="{{ event.name|xml_escape }} {{ event.url|xml_escape }}">
+<tr data-dates="{% for when in whens %}{{ when | date: "%s" }} {% endfor %}" data-order="{{ order }}" data-hashable="{{ event.name|xml_escape }} {{ event.url|xml_escape }}" class="listing">
+  {% if include.showcal %}
+  <td>
+    <div class="calendar">
+      {%- for num in (0...6) -%}
+      {%- assign seconds_after = num | times: 86400 -%}
+      {%- assign thisday = time_start | plus: seconds_after -%}
+      {%- assign nextday = thisday | plus: 86400 -%}
+      <div class="calendar-day {% for nwhen in nwhens -%}
+        {%- if (nwhen >= thisday) and (nwhen < nextday -%}included {% endif -%}
+      {%- endfor -%}" date-date-marker="{{ thisday }}">{{ thisday | date: "%a" | truncate: 1, ''}}</div>
+      {%- endfor -%}
+    </div>
+  </td>
+  {% else %}
+  <td class="dates">
+    {%- assign num_events = whens | size -%}
+    {%- if num_events == 1 -%}
+      {{ whens.first | date: "%b %-d" }}
+    {%- else -%}
+      {{ whens.first | date: "%b %-d" }}-{{ whens.last | date: "%b %-d"}}
+    {%- endif -%}
+  </td>
+  {% endif %}
+  <td class="price">
+    {%- if event.price == 'free' or event.price == 'FREE' -%}
+      <span class="free"></span>
+    {%- elsif event.price == 'vendors' -%}
+      <span class="vendors">V</span>
+    {%- elsif event.price -%}
+      <span class="cost">$</span>
+    {%- else -%}
+      <span class="unknown">?</span>
+    {%- endif -%}
+  </td>
+  <td class="name">
+    <a href="{{event.url}}" target="_blank">{{ event.name }}</a>
+  </td>
+  <td class="location">
+    {{ event.location }}
+  </td>
+  <td class="tags">
+    {%- if event.tags -%}
+      {%- assign tags = event.tags -%}
+      {%- if tags.first -%}
+      {%- else -%}
+        {%- assign tags = tags | split: ',' -%}
+      {%- endif -%}
+      {{ tags | sort | join: ', ' }}
+    {%- endif -%}
+  </td>
+</tr>
+<!-- 
   <div class="prefix"></div>
   <div class="body">
     <div class="first-line"><a href="{{event.url}}" target="_blank">{{ event.name }}</a></div>
@@ -75,11 +127,11 @@
       <span class="segment" data-name="when">
       {%- assign num_events = whens | size -%}
       {%- if num_events == 1 -%}
-        {{ whens.first | date: "%a, %b %-d" }}
+        {{ whens.first | date: "%b %-d" }}
       {%- elsif num_events == 2 -%}
-        {{ whens.first | date: "%a, %b %-d" }} and {{ whens.last | date: "%a, %b %-d" }}
+        {{ whens.first | date: "%b %-d" }} and {{ whens.last | date: "%b %-d" }}
       {%- else -%}
-        {{ num_events }} times {{ whens.first | date: "%a, %b %-d" }}-{{ whens.last | date: "%a, %b %-d"}}
+        {{ num_events }} times {{ whens.first | date: "%b %-d" }}-{{ whens.last | date: "%b %-d"}}
       {%- endif -%}
       </span>
 
@@ -97,4 +149,4 @@
       {%- endif -%}
     </div>
   </div>
-</div>
+</div> -->

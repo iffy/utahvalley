@@ -6,11 +6,11 @@ permalink: /ongoing/
 ---
 
 <h2>Ongoing</h2>
-<div class="listings">
+<table class="listings">
 {% for event in site.data.ongoing %}
   {% include event_listing.html event=event %}
 {% endfor %}
-</div>
+</table>
 
 {% include legend.html %}
 
