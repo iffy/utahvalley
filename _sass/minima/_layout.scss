@@ -55,7 +55,7 @@ table.listings {
       }
     }
     &.vote-no {
-      opacity: 0.5;
+      opacity: .15;
       .vote {
         &:after {
           content: '\00d7';
