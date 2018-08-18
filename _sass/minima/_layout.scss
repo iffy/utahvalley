@@ -48,6 +48,28 @@ table.listings {
     &.filter-hidden {
       display: none;
     }
+    .vote {
+      &:after {
+        content: '\2665';
+        color: lightgrey;
+      }
+    }
+    &.vote-no {
+      opacity: 0.5;
+      .vote {
+        &:after {
+          content: '\00d7';
+          color: lightgrey;
+        }
+      }
+    }
+    &.vote-fave {
+      .vote {
+        &:after {
+          color: rgba(214, 48, 49, 1.0);
+        }
+      }
+    }
   }
   .price {
     font-size: .7rem;

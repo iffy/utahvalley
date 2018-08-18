@@ -30,6 +30,7 @@
 {%- endif -%}
 
 <tr data-dates="{% for when in whens %}{{ when | date: "%s" }} {% endfor %}" data-order="{{ order }}" data-hashable="{{ event.name|xml_escape }} {{ event.url|xml_escape }}" class="listing">
+  <td><div class="vote"></div></td>
   {% if include.showcal %}
   <td>
     <div class="calendar">
