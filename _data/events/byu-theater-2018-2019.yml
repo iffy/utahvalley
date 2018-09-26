@@ -1,3 +1,14 @@
+- name: 'They All Saw a Cat'
+  url: 'https://www.andrewmaxfield.org/2018/06/30/they-all-saw-a-cat-byu-provo-2018/'
+  location: Provo
+  minage: 0
+  when:
+    - 2018-09-29
+  tags:
+    - music
+    - theater
+    - sitting
+  price: free
 - name: 'The World''s Strongest Librarian'
   url: 'https://arts.byu.edu/2018/05/byu-announces-2018-19-theatre-season/'
   location: Provo

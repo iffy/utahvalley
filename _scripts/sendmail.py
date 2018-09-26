@@ -125,6 +125,9 @@ def templates():
 @cli.command()
 @click.argument('path')
 def get(path):
+    """
+    Perform a GET request to MailChimp
+    """
     doer = Doer()
     s = doer.session()
     r = s.get(API_ROOT + path)
@@ -134,6 +137,9 @@ def get(path):
 @click.option('-u', '--url',
     default='http://fun.iffycan.com')
 def scrape(url):
+    """
+    Scrape a mattslist website
+    """
     doer = Doer()
     result = doer.scrape(url)
     print json.dumps(result, indent=2)
