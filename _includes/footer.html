@@ -7,14 +7,15 @@ function saveVotes() {
   localStorage.setItem('votes', JSON.stringify(votes));
 }
 document.querySelectorAll('.listing').forEach(listing => {
-  let prefix = listing.querySelector('.prefix');
+  let vote = listing.querySelector('.vote');
   const hash = sha1(listing.getAttribute('data-hashable')).substr(0, 8);
+  // add hash
   listing.setAttribute('data-hash', hash);
 
   // initial state
   listing.classList.add(`vote-${votes[hash]}`);
   
-  prefix.addEventListener('click', ev => {
+  vote.addEventListener('click', ev => {
     if (votes[hash] === 'fave') {
       votes[hash] = 'no';
     } else if (votes[hash] === 'no') {
