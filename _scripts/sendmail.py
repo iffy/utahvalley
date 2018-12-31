@@ -8,6 +8,9 @@ from bs4 import BeautifulSoup
 
 TEMPLATE_ID=419529
 
+
+class EmptyBody(Exception): pass
+
 class Doer(object):
 
     def session(self):
@@ -21,6 +24,8 @@ class Doer(object):
         thedate = soup.find(id="this-week-date").text
         thisweeklistings = soup.find(id='this-week-listings')
         items = []
+        if len(thisweeklistings.children) == 0:
+            raise EmptyBody()
         for child in thisweeklistings.children:
             # print child
             # print list(child.children)
@@ -165,7 +170,10 @@ def makecampaign(template_id, list_id, date, body, url, send=False):
 
     if url:
         print 'Scraping:', url
-        scraped = doer.scrape(url)
+        try:
+            scraped = doer.scrape(url)
+        except EmptyBody:
+            return
         date = scraped['date']
         body = scraped['body']
 
