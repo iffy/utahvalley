@@ -240,6 +240,7 @@ class EventManager {
   private newevent_form = document.getElementById('newevent-form') as HTMLFormElement;
   private newevent_name = document.getElementById('newevent-name') as HTMLInputElement;
   private newevent_url = document.getElementById('newevent-url') as HTMLInputElement;
+  private newevent_location = document.getElementById('newevent-location') as HTMLInputElement;
   private newevent_price = document.getElementById('newevent-price') as HTMLSelectElement;
   private newevent_dates = new CalendarPicker(document.getElementById('newevent-calendar') as HTMLElement);
 
@@ -273,6 +274,7 @@ class EventManager {
       url: this.newevent_url.value,
       author: this.uid,
       dates: this.newevent_dates.value(),
+      location: this.newevent_location.value,
       tags,
       price,
     }
@@ -289,8 +291,9 @@ class EventManager {
     this.newevent_name.focus();
   }
 
-  private this_week_listing = document.getElementById('this-week') as HTMLTableSectionElement;
-  private next_week_listing = document.getElementById('next-week') as HTMLTableSectionElement;
+  private this_week_listing = document.getElementById('this-week') as HTMLDivElement;
+  private next_week_listing = document.getElementById('next-week') as HTMLDivElement;
+  private all_listing = document.getElementById('all-events') as HTMLDivElement;
   refreshTables() {
     let this_weeks_events = this.events.filter(x => {
       for (const date of (x.dates || [])) {
@@ -311,6 +314,8 @@ class EventManager {
       return false;
     })
     this.createListingTable(next_weeks_events, this.next_week_listing, this.nextweeksdates);
+
+    this.createListingTable(this.events, this.all_listing, []);
   }
 
   /**
@@ -339,20 +344,22 @@ class EventManager {
       row.appendChild(makeCell('dates', formatDates(event.dates || [])));
 
       // mini calendar
-      let minical = makeCell('', '');
-      let minical_container = document.createElement('div');
-      minical_container.classList.add('minical');
-      minical.appendChild(minical_container);
-      dates.forEach(dayofweek => {
-        let day = document.createElement('span');
-        day.innerText = daysOfWeek[parseIsoDate(dayofweek).getDay()][0];
-        if ((event.dates || []).indexOf(dayofweek) !== -1) {
-          day.classList.add('highlight');
-        }
-        minical_container.appendChild(day);
-      })
-      row.appendChild(minical);
-
+      if (dates.length) {
+        let minical = makeCell('', '');
+        let minical_container = document.createElement('div');
+        minical_container.classList.add('minical');
+        minical.appendChild(minical_container);
+        dates.forEach(dayofweek => {
+          let day = document.createElement('span');
+          day.innerText = daysOfWeek[parseIsoDate(dayofweek).getDay()][0];
+          if ((event.dates || []).indexOf(dayofweek) !== -1) {
+            day.classList.add('highlight');
+          }
+          minical_container.appendChild(day);
+        })
+        row.appendChild(minical);  
+      }
+      
       // price
       let price_string = "?";
       if (event.price === "free") {

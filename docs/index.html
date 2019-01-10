@@ -50,41 +50,45 @@
     <section id="submit-section">
       <hr/>
       <h2>Submit event</h2>
-        <form id="newevent-form" class="vert-form">
-          <label>Event name</label>
-          <input type="text" id="newevent-name" required>
-          
-          <label>URL</label>
-          <input type="text" id="newevent-url" required>
+      <form id="newevent-form" class="vert-form">
+        <label>Event name</label>
+        <input type="text" id="newevent-name" required>
+        
+        <label>URL</label>
+        <input type="text" id="newevent-url" required>
 
-          <label>City</label>
-          <input type="text" id="newevent-location" required>
+        <label>City</label>
+        <input type="text" id="newevent-location" required>
 
-          <label>Price</label>
-          <select id="newevent-price">
-            <option value="">?</option>
-            <option value="yes">Yes (it costs money)</option>
-            <option value="vendors">Vendors present</option>
-            <option value="free">Free</option>
-          </select>
+        <label>Price</label>
+        <select id="newevent-price">
+          <option value="">?</option>
+          <option value="yes">Yes (it costs money)</option>
+          <option value="vendors">Vendors present</option>
+          <option value="free">Free</option>
+        </select>
 
-          <label>Tags</label>
-          <div class="tags-form">
-            <label><input type="checkbox" name="tag-indoor"/> Indoor</label>
-            <label><input type="checkbox" name="tag-outdoor"/> Outdoor</label>
-            <label><input type="checkbox" name="tag-baby friendly"/> Baby friendly</label>
-            <label><input type="checkbox" name="tag-family friendly"/> Family friendly</label>
-            <label><input type="checkbox" name="tag-couple friendly"/> Couple friendly</label>
-            <label><input type="checkbox" name="tag-music"/> Music</label>
-            <label><input type="checkbox" name="tag-theater"/> Theater</label>
-          </div>
+        <label>Tags</label>
+        <div class="tags-form">
+          <label><input type="checkbox" name="tag-indoor"/> Indoor</label>
+          <label><input type="checkbox" name="tag-outdoor"/> Outdoor</label>
+          <label><input type="checkbox" name="tag-baby friendly"/> Baby friendly</label>
+          <label><input type="checkbox" name="tag-family friendly"/> Family friendly</label>
+          <label><input type="checkbox" name="tag-couple friendly"/> Couple friendly</label>
+          <label><input type="checkbox" name="tag-music"/> Music</label>
+          <label><input type="checkbox" name="tag-theater"/> Theater</label>
+        </div>
 
-          <label>When</label>
-          <div id="newevent-calendar"></div>
-          
-          <div><button type="submit">Submit</button></div>
-        </form>
-      </div>
+        <label>When</label>
+        <div id="newevent-calendar"></div>
+        
+        <div><button type="submit">Submit</button></div>
+      </form>
+    </section>
+
+    <section>
+      <h2>All events</h2>
+      <div id="all-events"></div>
     </section>
   </div>
   <footer>

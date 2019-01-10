@@ -52,10 +52,12 @@ var EventManager = /** @class */ (function () {
         this.newevent_form = document.getElementById('newevent-form');
         this.newevent_name = document.getElementById('newevent-name');
         this.newevent_url = document.getElementById('newevent-url');
+        this.newevent_location = document.getElementById('newevent-location');
         this.newevent_price = document.getElementById('newevent-price');
         this.newevent_dates = new CalendarPicker(document.getElementById('newevent-calendar'));
         this.this_week_listing = document.getElementById('this-week');
         this.next_week_listing = document.getElementById('next-week');
+        this.all_listing = document.getElementById('all-events');
         this.weekstartdate = new Date();
         while (this.weekstartdate.getDay() !== 1) {
             this.weekstartdate.setDate(this.weekstartdate.getDate() - 1);
@@ -332,6 +334,7 @@ var EventManager = /** @class */ (function () {
                             url: this.newevent_url.value,
                             author: this.uid,
                             dates: this.newevent_dates.value(),
+                            location: this.newevent_location.value,
                             tags: tags,
                             price: price,
                         };
@@ -379,6 +382,7 @@ var EventManager = /** @class */ (function () {
             return false;
         });
         this.createListingTable(next_weeks_events, this.next_week_listing, this.nextweeksdates);
+        this.createListingTable(this.events, this.all_listing, []);
     };
     /**
      *  Display a list of events as a table inside the given element.
@@ -403,19 +407,21 @@ var EventManager = /** @class */ (function () {
             // row.appendChild(makeCell('vote', ''));
             row.appendChild(makeCell('dates', formatDates(event_3.dates || [])));
             // mini calendar
-            var minical = makeCell('', '');
-            var minical_container = document.createElement('div');
-            minical_container.classList.add('minical');
-            minical.appendChild(minical_container);
-            dates.forEach(function (dayofweek) {
-                var day = document.createElement('span');
-                day.innerText = daysOfWeek[parseIsoDate(dayofweek).getDay()][0];
-                if ((event_3.dates || []).indexOf(dayofweek) !== -1) {
-                    day.classList.add('highlight');
-                }
-                minical_container.appendChild(day);
-            });
-            row.appendChild(minical);
+            if (dates.length) {
+                var minical = makeCell('', '');
+                var minical_container_1 = document.createElement('div');
+                minical_container_1.classList.add('minical');
+                minical.appendChild(minical_container_1);
+                dates.forEach(function (dayofweek) {
+                    var day = document.createElement('span');
+                    day.innerText = daysOfWeek[parseIsoDate(dayofweek).getDay()][0];
+                    if ((event_3.dates || []).indexOf(dayofweek) !== -1) {
+                        day.classList.add('highlight');
+                    }
+                    minical_container_1.appendChild(day);
+                });
+                row.appendChild(minical);
+            }
             // price
             var price_string = "?";
             if (event_3.price === "free") {
