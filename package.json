@@ -1,0 +1,6 @@
+{
+  "devDependencies": {
+    "firebase": "^5.7.2",
+    "typescript": "^3.2.2"
+  }
+}

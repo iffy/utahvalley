@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>mattslist</title>
+   <meta charset="UTF-8">
+   <link rel="shortcut icon" href="./assets/favicon.png" type="image/png">
+   <link rel="stylesheet" type="text/css" href="./mattslist.css">
+</head>
+<body class="loading">
+  <div class="wrap">
+    <header>
+      <div class="title">
+        mattslist
+        <svg viewBox="0 0 90 30" width="70px" height="15px">
+          <path fill="#fdcb6e" d="M0,30L20,0L40,0L20,30z" />
+          <path fill="#6c5ce7" d="M25,30L45,0L65,0L45,30z" />
+          <path fill="#00b894" d="M50,30L70,0L90,0L70,30z" />
+        </svg>
+        <span class="thisweekdates"></span>
+      </div>
+      
+      <div class="auth">
+        <div id="signin-pane">
+          <form id="signin-form">
+            Email: <input type="email" id="signin-email">
+            <button type="submit">Sign in</button>
+          </form>
+        </div>
+        <div id="signed-in-pane" style="">
+          <a href="#" id="signout-button">Sign out <span id="signin-identity"></span></a>
+        </div>
+      </div>
+    </header>
+
+    <section class="subheader">
+      Fun family/date events around Utah valley &mdash; Sign in to submit an event &mdash; <a href="mailto:haggardii+uv@gmail.com" target="_blank">Report an error</a>
+    </section>
+
+    <div id="messages" class="messages">
+    </div>
+
+
+    <section id="this-week-section">
+      <h2>This week</h2>
+      <div id="this-week"></div>
+      <h2>Next week</h2>
+      <div id="next-week"></div>
+    </section>
+
+    <section id="submit-section">
+      <hr/>
+      <h2>Submit event</h2>
+        <form id="newevent-form" class="vert-form">
+          <label>Event name</label>
+          <input type="text" id="newevent-name" required>
+          
+          <label>URL</label>
+          <input type="text" id="newevent-url" required>
+
+          <label>City</label>
+          <input type="text" id="newevent-location" required>
+
+          <label>Price</label>
+          <select id="newevent-price">
+            <option value="">?</option>
+            <option value="yes">Yes (it costs money)</option>
+            <option value="vendors">Vendors present</option>
+            <option value="free">Free</option>
+          </select>
+
+          <label>Tags</label>
+          <div class="tags-form">
+            <label><input type="checkbox" name="tag-indoor"/> Indoor</label>
+            <label><input type="checkbox" name="tag-outdoor"/> Outdoor</label>
+            <label><input type="checkbox" name="tag-baby friendly"/> Baby friendly</label>
+            <label><input type="checkbox" name="tag-family friendly"/> Family friendly</label>
+            <label><input type="checkbox" name="tag-couple friendly"/> Couple friendly</label>
+            <label><input type="checkbox" name="tag-music"/> Music</label>
+            <label><input type="checkbox" name="tag-theater"/> Theater</label>
+          </div>
+
+          <label>When</label>
+          <div id="newevent-calendar"></div>
+          
+          <div><button type="submit">Submit</button></div>
+        </form>
+      </div>
+    </section>
+  </div>
+  <footer>
+  </footer>
+  <script src="https://www.gstatic.com/firebasejs/5.7.0/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/5.7.0/firebase-auth.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/5.7.0/firebase-firestore.js"></script>
+  <script src="./js/mattslist.js"></script>
+</body>
+</html>
