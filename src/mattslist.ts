@@ -324,6 +324,13 @@ class EventManager {
    */
   createListingTable(events:IStoredEvent[], el:HTMLElement, dates:string[]) {
     el.innerHTML = '';
+
+    events.sort((a,b) => {
+      let a_date = parseIsoDate((a.dates || ["2040-01-01"])[0]);
+      let b_date = parseIsoDate((b.dates || ["2040-01-01"])[0]);
+      return unixTime(a_date) - unixTime(b_date);
+    });
+
     let table = document.createElement('table');
     table.classList.add('listing');
     el.appendChild(table);

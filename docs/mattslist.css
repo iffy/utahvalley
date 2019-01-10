@@ -99,7 +99,7 @@ table.listing tr:hover td {
   background-color: aliceblue;
 }
 table.listing .name {
-  font-size: 1rem;
+  /*font-size: 1rem;*/
 }
 
 .vote:after {

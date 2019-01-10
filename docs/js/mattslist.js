@@ -390,6 +390,11 @@ var EventManager = /** @class */ (function () {
      */
     EventManager.prototype.createListingTable = function (events, el, dates) {
         el.innerHTML = '';
+        events.sort(function (a, b) {
+            var a_date = parseIsoDate((a.dates || ["2040-01-01"])[0]);
+            var b_date = parseIsoDate((b.dates || ["2040-01-01"])[0]);
+            return unixTime(a_date) - unixTime(b_date);
+        });
         var table = document.createElement('table');
         table.classList.add('listing');
         el.appendChild(table);
