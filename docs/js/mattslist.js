@@ -34,6 +34,22 @@ var __generator = (this && this.__generator) || function (thisArg, body) {
         if (op[0] & 5) throw op[1]; return { value: op[0] ? op[1] : void 0, done: true };
     }
 };
+function debounce(func, milli) {
+    if (milli === void 0) { milli = 100; }
+    var timer;
+    return function () {
+        var args = [];
+        for (var _i = 0; _i < arguments.length; _i++) {
+            args[_i] = arguments[_i];
+        }
+        if (timer) {
+            clearTimeout(timer);
+        }
+        timer = setTimeout(function () {
+            func.apply(void 0, args);
+        }, milli);
+    };
+}
 var daysOfWeek = ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'];
 var EventManager = /** @class */ (function () {
     function EventManager() {
@@ -58,6 +74,9 @@ var EventManager = /** @class */ (function () {
         this.this_week_listing = document.getElementById('this-week');
         this.next_week_listing = document.getElementById('next-week');
         this.all_listing = document.getElementById('all-events');
+        this.refreshTables = debounce(function () {
+            _this._refreshTables();
+        });
         this.weekstartdate = new Date();
         while (this.weekstartdate.getDay() !== 1) {
             this.weekstartdate.setDate(this.weekstartdate.getDate() - 1);
@@ -360,7 +379,7 @@ var EventManager = /** @class */ (function () {
         this.newevent_form.reset();
         this.newevent_name.focus();
     };
-    EventManager.prototype.refreshTables = function () {
+    EventManager.prototype._refreshTables = function () {
         var _this = this;
         var this_weeks_events = this.events.filter(function (x) {
             for (var _i = 0, _a = (x.dates || []); _i < _a.length; _i++) {

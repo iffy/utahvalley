@@ -2,6 +2,18 @@ declare var firebase:any;
 
 type Price = 'free' | 'vendors' | 'yes' | '';
 
+function debounce(func:Function, milli=100):Function {
+  let timer:number;
+  return (...args:any) => {
+    if (timer) {
+      clearTimeout(timer);
+    }
+    timer = setTimeout(() => {
+      func(...args);
+    }, milli);
+  }
+}
+
 interface IEvent {
   name: string;
   url: string;
@@ -37,7 +49,13 @@ class EventManager {
   private thisweeksdates:string[] = [];
   private nextweeksdates:string[] = [];
 
+  refreshTables:Function;
+
   constructor() {
+    this.refreshTables = debounce(() => {
+      this._refreshTables()
+    });
+
     this.weekstartdate = new Date();
     while (this.weekstartdate.getDay() !== 1) {
       this.weekstartdate.setDate(this.weekstartdate.getDate()-1);
@@ -294,7 +312,7 @@ class EventManager {
   private this_week_listing = document.getElementById('this-week') as HTMLDivElement;
   private next_week_listing = document.getElementById('next-week') as HTMLDivElement;
   private all_listing = document.getElementById('all-events') as HTMLDivElement;
-  refreshTables() {
+  private _refreshTables() {
     let this_weeks_events = this.events.filter(x => {
       for (const date of (x.dates || [])) {
         if (this.thisweeksdates.indexOf(date) !== -1) {
